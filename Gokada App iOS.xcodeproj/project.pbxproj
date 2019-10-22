@@ -10,6 +10,10 @@
 		050CDEE23F7B960A8D12E3F9 /* Pods_Local_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */; };
 		1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */; };
 		1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */; };
+		12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12959FE6235FB6E700DC7856 /* PreLoader.swift */; };
+		12959FE9235FBB7B00DC7856 /* gokada_custom_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 12959FE8235FBB7B00DC7856 /* gokada_custom_loader.json */; };
+		12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D85FF62360537900C12D79 /* WelcomeViewController.swift */; };
+		12D85FF92360539900C12D79 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D85FF82360539900C12D79 /* Auth.storyboard */; };
 		1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC33235DD56C00E51875 /* AppDelegate.swift */; };
 		1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC35235DD56C00E51875 /* SceneDelegate.swift */; };
 		1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1438DC39235DD56C00E51875 /* Main.storyboard */; };
@@ -67,7 +71,7 @@
 		1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6F235F4DF900E51875 /* ErrorType.swift */; };
 		1438DD72235F602200E51875 /* AuthInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* AuthInjections.swift */; };
 		1438DD74235F667E00E51875 /* IAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD73235F667E00E51875 /* IAuthViewModel.swift */; };
-		1438DD76235F679E00E51875 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD75235F679E00E51875 /* AuthViewController.swift */; };
+		1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD75235F679E00E51875 /* LoginViewController.swift */; };
 		21368E7CE4D339EDA720D642 /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */; };
 		6A98988D5A8290F170391B36 /* Pods_RepositoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647530F024AE0DCDEC06811A /* Pods_RepositoryTests.framework */; };
 		6E584A78FA773E9C6EDE0A27 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */; };
@@ -243,6 +247,10 @@
 		1283C6E6235FAA7B00414C46 /* montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat.ttf; sourceTree = "<group>"; };
 		1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_welcome_anim.json; sourceTree = "<group>"; };
 		1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_splash_amin.json; sourceTree = "<group>"; };
+		12959FE6235FB6E700DC7856 /* PreLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoader.swift; sourceTree = "<group>"; };
+		12959FE8235FBB7B00DC7856 /* gokada_custom_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_custom_loader.json; sourceTree = "<group>"; };
+		12D85FF62360537900C12D79 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		12D85FF82360539900C12D79 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		1438DC30235DD56C00E51875 /* Gokada App iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada App iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438DC33235DD56C00E51875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1438DC35235DD56C00E51875 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -310,7 +318,7 @@
 		1438DD6F235F4DF900E51875 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		1438DD71235F602200E51875 /* AuthInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInjections.swift; sourceTree = "<group>"; };
 		1438DD73235F667E00E51875 /* IAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthViewModel.swift; sourceTree = "<group>"; };
-		1438DD75235F679E00E51875 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		1438DD75235F679E00E51875 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		186E3F910A958F53FE229F3D /* Pods-Gokada App iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B20F9A3373A28D9D1FFC57C /* Pods-Repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.release.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.release.xcconfig"; sourceTree = "<group>"; };
 		1E53639A3269A89B1106E590 /* Pods-Repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.debug.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.debug.xcconfig"; sourceTree = "<group>"; };
@@ -459,8 +467,65 @@
 			children = (
 				1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */,
 				1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */,
+				12959FE8235FBB7B00DC7856 /* gokada_custom_loader.json */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		12D85FEF2360512200C12D79 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD65235F2FB100E51875 /* View */,
+				1438DD64235F2FA400E51875 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		12D85FF02360519900C12D79 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		12D85FF1236051A100C12D79 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		12D85FF2236051C900C12D79 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				12D85FF52360535200C12D79 /* Storyboards */,
+				12D85FF32360520600C12D79 /* View */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		12D85FF32360520600C12D79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12D85FF62360537900C12D79 /* WelcomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12D85FF4236052FE00C12D79 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				12D85FF82360539900C12D79 /* Auth.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		12D85FF52360535200C12D79 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1438DC39235DD56C00E51875 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		1438DC27235DD56B00E51875 = {
@@ -703,6 +768,7 @@
 		1438DD5E235F2C9C00E51875 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				12D85FF2236051C900C12D79 /* Welcome */,
 				1438DD6E235F4DE000E51875 /* Utils */,
 				1438DD68235F362A00E51875 /* Base */,
 				1438DD5F235F2CA500E51875 /* Auth */,
@@ -713,8 +779,10 @@
 		1438DD5F235F2CA500E51875 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				1438DD65235F2FB100E51875 /* View */,
-				1438DD64235F2FA400E51875 /* ViewModel */,
+				12D85FF4236052FE00C12D79 /* Storyboards */,
+				12D85FF1236051A100C12D79 /* Register */,
+				12D85FF02360519900C12D79 /* OTP */,
+				12D85FEF2360512200C12D79 /* Login */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -766,8 +834,7 @@
 		1438DD65235F2FB100E51875 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1438DC39235DD56C00E51875 /* Main.storyboard */,
-				1438DD75235F679E00E51875 /* AuthViewController.swift */,
+				1438DD75235F679E00E51875 /* LoginViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -785,6 +852,7 @@
 			isa = PBXGroup;
 			children = (
 				1438DD6F235F4DF900E51875 /* ErrorType.swift */,
+				12959FE6235FB6E700DC7856 /* PreLoader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1215,11 +1283,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12959FE9235FBB7B00DC7856 /* gokada_custom_loader.json in Resources */,
 				1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */,
 				1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */,
 				1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */,
 				1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */,
 				1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */,
+				12D85FF92360539900C12D79 /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1646,12 +1716,14 @@
 			files = (
 				1438DD67235F2FD800E51875 /* AuthViewModel.swift in Sources */,
 				1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */,
-				1438DD76235F679E00E51875 /* AuthViewController.swift in Sources */,
+				12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */,
+				1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */,
 				1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */,
 				1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */,
 				1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */,
 				1438DD74235F667E00E51875 /* IAuthViewModel.swift in Sources */,
 				1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */,
+				12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */,
 				1438DD72235F602200E51875 /* AuthInjections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

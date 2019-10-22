@@ -25,7 +25,7 @@ extension SwinjectStoryboard {
             AuthViewModel(authRepo: res.resolve(IAuthRepo.self)!)
         }
         
-        defaultContainer.storyboardInitCompleted(AuthViewController.self) { res, cntrl in
+        defaultContainer.storyboardInitCompleted(LoginViewController.self) { res, cntrl in
             cntrl.authViewModel = res.resolve(IAuthViewModel.self)
         }
     }

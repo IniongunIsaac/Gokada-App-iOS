@@ -13,7 +13,7 @@ import Entities
 class BaseViewModel {
     
     private let disposable = DisposeBag()
-    let isLoading: Single<Bool> = Single.just(false)
+    let isLoading: PublishSubject<Bool> = PublishSubject()
     let apiError: Single<ApiError>? = nil
     
     func viewDidLoad() { }
