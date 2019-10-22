@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050CDEE23F7B960A8D12E3F9 /* Pods_Local_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */; };
 		1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC33235DD56C00E51875 /* AppDelegate.swift */; };
 		1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC35235DD56C00E51875 /* SceneDelegate.swift */; };
 		1438DC38235DD56C00E51875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC37235DD56C00E51875 /* ViewController.swift */; };
@@ -15,6 +16,56 @@
 		1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1438DC3E235DD57000E51875 /* LaunchScreen.storyboard */; };
 		1438DC4B235DD57100E51875 /* Gokada_App_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC4A235DD57100E51875 /* Gokada_App_iOSTests.swift */; };
 		1438DC56235DD57100E51875 /* Gokada_App_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC55235DD57100E51875 /* Gokada_App_iOSUITests.swift */; };
+		1438DC72235DF5D700E51875 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DC69235DF5D600E51875 /* Repository.framework */; };
+		1438DC79235DF5D700E51875 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC78235DF5D700E51875 /* RepositoryTests.swift */; };
+		1438DC7B235DF5D700E51875 /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = 1438DC6B235DF5D600E51875 /* Repository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1438DC7E235DF5D700E51875 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DC69235DF5D600E51875 /* Repository.framework */; };
+		1438DC7F235DF5D700E51875 /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DC69235DF5D600E51875 /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1438DCB1235DF67B00E51875 /* Remote_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCA8235DF67B00E51875 /* Remote_API.framework */; };
+		1438DCB8235DF67B00E51875 /* Remote_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DCB7235DF67B00E51875 /* Remote_APITests.swift */; };
+		1438DCBA235DF67B00E51875 /* Remote_API.h in Headers */ = {isa = PBXBuildFile; fileRef = 1438DCAA235DF67B00E51875 /* Remote_API.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1438DCBD235DF67B00E51875 /* Remote_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCA8235DF67B00E51875 /* Remote_API.framework */; };
+		1438DCBE235DF67B00E51875 /* Remote_API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCA8235DF67B00E51875 /* Remote_API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1438DCD3235DF6C300E51875 /* Local_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCCA235DF6C300E51875 /* Local_Storage.framework */; };
+		1438DCDA235DF6C300E51875 /* Local_StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DCD9235DF6C300E51875 /* Local_StorageTests.swift */; };
+		1438DCDC235DF6C300E51875 /* Local_Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1438DCCC235DF6C300E51875 /* Local_Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1438DCDF235DF6C300E51875 /* Local_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCCA235DF6C300E51875 /* Local_Storage.framework */; };
+		1438DCE0235DF6C300E51875 /* Local_Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCCA235DF6C300E51875 /* Local_Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1438DCF5235DF6FF00E51875 /* App_Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCEC235DF6FE00E51875 /* App_Preferences.framework */; };
+		1438DCFC235DF6FF00E51875 /* App_PreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DCFB235DF6FF00E51875 /* App_PreferencesTests.swift */; };
+		1438DCFE235DF6FF00E51875 /* App_Preferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 1438DCEE235DF6FE00E51875 /* App_Preferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1438DD01235DF6FF00E51875 /* App_Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCEC235DF6FE00E51875 /* App_Preferences.framework */; };
+		1438DD02235DF6FF00E51875 /* App_Preferences.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DCEC235DF6FE00E51875 /* App_Preferences.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1438DD12235DF72400E51875 /* Entities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1438DD10235DF72400E51875 /* Entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1438DD15235DF72400E51875 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DD0E235DF72400E51875 /* Entities.framework */; };
+		1438DD16235DF72400E51875 /* Entities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1438DD0E235DF72400E51875 /* Entities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1438DD24235DF90D00E51875 /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD23235DF90D00E51875 /* AuthRepo.swift */; };
+		1438DD27235E367400E51875 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD26235E367400E51875 /* User.swift */; };
+		1438DD29235E386E00E51875 /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD28235E386E00E51875 /* Daily.swift */; };
+		1438DD2B235E38CA00E51875 /* Earning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD2A235E38CA00E51875 /* Earning.swift */; };
+		1438DD2F235E3A6000E51875 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD2E235E3A6000E51875 /* Location.swift */; };
+		1438DD33235E3AF600E51875 /* Pilot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD32235E3AF600E51875 /* Pilot.swift */; };
+		1438DD35235E3B6300E51875 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD34235E3B6300E51875 /* Rating.swift */; };
+		1438DD38235E431300E51875 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD37235E431300E51875 /* ErrorMessage.swift */; };
+		1438DD3A235E436600E51875 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD39235E436600E51875 /* ApiError.swift */; };
+		1438DD3C235E43E000E51875 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD3B235E43E000E51875 /* ApiResponse.swift */; };
+		1438DD3E235E8D2500E51875 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD3D235E8D2500E51875 /* AppUser.swift */; };
+		1438DD43235E948300E51875 /* RemoteAPI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD42235E948300E51875 /* RemoteAPI+Extensions.swift */; };
+		1438DD47235E970700E51875 /* IBaseRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD46235E970700E51875 /* IBaseRemoteApi.swift */; };
+		1438DD49235E97D900E51875 /* BaseRemoteApiImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD48235E97D900E51875 /* BaseRemoteApiImpl.swift */; };
+		1438DD4C235E9ED700E51875 /* PreferenceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD4B235E9ED700E51875 /* PreferenceConstants.swift */; };
+		1438DD4E235E9F7F00E51875 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD4D235E9F7F00E51875 /* Preference.swift */; };
+		1438DD53235EB98400E51875 /* RemoteApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD52235EB98400E51875 /* RemoteApiConstants.swift */; };
+		1438DD55235EBAF200E51875 /* IAuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD54235EBAF200E51875 /* IAuthRepo.swift */; };
+		1438DD57235EBCCE00E51875 /* PhoneNumberAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD56235EBCCE00E51875 /* PhoneNumberAuth.swift */; };
+		21368E7CE4D339EDA720D642 /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */; };
+		6A98988D5A8290F170391B36 /* Pods_RepositoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647530F024AE0DCDEC06811A /* Pods_RepositoryTests.framework */; };
+		6E584A78FA773E9C6EDE0A27 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */; };
+		93DE74AC720BB07A7945AB2D /* Pods_Gokada_App_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521F0FC34C88BF458FD3618A /* Pods_Gokada_App_iOS.framework */; };
+		C1E4292101E708249E4BDBAF /* Pods_Remote_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CC7820B6EF6A314767FE4B /* Pods_Remote_API.framework */; };
+		D258757A4B13DA48EBA9CEC5 /* Pods_Local_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3538DE3DD6C8B121CA0C4677 /* Pods_Local_Storage.framework */; };
+		E08DD234C6E4DECD1152579A /* Pods_Remote_APITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C82131DF1A92AD73F41CFCB /* Pods_Remote_APITests.framework */; };
+		F0D59D5F441CE2F5ADCD336D /* Pods_Gokada_App_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03169CF9B0EA0A1EC6340E5 /* Pods_Gokada_App_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +83,151 @@
 			remoteGlobalIDString = 1438DC2F235DD56C00E51875;
 			remoteInfo = "Gokada App iOS";
 		};
+		1438DC73235DF5D700E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DC68235DF5D600E51875;
+			remoteInfo = Repository;
+		};
+		1438DC75235DF5D700E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DC2F235DD56C00E51875;
+			remoteInfo = "Gokada App iOS";
+		};
+		1438DC7C235DF5D700E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DC68235DF5D600E51875;
+			remoteInfo = Repository;
+		};
+		1438DCB2235DF67B00E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCA7235DF67B00E51875;
+			remoteInfo = "Remote API";
+		};
+		1438DCB4235DF67B00E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DC2F235DD56C00E51875;
+			remoteInfo = "Gokada App iOS";
+		};
+		1438DCBB235DF67B00E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCA7235DF67B00E51875;
+			remoteInfo = "Remote API";
+		};
+		1438DCD4235DF6C300E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCC9235DF6C300E51875;
+			remoteInfo = "Local Storage";
+		};
+		1438DCD6235DF6C300E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DC2F235DD56C00E51875;
+			remoteInfo = "Gokada App iOS";
+		};
+		1438DCDD235DF6C300E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCC9235DF6C300E51875;
+			remoteInfo = "Local Storage";
+		};
+		1438DCF6235DF6FF00E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCEB235DF6FE00E51875;
+			remoteInfo = "App Preferences";
+		};
+		1438DCF8235DF6FF00E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DC2F235DD56C00E51875;
+			remoteInfo = "Gokada App iOS";
+		};
+		1438DCFF235DF6FF00E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCEB235DF6FE00E51875;
+			remoteInfo = "App Preferences";
+		};
+		1438DD13235DF72400E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DD0D235DF72400E51875;
+			remoteInfo = Entities;
+		};
+		1438DD1A235DF74900E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCEB235DF6FE00E51875;
+			remoteInfo = "App Preferences";
+		};
+		1438DD1C235DF74F00E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DD0D235DF72400E51875;
+			remoteInfo = Entities;
+		};
+		1438DD1E235DF75500E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCC9235DF6C300E51875;
+			remoteInfo = "Local Storage";
+		};
+		1438DD20235DF76700E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCA7235DF67B00E51875;
+			remoteInfo = "Remote API";
+		};
+		1438DD50235EA25900E51875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DCEB235DF6FE00E51875;
+			remoteInfo = "App Preferences";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1438DC80235DF5D700E51875 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1438DD16235DF72400E51875 /* Entities.framework in Embed Frameworks */,
+				1438DC7F235DF5D700E51875 /* Repository.framework in Embed Frameworks */,
+				1438DCBE235DF67B00E51875 /* Remote_API.framework in Embed Frameworks */,
+				1438DCE0235DF6C300E51875 /* Local_Storage.framework in Embed Frameworks */,
+				1438DD02235DF6FF00E51875 /* App_Preferences.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1438DC30235DD56C00E51875 /* Gokada App iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada App iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +244,79 @@
 		1438DC51235DD57100E51875 /* Gokada App iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gokada App iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438DC55235DD57100E51875 /* Gokada_App_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gokada_App_iOSUITests.swift; sourceTree = "<group>"; };
 		1438DC57235DD57100E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DC69235DF5D600E51875 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DC6B235DF5D600E51875 /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		1438DC6C235DF5D600E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DC71235DF5D700E51875 /* RepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DC78235DF5D700E51875 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		1438DC7A235DF5D700E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DCA8235DF67B00E51875 /* Remote_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Remote_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DCAA235DF67B00E51875 /* Remote_API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Remote_API.h; sourceTree = "<group>"; };
+		1438DCAB235DF67B00E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DCB0235DF67B00E51875 /* Remote APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Remote APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DCB7235DF67B00E51875 /* Remote_APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote_APITests.swift; sourceTree = "<group>"; };
+		1438DCB9235DF67B00E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DCCA235DF6C300E51875 /* Local_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Local_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DCCC235DF6C300E51875 /* Local_Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Local_Storage.h; sourceTree = "<group>"; };
+		1438DCCD235DF6C300E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DCD2235DF6C300E51875 /* Local StorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Local StorageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DCD9235DF6C300E51875 /* Local_StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local_StorageTests.swift; sourceTree = "<group>"; };
+		1438DCDB235DF6C300E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DCEC235DF6FE00E51875 /* App_Preferences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = App_Preferences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DCEE235DF6FE00E51875 /* App_Preferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App_Preferences.h; sourceTree = "<group>"; };
+		1438DCEF235DF6FE00E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DCF4235DF6FF00E51875 /* App PreferencesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App PreferencesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DCFB235DF6FF00E51875 /* App_PreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_PreferencesTests.swift; sourceTree = "<group>"; };
+		1438DCFD235DF6FF00E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DD0E235DF72400E51875 /* Entities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DD10235DF72400E51875 /* Entities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entities.h; sourceTree = "<group>"; };
+		1438DD11235DF72400E51875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1438DD23235DF90D00E51875 /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
+		1438DD26235E367400E51875 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1438DD28235E386E00E51875 /* Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
+		1438DD2A235E38CA00E51875 /* Earning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earning.swift; sourceTree = "<group>"; };
+		1438DD2E235E3A6000E51875 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1438DD32235E3AF600E51875 /* Pilot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilot.swift; sourceTree = "<group>"; };
+		1438DD34235E3B6300E51875 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		1438DD37235E431300E51875 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		1438DD39235E436600E51875 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		1438DD3B235E43E000E51875 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		1438DD3D235E8D2500E51875 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		1438DD42235E948300E51875 /* RemoteAPI+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoteAPI+Extensions.swift"; sourceTree = "<group>"; };
+		1438DD46235E970700E51875 /* IBaseRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBaseRemoteApi.swift; sourceTree = "<group>"; };
+		1438DD48235E97D900E51875 /* BaseRemoteApiImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRemoteApiImpl.swift; sourceTree = "<group>"; };
+		1438DD4B235E9ED700E51875 /* PreferenceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceConstants.swift; sourceTree = "<group>"; };
+		1438DD4D235E9F7F00E51875 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		1438DD52235EB98400E51875 /* RemoteApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteApiConstants.swift; sourceTree = "<group>"; };
+		1438DD54235EBAF200E51875 /* IAuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthRepo.swift; sourceTree = "<group>"; };
+		1438DD56235EBCCE00E51875 /* PhoneNumberAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberAuth.swift; sourceTree = "<group>"; };
+		186E3F910A958F53FE229F3D /* Pods-Gokada App iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B20F9A3373A28D9D1FFC57C /* Pods-Repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.release.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.release.xcconfig"; sourceTree = "<group>"; };
+		1E53639A3269A89B1106E590 /* Pods-Repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.debug.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.debug.xcconfig"; sourceTree = "<group>"; };
+		2ADA07C3333A64A14F26542F /* Pods-Local Storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Local Storage.debug.xcconfig"; path = "Target Support Files/Pods-Local Storage/Pods-Local Storage.debug.xcconfig"; sourceTree = "<group>"; };
+		3538DE3DD6C8B121CA0C4677 /* Pods_Local_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Local_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E8D3469D013E81E2A648BB /* Pods-Gokada App iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOS.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS.release.xcconfig"; sourceTree = "<group>"; };
+		41CC7820B6EF6A314767FE4B /* Pods_Remote_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remote_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C82131DF1A92AD73F41CFCB /* Pods_Remote_APITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remote_APITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521F0FC34C88BF458FD3618A /* Pods_Gokada_App_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_App_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		608B4C939BA16E3A7C891F70 /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6387B70C8F33E077A8FC0C8C /* Pods-Gokada App iOS-Gokada App iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOS-Gokada App iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		647530F024AE0DCDEC06811A /* Pods_RepositoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepositoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B349FFA41F9BDA702C769EB /* Pods-Local Storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Local Storage.release.xcconfig"; path = "Target Support Files/Pods-Local Storage/Pods-Local Storage.release.xcconfig"; sourceTree = "<group>"; };
+		8F985DB9FCC5053EEB76E507 /* Pods-Remote API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote API.release.xcconfig"; path = "Target Support Files/Pods-Remote API/Pods-Remote API.release.xcconfig"; sourceTree = "<group>"; };
+		A5792F374799C55C1AB87AB3 /* Pods-RepositoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.release.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		A67158791A596F6A67D9EFD2 /* Pods-Remote API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote API.debug.xcconfig"; path = "Target Support Files/Pods-Remote API/Pods-Remote API.debug.xcconfig"; sourceTree = "<group>"; };
+		ADD54C879D1014D959B5A1E9 /* Pods-Remote APITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote APITests.release.xcconfig"; path = "Target Support Files/Pods-Remote APITests/Pods-Remote APITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5BFAF5CD8BA7541D25A45B3 /* Pods-Remote APITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote APITests.debug.xcconfig"; path = "Target Support Files/Pods-Remote APITests/Pods-Remote APITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C03169CF9B0EA0A1EC6340E5 /* Pods_Gokada_App_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_App_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C037DAFAFE60256F32907358 /* Pods-Gokada App iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOS.debug.xcconfig"; path = "Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Local_StorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97CAD2D78704A14831BBD3C /* Pods-Gokada App iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECECC4D8B70F14400A182FB6 /* Pods-Local StorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Local StorageTests.release.xcconfig"; path = "Target Support Files/Pods-Local StorageTests/Pods-Local StorageTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F204A53EE2C1C47E5F1638CF /* Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F35E5C337573008201DF625E /* Pods-Local StorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Local StorageTests.debug.xcconfig"; path = "Target Support Files/Pods-Local StorageTests/Pods-Local StorageTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +324,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1438DC7E235DF5D700E51875 /* Repository.framework in Frameworks */,
+				1438DCBD235DF67B00E51875 /* Remote_API.framework in Frameworks */,
+				1438DD01235DF6FF00E51875 /* App_Preferences.framework in Frameworks */,
+				1438DCDF235DF6C300E51875 /* Local_Storage.framework in Frameworks */,
+				93DE74AC720BB07A7945AB2D /* Pods_Gokada_App_iOS.framework in Frameworks */,
+				1438DD15235DF72400E51875 /* Entities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,10 +337,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D59D5F441CE2F5ADCD336D /* Pods_Gokada_App_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1438DC4E235DD57100E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21368E7CE4D339EDA720D642 /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DC66235DF5D600E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E584A78FA773E9C6EDE0A27 /* Pods_Repository.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DC6E235DF5D700E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DC72235DF5D700E51875 /* Repository.framework in Frameworks */,
+				6A98988D5A8290F170391B36 /* Pods_RepositoryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCA5235DF67B00E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E4292101E708249E4BDBAF /* Pods_Remote_API.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCAD235DF67B00E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCB1235DF67B00E51875 /* Remote_API.framework in Frameworks */,
+				E08DD234C6E4DECD1152579A /* Pods_Remote_APITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCC7235DF6C300E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D258757A4B13DA48EBA9CEC5 /* Pods_Local_Storage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCCF235DF6C300E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCD3235DF6C300E51875 /* Local_Storage.framework in Frameworks */,
+				050CDEE23F7B960A8D12E3F9 /* Pods_Local_StorageTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCE9235DF6FE00E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCF1235DF6FF00E51875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCF5235DF6FF00E51875 /* App_Preferences.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DD0B235DF72400E51875 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,7 +431,18 @@
 				1438DC32235DD56C00E51875 /* Gokada App iOS */,
 				1438DC49235DD57100E51875 /* Gokada App iOSTests */,
 				1438DC54235DD57100E51875 /* Gokada App iOSUITests */,
+				1438DC6A235DF5D600E51875 /* Repository */,
+				1438DC77235DF5D700E51875 /* RepositoryTests */,
+				1438DCA9235DF67B00E51875 /* Remote API */,
+				1438DCB6235DF67B00E51875 /* Remote APITests */,
+				1438DCCB235DF6C300E51875 /* Local Storage */,
+				1438DCD8235DF6C300E51875 /* Local StorageTests */,
+				1438DCED235DF6FE00E51875 /* App Preferences */,
+				1438DCFA235DF6FF00E51875 /* App PreferencesTests */,
+				1438DD0F235DF72400E51875 /* Entities */,
 				1438DC31235DD56C00E51875 /* Products */,
+				8774D1F8952E6C13D9F7158C /* Pods */,
+				7DA2971EDEA381CD23C8169F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +452,15 @@
 				1438DC30235DD56C00E51875 /* Gokada App iOS.app */,
 				1438DC46235DD57100E51875 /* Gokada App iOSTests.xctest */,
 				1438DC51235DD57100E51875 /* Gokada App iOSUITests.xctest */,
+				1438DC69235DF5D600E51875 /* Repository.framework */,
+				1438DC71235DF5D700E51875 /* RepositoryTests.xctest */,
+				1438DCA8235DF67B00E51875 /* Remote_API.framework */,
+				1438DCB0235DF67B00E51875 /* Remote APITests.xctest */,
+				1438DCCA235DF6C300E51875 /* Local_Storage.framework */,
+				1438DCD2235DF6C300E51875 /* Local StorageTests.xctest */,
+				1438DCEC235DF6FE00E51875 /* App_Preferences.framework */,
+				1438DCF4235DF6FF00E51875 /* App PreferencesTests.xctest */,
+				1438DD0E235DF72400E51875 /* Entities.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,20 +497,277 @@
 			path = "Gokada App iOSUITests";
 			sourceTree = "<group>";
 		};
+		1438DC6A235DF5D600E51875 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD22235DF8C800E51875 /* Authentication */,
+				1438DC6B235DF5D600E51875 /* Repository.h */,
+				1438DC6C235DF5D600E51875 /* Info.plist */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1438DC77235DF5D700E51875 /* RepositoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				1438DC78235DF5D700E51875 /* RepositoryTests.swift */,
+				1438DC7A235DF5D700E51875 /* Info.plist */,
+			);
+			path = RepositoryTests;
+			sourceTree = "<group>";
+		};
+		1438DCA9235DF67B00E51875 /* Remote API */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD41235E945700E51875 /* Authentication */,
+				1438DD40235E945000E51875 /* Base */,
+				1438DD3F235E944400E51875 /* Utils */,
+				1438DCAA235DF67B00E51875 /* Remote_API.h */,
+				1438DCAB235DF67B00E51875 /* Info.plist */,
+			);
+			path = "Remote API";
+			sourceTree = "<group>";
+		};
+		1438DCB6235DF67B00E51875 /* Remote APITests */ = {
+			isa = PBXGroup;
+			children = (
+				1438DCB7235DF67B00E51875 /* Remote_APITests.swift */,
+				1438DCB9235DF67B00E51875 /* Info.plist */,
+			);
+			path = "Remote APITests";
+			sourceTree = "<group>";
+		};
+		1438DCCB235DF6C300E51875 /* Local Storage */ = {
+			isa = PBXGroup;
+			children = (
+				1438DCCC235DF6C300E51875 /* Local_Storage.h */,
+				1438DCCD235DF6C300E51875 /* Info.plist */,
+			);
+			path = "Local Storage";
+			sourceTree = "<group>";
+		};
+		1438DCD8235DF6C300E51875 /* Local StorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				1438DCD9235DF6C300E51875 /* Local_StorageTests.swift */,
+				1438DCDB235DF6C300E51875 /* Info.plist */,
+			);
+			path = "Local StorageTests";
+			sourceTree = "<group>";
+		};
+		1438DCED235DF6FE00E51875 /* App Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD4F235E9F8800E51875 /* Preferences */,
+				1438DD4A235E9EBE00E51875 /* Utils */,
+				1438DCEE235DF6FE00E51875 /* App_Preferences.h */,
+				1438DCEF235DF6FE00E51875 /* Info.plist */,
+			);
+			path = "App Preferences";
+			sourceTree = "<group>";
+		};
+		1438DCFA235DF6FF00E51875 /* App PreferencesTests */ = {
+			isa = PBXGroup;
+			children = (
+				1438DCFB235DF6FF00E51875 /* App_PreferencesTests.swift */,
+				1438DCFD235DF6FF00E51875 /* Info.plist */,
+			);
+			path = "App PreferencesTests";
+			sourceTree = "<group>";
+		};
+		1438DD0F235DF72400E51875 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD36235E428A00E51875 /* Base */,
+				1438DD25235E345F00E51875 /* Authentication */,
+				1438DD10235DF72400E51875 /* Entities.h */,
+				1438DD11235DF72400E51875 /* Info.plist */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1438DD22235DF8C800E51875 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD23235DF90D00E51875 /* AuthRepo.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1438DD25235E345F00E51875 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD26235E367400E51875 /* User.swift */,
+				1438DD28235E386E00E51875 /* Daily.swift */,
+				1438DD2A235E38CA00E51875 /* Earning.swift */,
+				1438DD2E235E3A6000E51875 /* Location.swift */,
+				1438DD32235E3AF600E51875 /* Pilot.swift */,
+				1438DD34235E3B6300E51875 /* Rating.swift */,
+				1438DD3D235E8D2500E51875 /* AppUser.swift */,
+				1438DD56235EBCCE00E51875 /* PhoneNumberAuth.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1438DD36235E428A00E51875 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD37235E431300E51875 /* ErrorMessage.swift */,
+				1438DD39235E436600E51875 /* ApiError.swift */,
+				1438DD3B235E43E000E51875 /* ApiResponse.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1438DD3F235E944400E51875 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD42235E948300E51875 /* RemoteAPI+Extensions.swift */,
+				1438DD52235EB98400E51875 /* RemoteApiConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1438DD40235E945000E51875 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD46235E970700E51875 /* IBaseRemoteApi.swift */,
+				1438DD48235E97D900E51875 /* BaseRemoteApiImpl.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1438DD41235E945700E51875 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD54235EBAF200E51875 /* IAuthRepo.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1438DD4A235E9EBE00E51875 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD4B235E9ED700E51875 /* PreferenceConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1438DD4F235E9F8800E51875 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				1438DD4D235E9F7F00E51875 /* Preference.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		7DA2971EDEA381CD23C8169F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				521F0FC34C88BF458FD3618A /* Pods_Gokada_App_iOS.framework */,
+				C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */,
+				C03169CF9B0EA0A1EC6340E5 /* Pods_Gokada_App_iOSTests.framework */,
+				EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */,
+				647530F024AE0DCDEC06811A /* Pods_RepositoryTests.framework */,
+				3538DE3DD6C8B121CA0C4677 /* Pods_Local_Storage.framework */,
+				D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */,
+				41CC7820B6EF6A314767FE4B /* Pods_Remote_API.framework */,
+				4C82131DF1A92AD73F41CFCB /* Pods_Remote_APITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8774D1F8952E6C13D9F7158C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C037DAFAFE60256F32907358 /* Pods-Gokada App iOS.debug.xcconfig */,
+				40E8D3469D013E81E2A648BB /* Pods-Gokada App iOS.release.xcconfig */,
+				F204A53EE2C1C47E5F1638CF /* Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig */,
+				6387B70C8F33E077A8FC0C8C /* Pods-Gokada App iOS-Gokada App iOSUITests.release.xcconfig */,
+				D97CAD2D78704A14831BBD3C /* Pods-Gokada App iOSTests.debug.xcconfig */,
+				186E3F910A958F53FE229F3D /* Pods-Gokada App iOSTests.release.xcconfig */,
+				1E53639A3269A89B1106E590 /* Pods-Repository.debug.xcconfig */,
+				1B20F9A3373A28D9D1FFC57C /* Pods-Repository.release.xcconfig */,
+				608B4C939BA16E3A7C891F70 /* Pods-RepositoryTests.debug.xcconfig */,
+				A5792F374799C55C1AB87AB3 /* Pods-RepositoryTests.release.xcconfig */,
+				2ADA07C3333A64A14F26542F /* Pods-Local Storage.debug.xcconfig */,
+				7B349FFA41F9BDA702C769EB /* Pods-Local Storage.release.xcconfig */,
+				F35E5C337573008201DF625E /* Pods-Local StorageTests.debug.xcconfig */,
+				ECECC4D8B70F14400A182FB6 /* Pods-Local StorageTests.release.xcconfig */,
+				A67158791A596F6A67D9EFD2 /* Pods-Remote API.debug.xcconfig */,
+				8F985DB9FCC5053EEB76E507 /* Pods-Remote API.release.xcconfig */,
+				B5BFAF5CD8BA7541D25A45B3 /* Pods-Remote APITests.debug.xcconfig */,
+				ADD54C879D1014D959B5A1E9 /* Pods-Remote APITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1438DC64235DF5D600E51875 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DC7B235DF5D700E51875 /* Repository.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCA3235DF67B00E51875 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCBA235DF67B00E51875 /* Remote_API.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCC5235DF6C300E51875 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCDC235DF6C300E51875 /* Local_Storage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCE7235DF6FE00E51875 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCFE235DF6FF00E51875 /* App_Preferences.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DD09235DF72400E51875 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DD12235DF72400E51875 /* Entities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1438DC2F235DD56C00E51875 /* Gokada App iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1438DC5A235DD57100E51875 /* Build configuration list for PBXNativeTarget "Gokada App iOS" */;
 			buildPhases = (
+				36D1FAD0678F0D922E36BFF4 /* [CP] Check Pods Manifest.lock */,
 				1438DC2C235DD56C00E51875 /* Sources */,
 				1438DC2D235DD56C00E51875 /* Frameworks */,
 				1438DC2E235DD56C00E51875 /* Resources */,
+				3094C65FBB4206C75E51AB5B /* [CP] Embed Pods Frameworks */,
+				1438DC80235DF5D700E51875 /* Embed Frameworks */,
+				CC40CBBF0B7D0061B30A4ECE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1438DC7D235DF5D700E51875 /* PBXTargetDependency */,
+				1438DCBC235DF67B00E51875 /* PBXTargetDependency */,
+				1438DCDE235DF6C300E51875 /* PBXTargetDependency */,
+				1438DD00235DF6FF00E51875 /* PBXTargetDependency */,
+				1438DD14235DF72400E51875 /* PBXTargetDependency */,
 			);
 			name = "Gokada App iOS";
 			productName = "Gokada App iOS";
@@ -152,9 +778,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1438DC5D235DD57100E51875 /* Build configuration list for PBXNativeTarget "Gokada App iOSTests" */;
 			buildPhases = (
+				0F8D10D190186BC2350D5FA9 /* [CP] Check Pods Manifest.lock */,
 				1438DC42235DD57100E51875 /* Sources */,
 				1438DC43235DD57100E51875 /* Frameworks */,
 				1438DC44235DD57100E51875 /* Resources */,
+				6C64929B8A9B152526BF0D0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +798,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1438DC60235DD57100E51875 /* Build configuration list for PBXNativeTarget "Gokada App iOSUITests" */;
 			buildPhases = (
+				264D66196816456B4051152F /* [CP] Check Pods Manifest.lock */,
 				1438DC4D235DD57100E51875 /* Sources */,
 				1438DC4E235DD57100E51875 /* Frameworks */,
 				1438DC4F235DD57100E51875 /* Resources */,
+				A8B7A3CD926250E263930E24 /* [CP] Embed Pods Frameworks */,
+				975A24E01CEBA824E20693D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +814,186 @@
 			productName = "Gokada App iOSUITests";
 			productReference = 1438DC51235DD57100E51875 /* Gokada App iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1438DC68235DF5D600E51875 /* Repository */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DC85235DF5D700E51875 /* Build configuration list for PBXNativeTarget "Repository" */;
+			buildPhases = (
+				6203FB31E2710AB176FEBEDD /* [CP] Check Pods Manifest.lock */,
+				1438DC64235DF5D600E51875 /* Headers */,
+				1438DC65235DF5D600E51875 /* Sources */,
+				1438DC66235DF5D600E51875 /* Frameworks */,
+				1438DC67235DF5D600E51875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1438DD21235DF76700E51875 /* PBXTargetDependency */,
+				1438DD1F235DF75500E51875 /* PBXTargetDependency */,
+				1438DD1D235DF74F00E51875 /* PBXTargetDependency */,
+				1438DD1B235DF74900E51875 /* PBXTargetDependency */,
+			);
+			name = Repository;
+			productName = Repository;
+			productReference = 1438DC69235DF5D600E51875 /* Repository.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1438DC70235DF5D700E51875 /* RepositoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DC86235DF5D700E51875 /* Build configuration list for PBXNativeTarget "RepositoryTests" */;
+			buildPhases = (
+				7684CFDFC1F1AA6A1127B5CE /* [CP] Check Pods Manifest.lock */,
+				1438DC6D235DF5D700E51875 /* Sources */,
+				1438DC6E235DF5D700E51875 /* Frameworks */,
+				1438DC6F235DF5D700E51875 /* Resources */,
+				297069462763279B8FF5BB74 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1438DC74235DF5D700E51875 /* PBXTargetDependency */,
+				1438DC76235DF5D700E51875 /* PBXTargetDependency */,
+			);
+			name = RepositoryTests;
+			productName = RepositoryTests;
+			productReference = 1438DC71235DF5D700E51875 /* RepositoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1438DCA7235DF67B00E51875 /* Remote API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DCBF235DF67B00E51875 /* Build configuration list for PBXNativeTarget "Remote API" */;
+			buildPhases = (
+				8EE9F69DD4CBEE8E4B13A22A /* [CP] Check Pods Manifest.lock */,
+				1438DCA3235DF67B00E51875 /* Headers */,
+				1438DCA4235DF67B00E51875 /* Sources */,
+				1438DCA5235DF67B00E51875 /* Frameworks */,
+				1438DCA6235DF67B00E51875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1438DD51235EA25900E51875 /* PBXTargetDependency */,
+			);
+			name = "Remote API";
+			productName = "Remote API";
+			productReference = 1438DCA8235DF67B00E51875 /* Remote_API.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1438DCAF235DF67B00E51875 /* Remote APITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DCC2235DF67B00E51875 /* Build configuration list for PBXNativeTarget "Remote APITests" */;
+			buildPhases = (
+				2B7B685EACC25D02B3CA2D5A /* [CP] Check Pods Manifest.lock */,
+				1438DCAC235DF67B00E51875 /* Sources */,
+				1438DCAD235DF67B00E51875 /* Frameworks */,
+				1438DCAE235DF67B00E51875 /* Resources */,
+				110F20458835982F4D21F1A3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1438DCB3235DF67B00E51875 /* PBXTargetDependency */,
+				1438DCB5235DF67B00E51875 /* PBXTargetDependency */,
+			);
+			name = "Remote APITests";
+			productName = "Remote APITests";
+			productReference = 1438DCB0235DF67B00E51875 /* Remote APITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1438DCC9235DF6C300E51875 /* Local Storage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DCE1235DF6C300E51875 /* Build configuration list for PBXNativeTarget "Local Storage" */;
+			buildPhases = (
+				81F6B300778950869EB8973E /* [CP] Check Pods Manifest.lock */,
+				1438DCC5235DF6C300E51875 /* Headers */,
+				1438DCC6235DF6C300E51875 /* Sources */,
+				1438DCC7235DF6C300E51875 /* Frameworks */,
+				1438DCC8235DF6C300E51875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Local Storage";
+			productName = "Local Storage";
+			productReference = 1438DCCA235DF6C300E51875 /* Local_Storage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1438DCD1235DF6C300E51875 /* Local StorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DCE4235DF6C300E51875 /* Build configuration list for PBXNativeTarget "Local StorageTests" */;
+			buildPhases = (
+				0293F3E8483FE0F60BD5520C /* [CP] Check Pods Manifest.lock */,
+				1438DCCE235DF6C300E51875 /* Sources */,
+				1438DCCF235DF6C300E51875 /* Frameworks */,
+				1438DCD0235DF6C300E51875 /* Resources */,
+				064C97515CF02AA7E4017D3D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1438DCD5235DF6C300E51875 /* PBXTargetDependency */,
+				1438DCD7235DF6C300E51875 /* PBXTargetDependency */,
+			);
+			name = "Local StorageTests";
+			productName = "Local StorageTests";
+			productReference = 1438DCD2235DF6C300E51875 /* Local StorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1438DCEB235DF6FE00E51875 /* App Preferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DD03235DF6FF00E51875 /* Build configuration list for PBXNativeTarget "App Preferences" */;
+			buildPhases = (
+				1438DCE7235DF6FE00E51875 /* Headers */,
+				1438DCE8235DF6FE00E51875 /* Sources */,
+				1438DCE9235DF6FE00E51875 /* Frameworks */,
+				1438DCEA235DF6FE00E51875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App Preferences";
+			productName = "App Preferences";
+			productReference = 1438DCEC235DF6FE00E51875 /* App_Preferences.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1438DCF3235DF6FF00E51875 /* App PreferencesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DD06235DF6FF00E51875 /* Build configuration list for PBXNativeTarget "App PreferencesTests" */;
+			buildPhases = (
+				1438DCF0235DF6FF00E51875 /* Sources */,
+				1438DCF1235DF6FF00E51875 /* Frameworks */,
+				1438DCF2235DF6FF00E51875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1438DCF7235DF6FF00E51875 /* PBXTargetDependency */,
+				1438DCF9235DF6FF00E51875 /* PBXTargetDependency */,
+			);
+			name = "App PreferencesTests";
+			productName = "App PreferencesTests";
+			productReference = 1438DCF4235DF6FF00E51875 /* App PreferencesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1438DD0D235DF72400E51875 /* Entities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1438DD17235DF72400E51875 /* Build configuration list for PBXNativeTarget "Entities" */;
+			buildPhases = (
+				1438DD09235DF72400E51875 /* Headers */,
+				1438DD0A235DF72400E51875 /* Sources */,
+				1438DD0B235DF72400E51875 /* Frameworks */,
+				1438DD0C235DF72400E51875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Entities;
+			productName = Entities;
+			productReference = 1438DD0E235DF72400E51875 /* Entities.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -205,6 +1016,41 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = 1438DC2F235DD56C00E51875;
 					};
+					1438DC68235DF5D600E51875 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					1438DC70235DF5D700E51875 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 1438DC2F235DD56C00E51875;
+					};
+					1438DCA7235DF67B00E51875 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					1438DCAF235DF67B00E51875 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 1438DC2F235DD56C00E51875;
+					};
+					1438DCC9235DF6C300E51875 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1438DCD1235DF6C300E51875 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 1438DC2F235DD56C00E51875;
+					};
+					1438DCEB235DF6FE00E51875 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					1438DCF3235DF6FF00E51875 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 1438DC2F235DD56C00E51875;
+					};
+					1438DD0D235DF72400E51875 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
 				};
 			};
 			buildConfigurationList = 1438DC2B235DD56B00E51875 /* Build configuration list for PBXProject "Gokada App iOS" */;
@@ -223,6 +1069,15 @@
 				1438DC2F235DD56C00E51875 /* Gokada App iOS */,
 				1438DC45235DD57100E51875 /* Gokada App iOSTests */,
 				1438DC50235DD57100E51875 /* Gokada App iOSUITests */,
+				1438DC68235DF5D600E51875 /* Repository */,
+				1438DC70235DF5D700E51875 /* RepositoryTests */,
+				1438DCA7235DF67B00E51875 /* Remote API */,
+				1438DCAF235DF67B00E51875 /* Remote APITests */,
+				1438DCC9235DF6C300E51875 /* Local Storage */,
+				1438DCD1235DF6C300E51875 /* Local StorageTests */,
+				1438DCEB235DF6FE00E51875 /* App Preferences */,
+				1438DCF3235DF6FF00E51875 /* App PreferencesTests */,
+				1438DD0D235DF72400E51875 /* Entities */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +1107,407 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1438DC67235DF5D600E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DC6F235DF5D700E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCA6235DF67B00E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCAE235DF67B00E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCC8235DF6C300E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCD0235DF6C300E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCEA235DF6FE00E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCF2235DF6FF00E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DD0C235DF72400E51875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0293F3E8483FE0F60BD5520C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Local StorageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		064C97515CF02AA7E4017D3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Local StorageTests/Pods-Local StorageTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Local StorageTests/Pods-Local StorageTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Local StorageTests/Pods-Local StorageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F8D10D190186BC2350D5FA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gokada App iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		110F20458835982F4D21F1A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Remote APITests/Pods-Remote APITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Remote APITests/Pods-Remote APITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Remote APITests/Pods-Remote APITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		264D66196816456B4051152F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gokada App iOS-Gokada App iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		297069462763279B8FF5BB74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B7B685EACC25D02B3CA2D5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remote APITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3094C65FBB4206C75E51AB5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36D1FAD0678F0D922E36BFF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gokada App iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6203FB31E2710AB176FEBEDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Repository-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C64929B8A9B152526BF0D0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7684CFDFC1F1AA6A1127B5CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepositoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F6B300778950869EB8973E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Local Storage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE9F69DD4CBEE8E4B13A22A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remote API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		975A24E01CEBA824E20693D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B7A3CD926250E263930E24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC40CBBF0B7D0061B30A4ECE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1438DC2C235DD56C00E51875 /* Sources */ = {
@@ -281,6 +1536,92 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1438DC65235DF5D600E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DD24235DF90D00E51875 /* AuthRepo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DC6D235DF5D700E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DC79235DF5D700E51875 /* RepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCA4235DF67B00E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DD55235EBAF200E51875 /* IAuthRepo.swift in Sources */,
+				1438DD49235E97D900E51875 /* BaseRemoteApiImpl.swift in Sources */,
+				1438DD43235E948300E51875 /* RemoteAPI+Extensions.swift in Sources */,
+				1438DD53235EB98400E51875 /* RemoteApiConstants.swift in Sources */,
+				1438DD47235E970700E51875 /* IBaseRemoteApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCAC235DF67B00E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCB8235DF67B00E51875 /* Remote_APITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCC6235DF6C300E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCCE235DF6C300E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCDA235DF6C300E51875 /* Local_StorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCE8235DF6FE00E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DD4E235E9F7F00E51875 /* Preference.swift in Sources */,
+				1438DD4C235E9ED700E51875 /* PreferenceConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DCF0235DF6FF00E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DCFC235DF6FF00E51875 /* App_PreferencesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1438DD0A235DF72400E51875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1438DD3C235E43E000E51875 /* ApiResponse.swift in Sources */,
+				1438DD57235EBCCE00E51875 /* PhoneNumberAuth.swift in Sources */,
+				1438DD33235E3AF600E51875 /* Pilot.swift in Sources */,
+				1438DD3E235E8D2500E51875 /* AppUser.swift in Sources */,
+				1438DD3A235E436600E51875 /* ApiError.swift in Sources */,
+				1438DD2B235E38CA00E51875 /* Earning.swift in Sources */,
+				1438DD38235E431300E51875 /* ErrorMessage.swift in Sources */,
+				1438DD35235E3B6300E51875 /* Rating.swift in Sources */,
+				1438DD2F235E3A6000E51875 /* Location.swift in Sources */,
+				1438DD27235E367400E51875 /* User.swift in Sources */,
+				1438DD29235E386E00E51875 /* Daily.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +1634,96 @@
 			isa = PBXTargetDependency;
 			target = 1438DC2F235DD56C00E51875 /* Gokada App iOS */;
 			targetProxy = 1438DC52235DD57100E51875 /* PBXContainerItemProxy */;
+		};
+		1438DC74235DF5D700E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DC68235DF5D600E51875 /* Repository */;
+			targetProxy = 1438DC73235DF5D700E51875 /* PBXContainerItemProxy */;
+		};
+		1438DC76235DF5D700E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DC2F235DD56C00E51875 /* Gokada App iOS */;
+			targetProxy = 1438DC75235DF5D700E51875 /* PBXContainerItemProxy */;
+		};
+		1438DC7D235DF5D700E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DC68235DF5D600E51875 /* Repository */;
+			targetProxy = 1438DC7C235DF5D700E51875 /* PBXContainerItemProxy */;
+		};
+		1438DCB3235DF67B00E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCA7235DF67B00E51875 /* Remote API */;
+			targetProxy = 1438DCB2235DF67B00E51875 /* PBXContainerItemProxy */;
+		};
+		1438DCB5235DF67B00E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DC2F235DD56C00E51875 /* Gokada App iOS */;
+			targetProxy = 1438DCB4235DF67B00E51875 /* PBXContainerItemProxy */;
+		};
+		1438DCBC235DF67B00E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCA7235DF67B00E51875 /* Remote API */;
+			targetProxy = 1438DCBB235DF67B00E51875 /* PBXContainerItemProxy */;
+		};
+		1438DCD5235DF6C300E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCC9235DF6C300E51875 /* Local Storage */;
+			targetProxy = 1438DCD4235DF6C300E51875 /* PBXContainerItemProxy */;
+		};
+		1438DCD7235DF6C300E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DC2F235DD56C00E51875 /* Gokada App iOS */;
+			targetProxy = 1438DCD6235DF6C300E51875 /* PBXContainerItemProxy */;
+		};
+		1438DCDE235DF6C300E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCC9235DF6C300E51875 /* Local Storage */;
+			targetProxy = 1438DCDD235DF6C300E51875 /* PBXContainerItemProxy */;
+		};
+		1438DCF7235DF6FF00E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCEB235DF6FE00E51875 /* App Preferences */;
+			targetProxy = 1438DCF6235DF6FF00E51875 /* PBXContainerItemProxy */;
+		};
+		1438DCF9235DF6FF00E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DC2F235DD56C00E51875 /* Gokada App iOS */;
+			targetProxy = 1438DCF8235DF6FF00E51875 /* PBXContainerItemProxy */;
+		};
+		1438DD00235DF6FF00E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCEB235DF6FE00E51875 /* App Preferences */;
+			targetProxy = 1438DCFF235DF6FF00E51875 /* PBXContainerItemProxy */;
+		};
+		1438DD14235DF72400E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DD0D235DF72400E51875 /* Entities */;
+			targetProxy = 1438DD13235DF72400E51875 /* PBXContainerItemProxy */;
+		};
+		1438DD1B235DF74900E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCEB235DF6FE00E51875 /* App Preferences */;
+			targetProxy = 1438DD1A235DF74900E51875 /* PBXContainerItemProxy */;
+		};
+		1438DD1D235DF74F00E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DD0D235DF72400E51875 /* Entities */;
+			targetProxy = 1438DD1C235DF74F00E51875 /* PBXContainerItemProxy */;
+		};
+		1438DD1F235DF75500E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCC9235DF6C300E51875 /* Local Storage */;
+			targetProxy = 1438DD1E235DF75500E51875 /* PBXContainerItemProxy */;
+		};
+		1438DD21235DF76700E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCA7235DF67B00E51875 /* Remote API */;
+			targetProxy = 1438DD20235DF76700E51875 /* PBXContainerItemProxy */;
+		};
+		1438DD51235EA25900E51875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DCEB235DF6FE00E51875 /* App Preferences */;
+			targetProxy = 1438DD50235EA25900E51875 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -432,10 +1863,13 @@
 		};
 		1438DC5B235DD57100E51875 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C037DAFAFE60256F32907358 /* Pods-Gokada App iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Gokada App iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +1883,13 @@
 		};
 		1438DC5C235DD57100E51875 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E8D3469D013E81E2A648BB /* Pods-Gokada App iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Gokada App iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +1903,7 @@
 		};
 		1438DC5E235DD57100E51875 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97CAD2D78704A14831BBD3C /* Pods-Gokada App iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +1925,7 @@
 		};
 		1438DC5F235DD57100E51875 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186E3F910A958F53FE229F3D /* Pods-Gokada App iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +1947,7 @@
 		};
 		1438DC61235DD57100E51875 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F204A53EE2C1C47E5F1638CF /* Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +1967,7 @@
 		};
 		1438DC62235DD57100E51875 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6387B70C8F33E077A8FC0C8C /* Pods-Gokada App iOS-Gokada App iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +1982,442 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Gokada App iOS";
+			};
+			name = Release;
+		};
+		1438DC81235DF5D700E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E53639A3269A89B1106E590 /* Pods-Repository.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ng.gokada.repository.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1438DC82235DF5D700E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B20F9A3373A28D9D1FFC57C /* Pods-Repository.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ng.gokada.repository.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1438DC83235DF5D700E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 608B4C939BA16E3A7C891F70 /* Pods-RepositoryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RepositoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ng.gokada.repository.RepositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada App iOS.app/Gokada App iOS";
+			};
+			name = Debug;
+		};
+		1438DC84235DF5D700E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5792F374799C55C1AB87AB3 /* Pods-RepositoryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RepositoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ng.gokada.repository.RepositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada App iOS.app/Gokada App iOS";
+			};
+			name = Release;
+		};
+		1438DCC0235DF67B00E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67158791A596F6A67D9EFD2 /* Pods-Remote API.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Remote API/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.remote.Remote-API";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1438DCC1235DF67B00E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F985DB9FCC5053EEB76E507 /* Pods-Remote API.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Remote API/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.remote.Remote-API";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1438DCC3235DF67B00E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5BFAF5CD8BA7541D25A45B3 /* Pods-Remote APITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Remote APITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.remote.Remote-APITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada App iOS.app/Gokada App iOS";
+			};
+			name = Debug;
+		};
+		1438DCC4235DF67B00E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADD54C879D1014D959B5A1E9 /* Pods-Remote APITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Remote APITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.remote.Remote-APITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada App iOS.app/Gokada App iOS";
+			};
+			name = Release;
+		};
+		1438DCE2235DF6C300E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ADA07C3333A64A14F26542F /* Pods-Local Storage.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Local Storage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.localstorage.Local-Storage";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1438DCE3235DF6C300E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B349FFA41F9BDA702C769EB /* Pods-Local Storage.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Local Storage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.localstorage.Local-Storage";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1438DCE5235DF6C300E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35E5C337573008201DF625E /* Pods-Local StorageTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Local StorageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.localstorage.Local-StorageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada App iOS.app/Gokada App iOS";
+			};
+			name = Debug;
+		};
+		1438DCE6235DF6C300E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECECC4D8B70F14400A182FB6 /* Pods-Local StorageTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Local StorageTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.localstorage.Local-StorageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada App iOS.app/Gokada App iOS";
+			};
+			name = Release;
+		};
+		1438DD04235DF6FF00E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "App Preferences/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.preferences.App-Preferences";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1438DD05235DF6FF00E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "App Preferences/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.preferences.App-Preferences";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1438DD07235DF6FF00E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "App PreferencesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.preferences.App-PreferencesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada App iOS.app/Gokada App iOS";
+			};
+			name = Debug;
+		};
+		1438DD08235DF6FF00E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "App PreferencesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.preferences.App-PreferencesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada App iOS.app/Gokada App iOS";
+			};
+			name = Release;
+		};
+		1438DD18235DF72400E51875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Entities/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ng.gokada.entities.Entities;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1438DD19235DF72400E51875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Entities/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ng.gokada.entities.Entities;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -579,6 +2456,87 @@
 			buildConfigurations = (
 				1438DC61235DD57100E51875 /* Debug */,
 				1438DC62235DD57100E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DC85235DF5D700E51875 /* Build configuration list for PBXNativeTarget "Repository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DC81235DF5D700E51875 /* Debug */,
+				1438DC82235DF5D700E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DC86235DF5D700E51875 /* Build configuration list for PBXNativeTarget "RepositoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DC83235DF5D700E51875 /* Debug */,
+				1438DC84235DF5D700E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DCBF235DF67B00E51875 /* Build configuration list for PBXNativeTarget "Remote API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DCC0235DF67B00E51875 /* Debug */,
+				1438DCC1235DF67B00E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DCC2235DF67B00E51875 /* Build configuration list for PBXNativeTarget "Remote APITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DCC3235DF67B00E51875 /* Debug */,
+				1438DCC4235DF67B00E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DCE1235DF6C300E51875 /* Build configuration list for PBXNativeTarget "Local Storage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DCE2235DF6C300E51875 /* Debug */,
+				1438DCE3235DF6C300E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DCE4235DF6C300E51875 /* Build configuration list for PBXNativeTarget "Local StorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DCE5235DF6C300E51875 /* Debug */,
+				1438DCE6235DF6C300E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DD03235DF6FF00E51875 /* Build configuration list for PBXNativeTarget "App Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DD04235DF6FF00E51875 /* Debug */,
+				1438DD05235DF6FF00E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DD06235DF6FF00E51875 /* Build configuration list for PBXNativeTarget "App PreferencesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DD07235DF6FF00E51875 /* Debug */,
+				1438DD08235DF6FF00E51875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1438DD17235DF72400E51875 /* Build configuration list for PBXNativeTarget "Entities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1438DD18235DF72400E51875 /* Debug */,
+				1438DD19235DF72400E51875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
