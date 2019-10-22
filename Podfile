@@ -34,6 +34,7 @@ target 'Gokada App iOS' do
   pod 'ProgressHUD'
   pod 'Toast', '~> 4.0.0'
   pod 'Alertift', '~> 4.1'
+  pod 'lottie-ios'
   
   #Firebase Pods
   #pod 'RxFirebase/Firestore'

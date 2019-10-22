@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		050CDEE23F7B960A8D12E3F9 /* Pods_Local_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */; };
+		1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */; };
+		1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */; };
 		1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC33235DD56C00E51875 /* AppDelegate.swift */; };
 		1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC35235DD56C00E51875 /* SceneDelegate.swift */; };
-		1438DC38235DD56C00E51875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC37235DD56C00E51875 /* ViewController.swift */; };
 		1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1438DC39235DD56C00E51875 /* Main.storyboard */; };
 		1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1438DC3C235DD57000E51875 /* Assets.xcassets */; };
 		1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1438DC3E235DD57000E51875 /* LaunchScreen.storyboard */; };
@@ -239,10 +240,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1283C6E6235FAA7B00414C46 /* montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat.ttf; sourceTree = "<group>"; };
+		1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_welcome_anim.json; sourceTree = "<group>"; };
+		1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_splash_amin.json; sourceTree = "<group>"; };
 		1438DC30235DD56C00E51875 /* Gokada App iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada App iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438DC33235DD56C00E51875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1438DC35235DD56C00E51875 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1438DC37235DD56C00E51875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1438DC3A235DD56C00E51875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1438DC3C235DD57000E51875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1438DC3F235DD57000E51875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -443,6 +446,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1283C6E5235FAA6900414C46 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1283C6E6235FAA7B00414C46 /* montserrat.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1283C6E7235FAA8500414C46 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */,
+				1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		1438DC27235DD56B00E51875 = {
 			isa = PBXGroup;
 			children = (
@@ -491,8 +511,6 @@
 				1438DD61235F2CCE00E51875 /* Supporting Files */,
 				1438DD60235F2CC300E51875 /* Resources */,
 				1438DD5E235F2C9C00E51875 /* Features */,
-				1438DC37235DD56C00E51875 /* ViewController.swift */,
-				1438DC39235DD56C00E51875 /* Main.storyboard */,
 				1438DC3E235DD57000E51875 /* LaunchScreen.storyboard */,
 			);
 			path = "Gokada App iOS";
@@ -704,6 +722,8 @@
 		1438DD60235F2CC300E51875 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1283C6E7235FAA8500414C46 /* Animations */,
+				1283C6E5235FAA6900414C46 /* Fonts */,
 				1438DC3C235DD57000E51875 /* Assets.xcassets */,
 				1438DC41235DD57000E51875 /* Info.plist */,
 			);
@@ -746,6 +766,7 @@
 		1438DD65235F2FB100E51875 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1438DC39235DD56C00E51875 /* Main.storyboard */,
 				1438DD75235F679E00E51875 /* AuthViewController.swift */,
 			);
 			path = View;
@@ -1194,8 +1215,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */,
 				1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */,
 				1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */,
+				1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */,
 				1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1625,7 +1648,6 @@
 				1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */,
 				1438DD76235F679E00E51875 /* AuthViewController.swift in Sources */,
 				1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */,
-				1438DC38235DD56C00E51875 /* ViewController.swift in Sources */,
 				1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */,
 				1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */,
 				1438DD74235F667E00E51875 /* IAuthViewModel.swift in Sources */,
