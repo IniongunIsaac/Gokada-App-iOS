@@ -8,6 +8,7 @@ target 'Gokada App iOS' do
   # Pods for Gokada App iOS
   
   pod 'Swinject'
+  pod 'SwinjectStoryboard'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'RxSwiftExt', '~> 5'

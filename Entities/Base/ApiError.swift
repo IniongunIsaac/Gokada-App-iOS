@@ -9,6 +9,6 @@
 import Foundation
 
 public struct ApiError: Codable {
-    let errors: [ErrorMessage]
-    let statusCode: CLong
+    public let errors: [ErrorMessage]
+    public let statusCode: CLong
 }
