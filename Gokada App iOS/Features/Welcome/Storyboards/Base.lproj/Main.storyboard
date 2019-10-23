@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZSG-Vu-oiy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Gokada_App_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-D1-obL" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvW-yb-AWD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TNP-2R-Kl4" customClass="AnimationView" customModule="Lottie">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                        <color key="backgroundColor" red="0.7843137255" green="0.87058823529999996" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWG-Av-cfN">
+                                        <rect key="frame" x="36" y="760" width="342" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="X9x-Y9-ieg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Sure, go ahead!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="showLoginPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="giX-8l-23e"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ready to enjoy a life without limits?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubh-dl-bgf">
+                                        <rect key="frame" x="108.5" y="632.5" width="197" height="41.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="197" id="Jki-Hs-fr8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" red="0.015686274510000001" green="0.2901960784" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EWG-Av-cfN" firstAttribute="top" secondItem="Ubh-dl-bgf" secondAttribute="bottom" constant="86" id="20w-Bm-55W"/>
+                                    <constraint firstItem="TNP-2R-Kl4" firstAttribute="top" secondItem="UvW-yb-AWD" secondAttribute="top" id="52a-po-ApQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="EWG-Av-cfN" secondAttribute="trailing" constant="36" id="SZl-zN-phJ"/>
+                                    <constraint firstItem="TNP-2R-Kl4" firstAttribute="leading" secondItem="UvW-yb-AWD" secondAttribute="leading" id="beF-Wm-hG1"/>
+                                    <constraint firstAttribute="trailing" secondItem="TNP-2R-Kl4" secondAttribute="trailing" id="kUL-Ax-znA"/>
+                                    <constraint firstItem="EWG-Av-cfN" firstAttribute="leading" secondItem="UvW-yb-AWD" secondAttribute="leading" constant="36" id="lFa-bY-z3T"/>
+                                    <constraint firstItem="Ubh-dl-bgf" firstAttribute="centerX" secondItem="UvW-yb-AWD" secondAttribute="centerX" id="lWE-kl-bV5"/>
+                                    <constraint firstAttribute="bottom" secondItem="EWG-Av-cfN" secondAttribute="bottom" constant="76" id="uBi-5L-nL5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEj-X6-Esf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_Background" translatesAutoresizingMaskIntoConstraints="NO" id="7l0-aU-Tps">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7l0-aU-Tps" firstAttribute="leading" secondItem="rEj-X6-Esf" secondAttribute="leading" id="FQw-tx-hV5"/>
+                                    <constraint firstItem="7l0-aU-Tps" firstAttribute="top" secondItem="rEj-X6-Esf" secondAttribute="top" id="gRh-s8-vX9"/>
+                                    <constraint firstAttribute="bottom" secondItem="7l0-aU-Tps" secondAttribute="bottom" id="mQQ-7W-ZWD"/>
+                                    <constraint firstAttribute="trailing" secondItem="7l0-aU-Tps" secondAttribute="trailing" id="uTS-pj-3FM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UvW-yb-AWD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BTI-fA-JVx"/>
+                            <constraint firstAttribute="bottom" secondItem="UvW-yb-AWD" secondAttribute="bottom" id="DpP-R5-Kaf"/>
+                            <constraint firstItem="rEj-X6-Esf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LtA-R9-c57"/>
+                            <constraint firstItem="UvW-yb-AWD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RAC-ux-rlC"/>
+                            <constraint firstItem="jKc-D1-obL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RvT-AG-tds"/>
+                            <constraint firstAttribute="bottom" secondItem="rEj-X6-Esf" secondAttribute="bottom" id="YvC-jr-GWZ"/>
+                            <constraint firstAttribute="bottom" secondItem="jKc-D1-obL" secondAttribute="bottom" id="ZPX-Hj-oQb"/>
+                            <constraint firstItem="jKc-D1-obL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aaW-eu-c5e"/>
+                            <constraint firstItem="UvW-yb-AWD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ekl-7y-q4p"/>
+                            <constraint firstItem="rEj-X6-Esf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lLE-NG-XDC"/>
+                            <constraint firstItem="jKc-D1-obL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rfR-cS-9Ev"/>
+                            <constraint firstItem="rEj-X6-Esf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tAg-WS-QsR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hsE-09-nHM"/>
+                    <connections>
+                        <outlet property="animationView" destination="jKc-D1-obL" id="fIi-dQ-jNB"/>
+                        <outlet property="continueView" destination="UvW-yb-AWD" id="ozF-77-lsm"/>
+                        <outlet property="continueViewAnimationView" destination="TNP-2R-Kl4" id="8LV-54-BqS"/>
+                        <outlet property="whiteOverlayView" destination="rEj-X6-Esf" id="7iO-HJ-t2E"/>
+                        <segue destination="nFF-kQ-tdo" kind="show" identifier="showAuthSegue" animates="NO" id="oTr-9g-W4Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+        </scene>
+        <!--Auth-->
+        <scene sceneID="c8h-xv-bRG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auth" id="nFF-kQ-tdo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="f4p-aU-1kj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vbd-mm-BY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.7681159420292" y="103.79464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4XW-Yp-vRx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZSG-Vu-oiy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3o-CG-RqU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0Mo-in-cqk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EpD-FR-VXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_Background" width="822" height="1392"/>
+    </resources>
+</document>

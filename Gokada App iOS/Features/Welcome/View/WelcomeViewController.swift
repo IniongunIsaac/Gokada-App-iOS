@@ -1,32 +1,25 @@
 //
-//  AuthViewController.swift
+//  WelcomeViewController.swift
 //  Gokada App iOS
 //
-//  Created by Isaac Iniongun on 22/10/2019.
+//  Created by Emmanuel Okwara on 23/10/2019.
 //  Copyright © 2019 Gokada. All rights reserved.
 //
 
 import UIKit
 import Lottie
 
-class AuthViewController: UIViewController {
-    
-    var authViewModel: IAuthViewModel?
+class WelcomeViewController: UIViewController {
+
     @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var continueView: UIView!
-    @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var continueViewAnimationView: AnimationView!
     @IBOutlet weak var whiteOverlayView: UIView!
-    @IBOutlet weak var phoneNumberView: UIView!
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
         get{
             return .portrait
         }
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
     }
     
     override func viewDidLoad() {
@@ -36,17 +29,13 @@ class AuthViewController: UIViewController {
         startAnimation()
     }
     
-    func setupViews() {
-        continueView.alpha = 0
-        loginView.alpha = 0
-        whiteOverlayView.alpha = 0
-        configurePhoneView()
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
-    func configurePhoneView() {
-        self.phoneNumberView.layer.borderWidth = 1
-        self.phoneNumberView.layer.borderColor = UIColor.lightGray.cgColor
-        self.phoneNumberView.layer.cornerRadius = 5
+    func setupViews() {
+        continueView.alpha = 0
+        whiteOverlayView.alpha = 0
     }
     
     @IBAction func showLoginPage(_ sender: UIButton) {
@@ -54,7 +43,7 @@ class AuthViewController: UIViewController {
             UIView.animate(withDuration: 0.6) {
                 self.continueView.alpha = 0
                 self.whiteOverlayView.alpha = 1
-                self.loginView.alpha = 1
+                self.performSegue(withIdentifier: "showAuthSegue", sender: self)
             }
         })
         continueViewAnimationView.play()
@@ -72,6 +61,11 @@ class AuthViewController: UIViewController {
             self.continueView.alpha = 1
             self.continueViewAnimationView.animation = Animation.named("gokada_welcome_anim")
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
 
 }

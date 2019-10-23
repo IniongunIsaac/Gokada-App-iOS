@@ -13,6 +13,7 @@ import RxCocoa
 class BaseViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
+    fileprivate var preloader: PreLoader!
     
     func getViewModel() -> BaseViewModel {
         preconditionFailure("The subclass BaseViewController must provide a subclass of BaseViewModel")
@@ -23,6 +24,7 @@ class BaseViewController: UIViewController {
         getViewModel().viewDidLoad()
         
         setObservers()
+        self.preloader = DefaultPreLoader(on: self.view)
     }
     
     private func setObservers() {
@@ -46,12 +48,12 @@ class BaseViewController: UIViewController {
         }.disposed(by: disposeBag)
     }
     
-    private func showLoading() {
-        
+    func showLoading() {
+        self.preloader.showLoading()
     }
     
-    private func hideLoading() {
-        
+    func hideLoading() {
+        self.preloader.hideLoading()
     }
     
     private func showErrorAlert(message: String) {
