@@ -8,10 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		050CDEE23F7B960A8D12E3F9 /* Pods_Local_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */; };
+		122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BD9DF236195AA009F8AD3 /* OTPViewController.swift */; };
+		122BD9E12361A468009F8AD3 /* montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E6235FAA7B00414C46 /* montserrat.ttf */; };
 		1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */; };
 		1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */; };
 		12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12959FE6235FB6E700DC7856 /* PreLoader.swift */; };
 		12959FE9235FBB7B00DC7856 /* gokada_custom_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 12959FE8235FBB7B00DC7856 /* gokada_custom_loader.json */; };
+		12A04211236487D000C4C0EF /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A04210236487D000C4C0EF /* WelcomeViewModel.swift */; };
+		12A04213236487E700C4C0EF /* IWelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A04212236487E700C4C0EF /* IWelcomeViewModel.swift */; };
+		12A0421A23649E3600C4C0EF /* AuthLocalImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A0421923649E3600C4C0EF /* AuthLocalImpl.swift */; };
+		12A0421C23649E4F00C4C0EF /* IAuthLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A0421B23649E4F00C4C0EF /* IAuthLocal.swift */; };
+		12A7B9222361C4D400861E3D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7B9212361C4D400861E3D /* RegisterViewController.swift */; };
+		12C4EF2B2362E6FB002CAB3A /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF2A2362E6FB002CAB3A /* CustomAlert.swift */; };
+		12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF302362F538002CAB3A /* AuthValidations.swift */; };
+		12C4EF332363002F002CAB3A /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF322363002F002CAB3A /* OTPViewModel.swift */; };
+		12C4EF3A23630600002CAB3A /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF3923630600002CAB3A /* NotificationType.swift */; };
+		12C4EF3C23630640002CAB3A /* IOTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF3B23630640002CAB3A /* IOTPViewModel.swift */; };
+		12C4EF4623635238002CAB3A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF4523635238002CAB3A /* RegisterViewModel.swift */; };
+		12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */; };
 		12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D85FF62360537900C12D79 /* WelcomeViewController.swift */; };
 		12D85FF92360539900C12D79 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D85FF82360539900C12D79 /* Auth.storyboard */; };
 		1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC33235DD56C00E51875 /* AppDelegate.swift */; };
@@ -65,16 +79,17 @@
 		1438DD59235F283800E51875 /* IAuthRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD58235F283800E51875 /* IAuthRemote.swift */; };
 		1438DD5B235F289000E51875 /* AuthRemoteImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD5A235F289000E51875 /* AuthRemoteImpl.swift */; };
 		1438DD5D235F2B6200E51875 /* IAuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD5C235F2B6200E51875 /* IAuthRepo.swift */; };
-		1438DD67235F2FD800E51875 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD66235F2FD800E51875 /* AuthViewModel.swift */; };
+		1438DD67235F2FD800E51875 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD66235F2FD800E51875 /* LoginViewModel.swift */; };
 		1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD69235F364200E51875 /* BaseViewModel.swift */; };
 		1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6C235F460200E51875 /* BaseViewController.swift */; };
 		1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6F235F4DF900E51875 /* ErrorType.swift */; };
 		1438DD72235F602200E51875 /* AuthInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* AuthInjections.swift */; };
-		1438DD74235F667E00E51875 /* IAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD73235F667E00E51875 /* IAuthViewModel.swift */; };
+		1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD73235F667E00E51875 /* ILoginViewModel.swift */; };
 		1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD75235F679E00E51875 /* LoginViewController.swift */; };
 		21368E7CE4D339EDA720D642 /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */; };
 		6A98988D5A8290F170391B36 /* Pods_RepositoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647530F024AE0DCDEC06811A /* Pods_RepositoryTests.framework */; };
 		6E584A78FA773E9C6EDE0A27 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */; };
+		8B7C9272FED0F4BA054F4A20 /* Pods_Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CD23E1C1DFC5E113A98C7A /* Pods_Entities.framework */; };
 		93DE74AC720BB07A7945AB2D /* Pods_Gokada_App_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521F0FC34C88BF458FD3618A /* Pods_Gokada_App_iOS.framework */; };
 		C1E4292101E708249E4BDBAF /* Pods_Remote_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CC7820B6EF6A314767FE4B /* Pods_Remote_API.framework */; };
 		D258757A4B13DA48EBA9CEC5 /* Pods_Local_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3538DE3DD6C8B121CA0C4677 /* Pods_Local_Storage.framework */; };
@@ -244,11 +259,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		122BD9DF236195AA009F8AD3 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		1283C6E6235FAA7B00414C46 /* montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat.ttf; sourceTree = "<group>"; };
 		1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_welcome_anim.json; sourceTree = "<group>"; };
 		1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_splash_amin.json; sourceTree = "<group>"; };
 		12959FE6235FB6E700DC7856 /* PreLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoader.swift; sourceTree = "<group>"; };
 		12959FE8235FBB7B00DC7856 /* gokada_custom_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_custom_loader.json; sourceTree = "<group>"; };
+		12A04210236487D000C4C0EF /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		12A04212236487E700C4C0EF /* IWelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWelcomeViewModel.swift; sourceTree = "<group>"; };
+		12A0421923649E3600C4C0EF /* AuthLocalImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalImpl.swift; sourceTree = "<group>"; };
+		12A0421B23649E4F00C4C0EF /* IAuthLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthLocal.swift; sourceTree = "<group>"; };
+		12A7B9212361C4D400861E3D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		12C4EF2A2362E6FB002CAB3A /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		12C4EF302362F538002CAB3A /* AuthValidations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidations.swift; sourceTree = "<group>"; };
+		12C4EF322363002F002CAB3A /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		12C4EF3923630600002CAB3A /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		12C4EF3B23630640002CAB3A /* IOTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTPViewModel.swift; sourceTree = "<group>"; };
+		12C4EF4523635238002CAB3A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRegisterViewModel.swift; sourceTree = "<group>"; };
 		12D85FF62360537900C12D79 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		12D85FF82360539900C12D79 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		1438DC30235DD56C00E51875 /* Gokada App iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada App iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,12 +340,12 @@
 		1438DD58235F283800E51875 /* IAuthRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthRemote.swift; sourceTree = "<group>"; };
 		1438DD5A235F289000E51875 /* AuthRemoteImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteImpl.swift; sourceTree = "<group>"; };
 		1438DD5C235F2B6200E51875 /* IAuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthRepo.swift; sourceTree = "<group>"; };
-		1438DD66235F2FD800E51875 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		1438DD66235F2FD800E51875 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1438DD69235F364200E51875 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1438DD6C235F460200E51875 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1438DD6F235F4DF900E51875 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		1438DD71235F602200E51875 /* AuthInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInjections.swift; sourceTree = "<group>"; };
-		1438DD73235F667E00E51875 /* IAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthViewModel.swift; sourceTree = "<group>"; };
+		1438DD73235F667E00E51875 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
 		1438DD75235F679E00E51875 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		186E3F910A958F53FE229F3D /* Pods-Gokada App iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B20F9A3373A28D9D1FFC57C /* Pods-Repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.release.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.release.xcconfig"; sourceTree = "<group>"; };
@@ -326,6 +354,7 @@
 		3538DE3DD6C8B121CA0C4677 /* Pods_Local_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Local_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E8D3469D013E81E2A648BB /* Pods-Gokada App iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOS.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOS/Pods-Gokada App iOS.release.xcconfig"; sourceTree = "<group>"; };
 		41CC7820B6EF6A314767FE4B /* Pods_Remote_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remote_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41CD23E1C1DFC5E113A98C7A /* Pods_Entities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Entities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C82131DF1A92AD73F41CFCB /* Pods_Remote_APITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remote_APITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		521F0FC34C88BF458FD3618A /* Pods_Gokada_App_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_App_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		608B4C939BA16E3A7C891F70 /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -342,6 +371,8 @@
 		C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Local_StorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97CAD2D78704A14831BBD3C /* Pods-Gokada App iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E074583ACD4AF2F18B08DAD3 /* Pods-Entities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entities.release.xcconfig"; path = "Target Support Files/Pods-Entities/Pods-Entities.release.xcconfig"; sourceTree = "<group>"; };
+		E960928A282C0129B7556D69 /* Pods-Entities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entities.debug.xcconfig"; path = "Target Support Files/Pods-Entities/Pods-Entities.debug.xcconfig"; sourceTree = "<group>"; };
 		ECECC4D8B70F14400A182FB6 /* Pods-Local StorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Local StorageTests.release.xcconfig"; path = "Target Support Files/Pods-Local StorageTests/Pods-Local StorageTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F204A53EE2C1C47E5F1638CF /* Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -448,12 +479,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7C9272FED0F4BA054F4A20 /* Pods_Entities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122BD9DD2361958B009F8AD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				122BD9DF236195AA009F8AD3 /* OTPViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		122BD9DE23619593009F8AD3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12C4EF322363002F002CAB3A /* OTPViewModel.swift */,
+				12C4EF3B23630640002CAB3A /* IOTPViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1283C6E5235FAA6900414C46 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +521,49 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		12A0420F2364876200C4C0EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12A04210236487D000C4C0EF /* WelcomeViewModel.swift */,
+				12A04212236487E700C4C0EF /* IWelcomeViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		12A0421823649E2400C4C0EF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				12A0421923649E3600C4C0EF /* AuthLocalImpl.swift */,
+				12A0421B23649E4F00C4C0EF /* IAuthLocal.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		12A7B91F2361C4BE00861E3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12C4EF4523635238002CAB3A /* RegisterViewModel.swift */,
+				12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12A7B9202361C4C400861E3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12A7B9212361C4D400861E3D /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12C4EF2C2362F3EE002CAB3A /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				12C4EF302362F538002CAB3A /* AuthValidations.swift */,
+			);
+			path = Validations;
+			sourceTree = "<group>";
+		};
 		12D85FEF2360512200C12D79 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,6 +576,8 @@
 		12D85FF02360519900C12D79 /* OTP */ = {
 			isa = PBXGroup;
 			children = (
+				122BD9DD2361958B009F8AD3 /* View */,
+				122BD9DE23619593009F8AD3 /* ViewModel */,
 			);
 			path = OTP;
 			sourceTree = "<group>";
@@ -491,6 +585,8 @@
 		12D85FF1236051A100C12D79 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				12A7B9202361C4C400861E3D /* View */,
+				12A7B91F2361C4BE00861E3D /* ViewModel */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -500,6 +596,7 @@
 			children = (
 				12D85FF52360535200C12D79 /* Storyboards */,
 				12D85FF32360520600C12D79 /* View */,
+				12A0420F2364876200C4C0EF /* ViewModel */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -576,7 +673,7 @@
 				1438DD61235F2CCE00E51875 /* Supporting Files */,
 				1438DD60235F2CC300E51875 /* Resources */,
 				1438DD5E235F2C9C00E51875 /* Features */,
-				1438DC3E235DD57000E51875 /* LaunchScreen.storyboard */,
+				12C4EF2C2362F3EE002CAB3A /* Validations */,
 			);
 			path = "Gokada App iOS";
 			sourceTree = "<group>";
@@ -642,6 +739,7 @@
 		1438DCCB235DF6C300E51875 /* Local Storage */ = {
 			isa = PBXGroup;
 			children = (
+				12A0421823649E2400C4C0EF /* Auth */,
 				1438DCCC235DF6C300E51875 /* Local_Storage.h */,
 				1438DCCD235DF6C300E51875 /* Info.plist */,
 			);
@@ -801,6 +899,7 @@
 		1438DD61235F2CCE00E51875 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1438DC3E235DD57000E51875 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -825,8 +924,8 @@
 		1438DD64235F2FA400E51875 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1438DD66235F2FD800E51875 /* AuthViewModel.swift */,
-				1438DD73235F667E00E51875 /* IAuthViewModel.swift */,
+				1438DD66235F2FD800E51875 /* LoginViewModel.swift */,
+				1438DD73235F667E00E51875 /* ILoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -853,6 +952,8 @@
 			children = (
 				1438DD6F235F4DF900E51875 /* ErrorType.swift */,
 				12959FE6235FB6E700DC7856 /* PreLoader.swift */,
+				12C4EF2A2362E6FB002CAB3A /* CustomAlert.swift */,
+				12C4EF3923630600002CAB3A /* NotificationType.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -869,6 +970,7 @@
 				D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */,
 				41CC7820B6EF6A314767FE4B /* Pods_Remote_API.framework */,
 				4C82131DF1A92AD73F41CFCB /* Pods_Remote_APITests.framework */,
+				41CD23E1C1DFC5E113A98C7A /* Pods_Entities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -894,6 +996,8 @@
 				8F985DB9FCC5053EEB76E507 /* Pods-Remote API.release.xcconfig */,
 				B5BFAF5CD8BA7541D25A45B3 /* Pods-Remote APITests.debug.xcconfig */,
 				ADD54C879D1014D959B5A1E9 /* Pods-Remote APITests.release.xcconfig */,
+				E960928A282C0129B7556D69 /* Pods-Entities.debug.xcconfig */,
+				E074583ACD4AF2F18B08DAD3 /* Pods-Entities.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1177,6 +1281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1438DD17235DF72400E51875 /* Build configuration list for PBXNativeTarget "Entities" */;
 			buildPhases = (
+				287C98BAD44DD5538A47740F /* [CP] Check Pods Manifest.lock */,
 				1438DD09235DF72400E51875 /* Headers */,
 				1438DD0A235DF72400E51875 /* Sources */,
 				1438DD0B235DF72400E51875 /* Frameworks */,
@@ -1230,6 +1335,7 @@
 					};
 					1438DCC9235DF6C300E51875 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					1438DCD1235DF6C300E51875 = {
 						CreatedOnToolsVersion = 11.1;
@@ -1284,6 +1390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12959FE9235FBB7B00DC7856 /* gokada_custom_loader.json in Resources */,
+				122BD9E12361A468009F8AD3 /* montserrat.ttf in Resources */,
 				1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */,
 				1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */,
 				1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */,
@@ -1467,6 +1574,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Gokada App iOS-Gokada App iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		287C98BAD44DD5538A47740F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Entities-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1714,17 +1843,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1438DD67235F2FD800E51875 /* AuthViewModel.swift in Sources */,
+				122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */,
+				1438DD67235F2FD800E51875 /* LoginViewModel.swift in Sources */,
 				1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */,
 				12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */,
 				1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */,
 				1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */,
 				1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */,
 				1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */,
-				1438DD74235F667E00E51875 /* IAuthViewModel.swift in Sources */,
+				12C4EF4623635238002CAB3A /* RegisterViewModel.swift in Sources */,
+				1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */,
+				12A04211236487D000C4C0EF /* WelcomeViewModel.swift in Sources */,
 				1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */,
+				12A7B9222361C4D400861E3D /* RegisterViewController.swift in Sources */,
 				12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */,
+				12C4EF332363002F002CAB3A /* OTPViewModel.swift in Sources */,
 				1438DD72235F602200E51875 /* AuthInjections.swift in Sources */,
+				12C4EF3C23630640002CAB3A /* IOTPViewModel.swift in Sources */,
+				12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */,
+				12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */,
+				12A04213236487E700C4C0EF /* IWelcomeViewModel.swift in Sources */,
+				12C4EF2B2362E6FB002CAB3A /* CustomAlert.swift in Sources */,
+				12C4EF3A23630600002CAB3A /* NotificationType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1786,6 +1926,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A0421A23649E3600C4C0EF /* AuthLocalImpl.swift in Sources */,
+				12A0421C23649E4F00C4C0EF /* IAuthLocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2078,6 +2220,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT459C64W3;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2098,6 +2241,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT459C64W3;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2393,6 +2537,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ADA07C3333A64A14F26542F /* Pods-Local Storage.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2409,6 +2554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.localstorage.Local-Storage";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2420,6 +2566,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B349FFA41F9BDA702C769EB /* Pods-Local Storage.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2578,6 +2725,7 @@
 		};
 		1438DD18235DF72400E51875 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E960928A282C0129B7556D69 /* Pods-Entities.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2606,6 +2754,7 @@
 		};
 		1438DD19235DF72400E51875 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E074583ACD4AF2F18B08DAD3 /* Pods-Entities.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

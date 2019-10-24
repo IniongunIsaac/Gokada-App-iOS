@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import RxSwift
+import Entities
 
-protocol IAuthViewModel {
-    
+protocol ILoginViewModel {
+    var loginResponse: PublishSubject<PhoneNumberAuth> { get }
+    func sendOTPCode(to phoneNumber: String)
 }

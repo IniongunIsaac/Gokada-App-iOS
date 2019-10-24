@@ -8,11 +8,11 @@
 
 import Foundation
 
-public struct AppUser: Decodable {
-    let token: String
-    let user: User
+public struct AppUser: Codable {
+    public let token: String
+    public let user: User
     
     func isRider() -> Bool {
-        return !(user.roles?.contains("driver") ?? false)
+        return !(user.roles.contains("driver"))
     }
 }

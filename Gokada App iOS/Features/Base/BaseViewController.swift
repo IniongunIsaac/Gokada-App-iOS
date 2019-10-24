@@ -12,8 +12,9 @@ import RxCocoa
 
 class BaseViewController: UIViewController {
     
-    private let disposeBag = DisposeBag()
+    public let disposeBag = DisposeBag()
     fileprivate var preloader: PreLoader!
+    fileprivate var alert: CustomAlert?
     
     func getViewModel() -> BaseViewModel {
         preconditionFailure("The subclass BaseViewController must provide a subclass of BaseViewModel")
@@ -25,11 +26,20 @@ class BaseViewController: UIViewController {
         
         setObservers()
         self.preloader = DefaultPreLoader(on: self.view)
+        self.alert = CustomAlert(on: self.view)
     }
     
     private func setObservers() {
         observeLoadingState()
-        observeErrorState()
+        observeApiErrorState()
+        observeThrowableErrorState()
+        observeAlerts()
+    }
+    
+    private func observeAlerts() {
+        getViewModel().showAlert.asObservable().bind { [weak self] value in
+            self?.showAlert(message: value.message, type: value.type)
+        }.disposed(by: disposeBag)
     }
     
     private func observeLoadingState() {
@@ -42,26 +52,28 @@ class BaseViewController: UIViewController {
         }.disposed(by: disposeBag)
     }
     
-    private func observeErrorState() {
-        getViewModel().apiError?.asObservable().bind{ [weak self] apiError in
-            self?.showErrorAlert(message: apiError.errors.first?.message ?? "An error occurred while making your request. Please try again!")
+    private func observeApiErrorState() {
+        getViewModel().apiError.asObservable().bind{ [weak self] apiError in
+            self?.showAlert(message: apiError.errors.first?.message ?? "An error occurred while making your request. Please try again!", type: .error)
         }.disposed(by: disposeBag)
     }
     
-    func showLoading() {
+    private func observeThrowableErrorState() {
+        getViewModel().throwableError.asObserver().bind { [weak self] error in
+            self?.showAlert(message: error.localizedDescription, type: .error)
+        }.disposed(by: disposeBag)
+    }
+    
+    private func showLoading() {
         self.preloader.showLoading()
     }
     
-    func hideLoading() {
+    private func hideLoading() {
         self.preloader.hideLoading()
     }
     
-    private func showErrorAlert(message: String) {
-        
-    }
-    
-    private func showSuccessAlert() {
-        
+    private func showAlert(message: String, type: AlertType) {
+        self.alert?.showAlert(text: message, type: type)
     }
     
     override func viewWillAppear(_ animated: Bool) { getViewModel().viewWillAppear() }

@@ -9,7 +9,7 @@
 import Foundation
 
 public struct PhoneNumberAuth: Codable {
-    let phoneNumber: String
-    let status: String
-    let timeToLive: Int
+    public let phoneNumber: String
+    public let status: String
+    public let timeToLive: Int
 }
