@@ -9,6 +9,6 @@
 import Foundation
 
 public struct ApiResponse<T: Codable>: Codable {
-    let data: T? = nil
-    let error: ApiError? = nil
+    public var data: T? = nil
+    public var error: ApiError? = nil
 }

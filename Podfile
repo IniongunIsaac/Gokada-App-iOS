@@ -35,6 +35,7 @@ target 'Gokada App iOS' do
   pod 'Toast', '~> 4.0.0'
   pod 'Alertift', '~> 4.1'
   pod 'lottie-ios'
+  pod 'RSKImageCropper'
   
   #Firebase Pods
   #pod 'RxFirebase/Firestore'
@@ -110,5 +111,14 @@ target 'Local Storage' do
     pod 'RxBlocking', '~> 5'
     pod 'RxTest', '~> 5'
   end
+
+end
+
+target 'Entities' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Entities
+  pod 'RealmSwift'
 
 end

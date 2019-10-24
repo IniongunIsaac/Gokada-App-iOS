@@ -5,24 +5,43 @@
 //  Created by Isaac Iniongun on 21/10/2019.
 //  Copyright © 2019 Gokada. All rights reserved.
 //
-
 import Foundation
+import RealmSwift
 
-public struct User: Codable {
-    let id: String
-    let firstName: String?
-    let lastName: String?
-    let phoneNumber: String?
-    let driver: Pilot?
-    let roles: [String]?
-    let profileImage: String?
-    let email: String?
+@objcMembers public class User: Object, Codable {
+    public dynamic var id: String = ""
+    public dynamic var firstName: String? = nil
+    public dynamic var lastName: String? = nil
+    public dynamic var phoneNumber: String? = nil
+    public dynamic var driver: Pilot?
+    public dynamic var profileImage: String? = nil
+    public dynamic var email: String? = nil
+    public var roles = List<String>()
     
-    enum CodingKeys: String, CodingKey{
-        case id = "_id", firstName, lastName, phoneNumber, driver, roles, profileImage, email
+    override public static func ignoredProperties() -> [String] {
+        return ["driver"]
     }
     
-    init(decoder: Decoder) throws {
+    public override class func primaryKey() -> String? {
+        return "id"
+    }
+    
+    enum CodingKeys: String, CodingKey{
+        case id, firstName, lastName, phoneNumber, driver, roles, profileImage, email
+    }
+    
+    public convenience required init(firstName: String, lastName: String, phoneNumber: String, profileImage: String, email: String) {
+        self.init()
+        self.firstName = firstName
+        self.lastName = lastName
+        self.phoneNumber = phoneNumber
+        self.profileImage = profileImage
+        self.email = email
+    }
+    
+    public required convenience init(decoder: Decoder) throws {
+        self.init()
+        
         //Get the root of our object
         let container = try decoder.container(keyedBy: CodingKeys.self)
         //Decode id from container(the root)
@@ -31,9 +50,11 @@ public struct User: Codable {
         lastName = try container.decodeIfPresent(String.self, forKey: .lastName)
         phoneNumber = try container.decodeIfPresent(String.self, forKey: .phoneNumber)
         driver = try container.decodeIfPresent(Pilot.self, forKey: .driver)
-        roles = try container.decodeIfPresent([String].self, forKey: .roles)
+        let rolesList = try container.decodeIfPresent([String].self, forKey: .roles) ?? [String]()
+        roles.append(objectsIn: rolesList)
         profileImage = try container.decodeIfPresent(String.self, forKey: .profileImage)
         email = try container.decodeIfPresent(String.self, forKey: .email)
+        
     }
     
 }

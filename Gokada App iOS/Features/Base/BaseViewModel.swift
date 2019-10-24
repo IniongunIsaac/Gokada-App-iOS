@@ -12,9 +12,11 @@ import Entities
 
 class BaseViewModel {
     
-    private let disposable = DisposeBag()
+    let disposeBag = DisposeBag()
     let isLoading: PublishSubject<Bool> = PublishSubject()
-    let apiError: Single<ApiError>? = nil
+    let showAlert: PublishSubject<AlertValues> = PublishSubject()
+    let apiError: PublishSubject<ApiError> = PublishSubject()
+    let throwableError: PublishSubject<Error> = PublishSubject()
     
     func viewDidLoad() { }
     

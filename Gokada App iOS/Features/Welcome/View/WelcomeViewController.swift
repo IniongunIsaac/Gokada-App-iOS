@@ -9,22 +9,23 @@
 import UIKit
 import Lottie
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: BaseViewController {
 
     @IBOutlet weak var animationView: AnimationView!
     @IBOutlet weak var continueView: UIView!
     @IBOutlet weak var continueViewAnimationView: AnimationView!
     @IBOutlet weak var whiteOverlayView: UIView!
+    var welcomeViewModel: IWelcomeViewModel?
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
-        get{
-            return .portrait
-        }
+    override func getViewModel() -> BaseViewModel {
+        return welcomeViewModel as! BaseViewModel
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.delegate = self
+
         setupViews()
         startAnimation()
     }
@@ -43,17 +44,30 @@ class WelcomeViewController: UIViewController {
             UIView.animate(withDuration: 0.6) {
                 self.continueView.alpha = 0
                 self.whiteOverlayView.alpha = 1
-                self.performSegue(withIdentifier: "showAuthSegue", sender: self)
             }
         })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+            self.performSegue(withIdentifier: "showAuthSegue", sender: self)
+        }
         continueViewAnimationView.play()
     }
     
     func startAnimation() {
         animationView.animation = Animation.named("gokada_splash_amin")
-        animationView.play { (_) in
-            self.showContinueView()
+        animationView.play { [weak self] (_) in
+            if (self?.welcomeViewModel?.userLoggedIn())! {
+                self?.showDashboard()
+            } else {
+                self?.showContinueView()
+            }
         }
+    }
+    
+    func showDashboard() {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Auth", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "homeVC")
+        self.show(vc, sender: self)
     }
     
     func showContinueView() {
@@ -68,4 +82,10 @@ class WelcomeViewController: UIViewController {
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
 
+}
+
+extension UIViewController: UINavigationControllerDelegate {
+    public func navigationControllerSupportedInterfaceOrientations(_ navigationController: UINavigationController) -> UIInterfaceOrientationMask {
+        return .portrait
+    }
 }

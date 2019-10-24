@@ -51,8 +51,7 @@ public class BaseRemoteApiImpl: IBaseRemoteApi {
         
     }
     
-    public func makeAPIRequestObservable<T>(responseType: T.Type, url: String, method: HTTPMethod, params: [String : Any]?, encoding: ParameterEncoding = URLEncoding.default) -> Observable<T> where T : Codable {
-        
+    public func makeAPIRequestObservable<T>(responseType: T.Type, url: String, method: HTTPMethod = .get, params: [String : Any]?, encoding: ParameterEncoding = URLEncoding.default) -> Observable<T> where T : Codable {
         return string(method, url, parameters: params, encoding: encoding, headers: requestHeaders)
             .debug()
             .flatMap({ responseString -> Observable<T> in
@@ -60,7 +59,7 @@ public class BaseRemoteApiImpl: IBaseRemoteApi {
                     
                     //check if the `responseString` contains the `errors` key, create a new json string with key `error`
                     //otherwise, create a new json string with key `data`
-                    let jsonString = responseString.caseInsensitiveCompare("errors") == .orderedSame ? try self.getJsonString(withKey: "error", forValue: responseString) : try self.getJsonString(withKey: "data", forValue: responseString)
+                    let jsonString = responseString.localizedCaseInsensitiveContains("errors") ? try self.getJsonString(withKey: "error", forValue: responseString) : try self.getJsonString(withKey: "data", forValue: responseString)
                     
                     //map the result of `jsonString` above to the `responseType`
                     let requestResponse = try responseType.mapTo(jsonString: jsonString)!
@@ -80,8 +79,7 @@ public class BaseRemoteApiImpl: IBaseRemoteApi {
     /// - Parameter forValue: value of the aforementioned key
     /// - Returns: String
     fileprivate func getJsonString(withKey: String, forValue: String) throws -> String {
-        let jsonStringDictionary = [withKey : forValue]
-        let jsonData = try JSONSerialization.data(withJSONObject: jsonStringDictionary, options: .prettyPrinted)
-        return String(data: jsonData, encoding: .utf8)!
+        let jsonStringDictionary = "{\"\(withKey)\": \(forValue)}"
+        return jsonStringDictionary
     }
 }

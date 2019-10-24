@@ -60,5 +60,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>montserrat.ttf</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>This app uses the camera to capture images as your profile image</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to your Photo Library to be able to select a profile image </string>
 </dict>
 </plist>

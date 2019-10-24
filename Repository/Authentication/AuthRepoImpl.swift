@@ -10,17 +10,44 @@ import Foundation
 import RxSwift
 import Entities
 import Remote_API
+import App_Preferences
+import Local_Storage
 
 public struct AuthRepoImpl: IAuthRepo {
     
     public let authRemote: IAuthRemote?
+    public let authLocal: IAuthLocal?
     
-    public init(authRemote: IAuthRemote) {
+    public init(authRemote: IAuthRemote, authLocal: IAuthLocal) {
         self.authRemote = authRemote
+        self.authLocal = authLocal
     }
     
     public func authenticate(requestBody: [String : String]) -> Observable<ApiResponse<PhoneNumberAuth>> {
         return authRemote!.authenticate(requestBody: requestBody)
+    }
+    
+    public func verify(requestBody: [String : String]) -> Observable<ApiResponse<AppUser>> {
+        return authRemote!.verify(requestBody: requestBody)
+    }
+    
+    public func saveUserToken(token: String) {
+        Preference.saveAuthorizationHeader(value: token)
+    }
+    
+    public func saveUserInformation(user: User) {
+        if user.firstName != nil {
+            Preference.saveAuthorizationHeader(key: "loggedIn", value: "true")
+            authLocal?.saveLoggedInUser(user: user)
+        }
+    }
+    
+    public func saveUserInformation(requestBody: [String : String]) -> Observable<ApiResponse<User>> {
+        return authRemote!.updateProfile(requestBody: requestBody)
+    }
+    
+    public func getLoggedInStatus() -> String? {
+        return Preference.getAuthorizationHeader(key: "loggedIn")
     }
     
 }
