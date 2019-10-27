@@ -33,7 +33,7 @@ public class BaseRemoteApiImpl: IBaseRemoteApi {
                     
                     //check if the `responseString` contains the `errors` key, create a new json string with key `error`
                     //otherwise, create a new json string with key `data`
-                    let jsonString = responseString.caseInsensitiveCompare("errors") == .orderedSame ? try self.getJsonString(withKey: "error", forValue: responseString) : try self.getJsonString(withKey: "data", forValue: responseString)
+                    let jsonString = responseString.localizedCaseInsensitiveContains("errors") ? try self.getJsonString(withKey: "error", forValue: responseString) : try self.getJsonString(withKey: "data", forValue: responseString)
                     
                     //map the result of `jsonString` above to the `responseType`
                     let requestResponse = try responseType.mapTo(jsonString: jsonString)!
