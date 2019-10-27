@@ -53,7 +53,7 @@ class RegisterViewController: BaseViewController {
     
     func configureBinding() {
         registerViewModel?.registerResponse.bind { [weak self] res in
-            self?.performSegue(withIdentifier: "showWelcomeSegue", sender: self)
+            self?.performSegue(withIdentifier: "showProfile", sender: self)
         }.disposed(by: disposeBag)
     }
     
@@ -63,10 +63,11 @@ class RegisterViewController: BaseViewController {
     
     @IBAction func createAccountBtnClicked(_ sender: UIButton) {
         var profileDetails = [String: String]()
-        profileDetails["firstName"] = firstNameField.text
-        profileDetails["lastName"] = lastNameField.text
-        profileDetails["email"] = emailField.text
-        profileDetails["profileImage"] = profileImage
+        profileDetails[AuthRequestKeyConstants.FIRST_NAME_KEY] = firstNameField.text
+        profileDetails[AuthRequestKeyConstants.LAST_NAME_KEY] = lastNameField.text
+        profileDetails[AuthRequestKeyConstants.EMAIL_ADDRESS_KEY] = emailField.text
+        profileDetails[AuthRequestKeyConstants.PROFILE_IMAGE_KEY] = profileImage
+        profileDetails[AuthRequestKeyConstants.PROFILE_IMAGE_NAME_KEY] = getProfileImageName()
         registerViewModel?.registerUser(profileDetails: profileDetails)
     }
     

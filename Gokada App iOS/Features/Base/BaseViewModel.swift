@@ -14,7 +14,7 @@ class BaseViewModel {
     
     let disposeBag = DisposeBag()
     let isLoading: PublishSubject<Bool> = PublishSubject()
-    let showAlert: PublishSubject<AlertValues> = PublishSubject()
+    let alertValue: PublishSubject<AlertValue> = PublishSubject()
     let apiError: PublishSubject<ApiError> = PublishSubject()
     let throwableError: PublishSubject<Error> = PublishSubject()
     

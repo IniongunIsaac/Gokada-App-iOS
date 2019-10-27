@@ -14,7 +14,7 @@ enum AlertType {
     case info
 }
 
-public struct AlertValues {
+public struct AlertValue {
     let message: String
     let type: AlertType
 }

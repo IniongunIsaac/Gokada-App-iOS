@@ -46,7 +46,7 @@ class OTPViewController: BaseViewController {
             self?.otpViewModel?.stopCountdown()
             
             if res.user.firstName != nil {
-                self?.performSegue(withIdentifier: "showWelcomeSegue", sender: self)
+                self?.performSegue(withIdentifier: "showProfile", sender: self)
             } else {
                 let controller = self?.storyboard?.instantiateViewController(identifier: "registrationVC") as! RegisterViewController
                 controller.currentUser = res.user

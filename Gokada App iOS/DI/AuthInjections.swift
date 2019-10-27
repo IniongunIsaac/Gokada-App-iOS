@@ -55,5 +55,23 @@ extension SwinjectStoryboard {
         defaultContainer.storyboardInitCompleted(RegisterViewController.self) { (res, cntrl) in
             cntrl.registerViewModel = res.resolve(IRegisterViewModel.self)
         }
+        
+        //MARK: - Profile Module Dependencies
+        defaultContainer.register(IProfileDetailsViewModel.self) { res in
+            ProfileDetailsViewModel(authRepo: res.resolve(IAuthRepo.self)!)
+        }
+        
+        defaultContainer.register(IEditProfileViewModel.self) { res in
+            EditProfileViewModel(authRepo: res.resolve(IAuthRepo.self)!)
+        }
+        
+        defaultContainer.storyboardInitCompleted(ProfileDetailsViewController.self) { res, cntrl in
+            cntrl.profileDetailsViewModel = res.resolve(IProfileDetailsViewModel.self)
+        }
+        
+        defaultContainer.storyboardInitCompleted(EditProfileViewController.self) { res, cntrl in
+            cntrl.editProfileViewModel = res.resolve(IEditProfileViewModel.self)
+        }
+        
     }
 }

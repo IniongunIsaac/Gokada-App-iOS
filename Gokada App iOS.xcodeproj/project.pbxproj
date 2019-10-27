@@ -28,6 +28,16 @@
 		12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */; };
 		12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D85FF62360537900C12D79 /* WelcomeViewController.swift */; };
 		12D85FF92360539900C12D79 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D85FF82360539900C12D79 /* Auth.storyboard */; };
+		1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A55E2364F62A0084B4BE /* ProfileItem.swift */; };
+		1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420A5612364F68D0084B4BE /* Profile.storyboard */; };
+		1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */; };
+		1420A5662364F6BB0084B4BE /* ProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5642364F6BB0084B4BE /* ProfileDetailsViewModel.swift */; };
+		1420A5692364F6D80084B4BE /* ProfileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5672364F6D80084B4BE /* ProfileDetailsViewController.swift */; };
+		1420A56A2364F6D80084B4BE /* ProfileItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5682364F6D80084B4BE /* ProfileItemTableViewCell.swift */; };
+		1420A56C2364F6F80084B4BE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A56B2364F6F80084B4BE /* EditProfileViewController.swift */; };
+		1420A56F2364F7070084B4BE /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A56D2364F7070084B4BE /* EditProfileViewModel.swift */; };
+		1420A5702364F7070084B4BE /* IEditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A56E2364F7070084B4BE /* IEditProfileViewModel.swift */; };
+		1420A5722364F84B0084B4BE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5712364F84B0084B4BE /* View+Extensions.swift */; };
 		1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC33235DD56C00E51875 /* AppDelegate.swift */; };
 		1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DC35235DD56C00E51875 /* SceneDelegate.swift */; };
 		1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1438DC39235DD56C00E51875 /* Main.storyboard */; };
@@ -86,6 +96,8 @@
 		1438DD72235F602200E51875 /* AuthInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* AuthInjections.swift */; };
 		1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD73235F667E00E51875 /* ILoginViewModel.swift */; };
 		1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD75235F679E00E51875 /* LoginViewController.swift */; };
+		145930C92365C6A20074E2EF /* Code+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145930C82365C6A20074E2EF /* Code+Extensions.swift */; };
+		145930CB2365C8790074E2EF /* AuthRequestKeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */; };
 		21368E7CE4D339EDA720D642 /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */; };
 		6A98988D5A8290F170391B36 /* Pods_RepositoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647530F024AE0DCDEC06811A /* Pods_RepositoryTests.framework */; };
 		6E584A78FA773E9C6EDE0A27 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */; };
@@ -98,6 +110,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1420A5522364DA310084B4BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DD0D235DF72400E51875;
+			remoteInfo = Entities;
+		};
+		1420A5542364DA380084B4BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1438DD0D235DF72400E51875;
+			remoteInfo = Entities;
+		};
 		1438DC47235DD57100E51875 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1438DC28235DD56B00E51875 /* Project object */;
@@ -279,6 +305,16 @@
 		12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRegisterViewModel.swift; sourceTree = "<group>"; };
 		12D85FF62360537900C12D79 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		12D85FF82360539900C12D79 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		1420A55E2364F62A0084B4BE /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
+		1420A5612364F68D0084B4BE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProfileDetailsViewModel.swift; sourceTree = "<group>"; };
+		1420A5642364F6BB0084B4BE /* ProfileDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailsViewModel.swift; sourceTree = "<group>"; };
+		1420A5672364F6D80084B4BE /* ProfileDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailsViewController.swift; sourceTree = "<group>"; };
+		1420A5682364F6D80084B4BE /* ProfileItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileItemTableViewCell.swift; sourceTree = "<group>"; };
+		1420A56B2364F6F80084B4BE /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		1420A56D2364F7070084B4BE /* EditProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		1420A56E2364F7070084B4BE /* IEditProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEditProfileViewModel.swift; sourceTree = "<group>"; };
+		1420A5712364F84B0084B4BE /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		1438DC30235DD56C00E51875 /* Gokada App iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada App iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438DC33235DD56C00E51875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1438DC35235DD56C00E51875 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -347,6 +383,8 @@
 		1438DD71235F602200E51875 /* AuthInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInjections.swift; sourceTree = "<group>"; };
 		1438DD73235F667E00E51875 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
 		1438DD75235F679E00E51875 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		145930C82365C6A20074E2EF /* Code+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code+Extensions.swift"; sourceTree = "<group>"; };
+		145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestKeyConstants.swift; sourceTree = "<group>"; };
 		186E3F910A958F53FE229F3D /* Pods-Gokada App iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B20F9A3373A28D9D1FFC57C /* Pods-Repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.release.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.release.xcconfig"; sourceTree = "<group>"; };
 		1E53639A3269A89B1106E590 /* Pods-Repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.debug.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.debug.xcconfig"; sourceTree = "<group>"; };
@@ -625,6 +663,85 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		1420A5562364F5960084B4BE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1420A5602364F64F0084B4BE /* Storyboards */,
+				1420A5582364F5A90084B4BE /* Details */,
+				1420A5572364F5A30084B4BE /* Edit */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1420A5572364F5A30084B4BE /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				1420A55C2364F5D40084B4BE /* ViewModel */,
+				1420A55B2364F5CC0084B4BE /* View */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		1420A5582364F5A90084B4BE /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1420A55A2364F5B80084B4BE /* ViewModel */,
+				1420A5592364F5B10084B4BE /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1420A5592364F5B10084B4BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1420A5672364F6D80084B4BE /* ProfileDetailsViewController.swift */,
+				1420A5682364F6D80084B4BE /* ProfileItemTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1420A55A2364F5B80084B4BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */,
+				1420A5642364F6BB0084B4BE /* ProfileDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1420A55B2364F5CC0084B4BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1420A56B2364F6F80084B4BE /* EditProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1420A55C2364F5D40084B4BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1420A56D2364F7070084B4BE /* EditProfileViewModel.swift */,
+				1420A56E2364F7070084B4BE /* IEditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1420A55D2364F5EA0084B4BE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1420A55E2364F62A0084B4BE /* ProfileItem.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1420A5602364F64F0084B4BE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1420A5612364F68D0084B4BE /* Profile.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		1438DC27235DD56B00E51875 = {
 			isa = PBXGroup;
 			children = (
@@ -673,7 +790,6 @@
 				1438DD61235F2CCE00E51875 /* Supporting Files */,
 				1438DD60235F2CC300E51875 /* Resources */,
 				1438DD5E235F2C9C00E51875 /* Features */,
-				12C4EF2C2362F3EE002CAB3A /* Validations */,
 			);
 			path = "Gokada App iOS";
 			sourceTree = "<group>";
@@ -778,6 +894,7 @@
 		1438DD0F235DF72400E51875 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				1420A55D2364F5EA0084B4BE /* Profile */,
 				1438DD36235E428A00E51875 /* Base */,
 				1438DD25235E345F00E51875 /* Authentication */,
 				1438DD10235DF72400E51875 /* Entities.h */,
@@ -866,10 +983,11 @@
 		1438DD5E235F2C9C00E51875 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				1420A5562364F5960084B4BE /* Profile */,
 				12D85FF2236051C900C12D79 /* Welcome */,
-				1438DD6E235F4DE000E51875 /* Utils */,
-				1438DD68235F362A00E51875 /* Base */,
 				1438DD5F235F2CA500E51875 /* Auth */,
+				1438DD68235F362A00E51875 /* Base */,
+				1438DD6E235F4DE000E51875 /* Utils */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -950,10 +1068,14 @@
 		1438DD6E235F4DE000E51875 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				12C4EF2C2362F3EE002CAB3A /* Validations */,
+				1420A5712364F84B0084B4BE /* View+Extensions.swift */,
 				1438DD6F235F4DF900E51875 /* ErrorType.swift */,
 				12959FE6235FB6E700DC7856 /* PreLoader.swift */,
 				12C4EF2A2362E6FB002CAB3A /* CustomAlert.swift */,
 				12C4EF3923630600002CAB3A /* NotificationType.swift */,
+				145930C82365C6A20074E2EF /* Code+Extensions.swift */,
+				145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1172,6 +1294,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1420A5532364DA310084B4BE /* PBXTargetDependency */,
 				1438DD51235EA25900E51875 /* PBXTargetDependency */,
 			);
 			name = "Remote API";
@@ -1213,6 +1336,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1420A5552364DA380084B4BE /* PBXTargetDependency */,
 			);
 			name = "Local Storage";
 			productName = "Local Storage";
@@ -1395,6 +1519,7 @@
 				1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */,
 				1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */,
 				1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */,
+				1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */,
 				1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */,
 				12D85FF92360539900C12D79 /* Auth.storyboard in Resources */,
 			);
@@ -1843,28 +1968,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */,
+				1420A5692364F6D80084B4BE /* ProfileDetailsViewController.swift in Sources */,
 				122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */,
 				1438DD67235F2FD800E51875 /* LoginViewModel.swift in Sources */,
+				1420A56F2364F7070084B4BE /* EditProfileViewModel.swift in Sources */,
 				1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */,
 				12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */,
 				1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */,
+				145930C92365C6A20074E2EF /* Code+Extensions.swift in Sources */,
 				1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */,
 				1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */,
 				1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */,
 				12C4EF4623635238002CAB3A /* RegisterViewModel.swift in Sources */,
 				1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */,
+				1420A5662364F6BB0084B4BE /* ProfileDetailsViewModel.swift in Sources */,
 				12A04211236487D000C4C0EF /* WelcomeViewModel.swift in Sources */,
 				1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */,
 				12A7B9222361C4D400861E3D /* RegisterViewController.swift in Sources */,
+				1420A56A2364F6D80084B4BE /* ProfileItemTableViewCell.swift in Sources */,
 				12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */,
 				12C4EF332363002F002CAB3A /* OTPViewModel.swift in Sources */,
 				1438DD72235F602200E51875 /* AuthInjections.swift in Sources */,
 				12C4EF3C23630640002CAB3A /* IOTPViewModel.swift in Sources */,
 				12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */,
 				12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */,
+				145930CB2365C8790074E2EF /* AuthRequestKeyConstants.swift in Sources */,
+				1420A5702364F7070084B4BE /* IEditProfileViewModel.swift in Sources */,
 				12A04213236487E700C4C0EF /* IWelcomeViewModel.swift in Sources */,
 				12C4EF2B2362E6FB002CAB3A /* CustomAlert.swift in Sources */,
 				12C4EF3A23630600002CAB3A /* NotificationType.swift in Sources */,
+				1420A5722364F84B0084B4BE /* View+Extensions.swift in Sources */,
+				1420A56C2364F6F80084B4BE /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1960,6 +2095,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */,
 				1438DD3C235E43E000E51875 /* ApiResponse.swift in Sources */,
 				1438DD57235EBCCE00E51875 /* PhoneNumberAuth.swift in Sources */,
 				1438DD33235E3AF600E51875 /* Pilot.swift in Sources */,
@@ -1977,6 +2113,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1420A5532364DA310084B4BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DD0D235DF72400E51875 /* Entities */;
+			targetProxy = 1420A5522364DA310084B4BE /* PBXContainerItemProxy */;
+		};
+		1420A5552364DA380084B4BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1438DD0D235DF72400E51875 /* Entities */;
+			targetProxy = 1420A5542364DA380084B4BE /* PBXContainerItemProxy */;
+		};
 		1438DC48235DD57100E51875 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1438DC2F235DD56C00E51875 /* Gokada App iOS */;

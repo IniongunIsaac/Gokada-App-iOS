@@ -21,15 +21,15 @@ class RegisterViewModel: BaseViewModel, IRegisterViewModel  {
     
     func registerUser(profileDetails: [String : String]) {
         if let error = AuthValidation.validProfileRegistration(profileDetails: profileDetails) {
-            self.showAlert.onNext(AlertValues(message: error, type: .error))
+            self.alertValue.onNext(AlertValue(message: error, type: .error))
             return
         }
         
         self.isLoading.onNext(true)
-        self.authRepo.saveUserInformation(requestBody: profileDetails).subscribe(onNext: { [weak self] res in
+        self.authRepo.updateUserProfile(requestBody: profileDetails).subscribe(onNext: { [weak self] res in
             self?.isLoading.onNext(false)
             if let regRes = res.data {
-                self?.authRepo.saveUserInformation(user: regRes)
+                self?.authRepo.saveLoggedInUser(user: regRes)
                 self?.registerResponse.onNext(regRes)
             } else if let apiErr = res.error {
                 self?.apiError.onNext(apiErr)

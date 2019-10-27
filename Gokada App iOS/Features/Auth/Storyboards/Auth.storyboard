@@ -15,7 +15,7 @@
         <!--Login View Controller-->
         <scene sceneID="McU-88-Cl8">
             <objects>
-                <viewController id="OV1-di-ygq" customClass="LoginViewController" customModule="Gokada_App_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="OV1-di-ygq" customClass="LoginViewController" customModule="Gokada_App_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NzT-Pm-xU7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,7 +374,7 @@
                         <outlet property="phoneLbl" destination="9a7-Rp-ONi" id="8wl-ee-0nJ"/>
                         <outlet property="resendBtn" destination="ACP-e0-OKZ" id="AYC-Ox-sZc"/>
                         <segue destination="iQP-Od-zM4" kind="show" identifier="showRegistrationSegue" id="wY8-h6-MIi"/>
-                        <segue destination="3rY-g9-QfE" kind="show" identifier="showWelcomeSegue" id="pLK-xA-WKT"/>
+                        <segue destination="Qur-Ks-Aev" kind="show" identifier="showProfile" id="KXx-at-pS0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vr5-pU-Jq2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -435,7 +435,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm3-o4-Xp1">
-                                                                <rect key="frame" x="162" y="127" width="90" height="27"/>
+                                                                <rect key="frame" x="162" y="127" width="90" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="90" id="hQj-PE-uZi"/>
                                                                 </constraints>
@@ -448,19 +448,19 @@
                                                                 </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kak-Rh-vZG">
-                                                                <rect key="frame" x="0.0" y="154" width="414" height="520"/>
+                                                                <rect key="frame" x="0.0" y="158" width="414" height="516"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncw-YJ-YjF">
-                                                                        <rect key="frame" x="36" y="30" width="342" height="78"/>
+                                                                        <rect key="frame" x="36" y="30" width="342" height="77"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxF-iS-5Sz">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="86" height="14"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="86" height="13"/>
                                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+234 - 877487478" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nB-uC-qCC">
-                                                                                <rect key="frame" x="0.0" y="26" width="342" height="45"/>
+                                                                                <rect key="frame" x="0.0" y="25" width="342" height="45"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="45" id="YZS-0V-Gw4"/>
                                                                                 </constraints>
@@ -479,16 +479,16 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gba-Ic-McJ">
-                                                                        <rect key="frame" x="36" y="128" width="342" height="78"/>
+                                                                        <rect key="frame" x="36" y="127" width="342" height="77"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kx-Wz-kgZ">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="14"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="59" height="13"/>
                                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x5q-PH-dF3">
-                                                                                <rect key="frame" x="0.0" y="26" width="342" height="45"/>
+                                                                                <rect key="frame" x="0.0" y="25" width="342" height="45"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="45" id="8DI-G8-cQ7"/>
                                                                                 </constraints>
@@ -507,16 +507,16 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orT-vC-tDu">
-                                                                        <rect key="frame" x="36" y="226" width="342" height="78"/>
+                                                                        <rect key="frame" x="36" y="224" width="342" height="77"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KT-of-PfO">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="14"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="13"/>
                                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fn6-zR-f45">
-                                                                                <rect key="frame" x="0.0" y="26" width="342" height="45"/>
+                                                                                <rect key="frame" x="0.0" y="25" width="342" height="45"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="45" id="6yg-Tg-EPX"/>
                                                                                 </constraints>
@@ -535,16 +535,16 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlJ-Sj-YHn">
-                                                                        <rect key="frame" x="36" y="324" width="342" height="78"/>
+                                                                        <rect key="frame" x="36" y="321" width="342" height="77"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4x-ZF-Xbx">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="78" height="14"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="78" height="13"/>
                                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2E8-ES-YSl">
-                                                                                <rect key="frame" x="0.0" y="26" width="342" height="45"/>
+                                                                                <rect key="frame" x="0.0" y="25" width="342" height="45"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="45" id="Gv0-zj-xiR"/>
                                                                                 </constraints>
@@ -563,7 +563,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlE-ah-6Oa">
-                                                                        <rect key="frame" x="36" y="431" width="342" height="60"/>
+                                                                        <rect key="frame" x="36" y="427" width="342" height="60"/>
                                                                         <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="9IR-IO-dSp"/>
@@ -674,7 +674,6 @@
                         <outlet property="scrollView" destination="mSG-Yi-zFP" id="sKm-gB-1la"/>
                         <outlet property="scrollViewBottomConstraint" destination="Bzr-Gq-g4Y" id="OwV-6z-IrI"/>
                         <outlet property="uploadBtn" destination="hm3-o4-Xp1" id="5HE-1J-P53"/>
-                        <segue destination="3rY-g9-QfE" kind="show" identifier="showWelcomeSegue" id="Fqe-4m-ZoH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TW-cV-XMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -682,33 +681,15 @@
             </objects>
             <point key="canvasLocation" x="1075" y="-11"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cbG-6D-bSR">
+        <!--Profile-->
+        <scene sceneID="DUX-DU-HlD">
             <objects>
-                <viewController storyboardIdentifier="homeVC" id="3rY-g9-QfE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CkZ-mz-w66">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the welcome screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugI-cV-J77">
-                                <rect key="frame" x="103.5" y="393.5" width="207" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="ugI-cV-J77" firstAttribute="centerX" secondItem="mgc-vU-bRW" secondAttribute="centerX" id="3Y8-uA-gbo"/>
-                            <constraint firstItem="ugI-cV-J77" firstAttribute="centerY" secondItem="mgc-vU-bRW" secondAttribute="centerY" id="ke2-Hl-h3o"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="mgc-vU-bRW"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="rcd-xg-Ph4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nCc-Ne-e4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Profile" id="Qur-Ks-Aev" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="J0E-cl-ax1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHH-PF-dUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1974" y="-11"/>
+            <point key="canvasLocation" x="1986" y="-324"/>
         </scene>
     </scenes>
     <resources>
@@ -719,7 +700,4 @@
         <image name="profileImagePlaceHolder" width="340" height="340"/>
         <image name="telephone" width="9.5" height="9.5"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Fqe-4m-ZoH"/>
-    </inferredMetricsTieBreakers>
 </document>

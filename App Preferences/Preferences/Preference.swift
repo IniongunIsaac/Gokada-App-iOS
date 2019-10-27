@@ -18,4 +18,12 @@ public struct Preference {
         UserDefaults.standard.set(value, forKey: key)
     }
     
+    public static func getUserLoginStatus(key: String = PreferenceConstants.USER_LOGIN_STATUS_KEY) -> String? {
+        return UserDefaults.standard.string(forKey: key)
+    }
+    
+    public static func saveUserLoginStatus(key: String = PreferenceConstants.USER_LOGIN_STATUS_KEY, value: String) {
+        UserDefaults.standard.set(value, forKey: key)
+    }
+    
 }

@@ -24,7 +24,7 @@ class LoginViewModel: BaseViewModel, ILoginViewModel {
     
     func sendOTPCode(to phoneNumber: String) {
         if let error = AuthValidation.validLogin(phoneNumber) {
-            self.showAlert.onNext(AlertValues(message: error, type: .error))
+            self.alertValue.onNext(AlertValue(message: error, type: .error))
             return
         }
         

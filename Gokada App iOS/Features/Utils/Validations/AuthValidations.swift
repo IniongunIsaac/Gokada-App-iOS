@@ -51,14 +51,26 @@ class AuthValidation {
     }
     
     public static func validProfileRegistration(profileDetails: [String: String]) -> String? {
-        if let nameError = validName(name: profileDetails["firstName"], type: "first") {
+        if let nameError = validName(name: profileDetails[AuthRequestKeyConstants.FIRST_NAME_KEY], type: "first") {
             return nameError
-        } else if let nameError = validName(name: profileDetails["lastName"], type: "last") {
+        } else if let nameError = validName(name: profileDetails[AuthRequestKeyConstants.LAST_NAME_KEY], type: "last") {
             return nameError
-        } else if let emailError = validEmail(email: profileDetails["email"]) {
+        } else if let emailError = validEmail(email: profileDetails[AuthRequestKeyConstants.EMAIL_ADDRESS_KEY]) {
             return emailError
-        } else if let requiredError = requiredValue(text: profileDetails["profileImage"], type: "Profile image") {
+        } else if let requiredError = requiredValue(text: profileDetails[AuthRequestKeyConstants.PROFILE_IMAGE_KEY], type: "Profile image") {
             return requiredError
+        }
+        
+        return nil
+    }
+    
+    public static func isValidUserProfileDetails(profileDetails: [String: String]) -> String? {
+        if let nameError = validName(name: profileDetails[AuthRequestKeyConstants.FIRST_NAME_KEY], type: "first") {
+            return nameError
+        } else if let nameError = validName(name: profileDetails[AuthRequestKeyConstants.LAST_NAME_KEY], type: "last") {
+            return nameError
+        } else if let emailError = validEmail(email: profileDetails[AuthRequestKeyConstants.EMAIL_ADDRESS_KEY]) {
+            return emailError
         }
         
         return nil

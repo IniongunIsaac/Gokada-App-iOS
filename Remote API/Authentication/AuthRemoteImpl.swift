@@ -19,11 +19,11 @@ public class AuthRemoteImpl: BaseRemoteApiImpl, IAuthRemote {
     }
     
     public func verify(requestBody: [String : String]) -> Observable<ApiResponse<AppUser>> {
-        return makeAPIRequestObservable(responseType: ApiResponse<AppUser>.self, url: RemoteApiConstants.OTP_VERIFICATION, method: .post, params: requestBody, encoding: JSONEncoding.default)
+        return makeAPIRequestObservable(responseType: ApiResponse<AppUser>.self, url: RemoteApiConstants.OTP_VERIFICATION_URL, method: .post, params: requestBody, encoding: JSONEncoding.default)
     }
     
-    public func updateProfile(requestBody: [String : String]) -> Observable<ApiResponse<User>> {
-        return makeAPIRequestObservable(responseType: ApiResponse<User>.self, url: RemoteApiConstants.UPDATE_PROFILE, method: .patch, params: requestBody, encoding: JSONEncoding.default)
+    public func updateUserProfile(requestBody: [String : String]) -> Observable<ApiResponse<User>> {
+        return makeAPIRequestObservable(responseType: ApiResponse<User>.self, url: RemoteApiConstants.UPDATE_USER_PROFILE_URL, method: .patch, params: requestBody, encoding: JSONEncoding.default)
     }
     
 }

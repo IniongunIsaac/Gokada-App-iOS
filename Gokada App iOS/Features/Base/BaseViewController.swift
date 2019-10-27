@@ -22,6 +22,7 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         getViewModel().viewDidLoad()
         
         setObservers()
@@ -37,7 +38,7 @@ class BaseViewController: UIViewController {
     }
     
     private func observeAlerts() {
-        getViewModel().showAlert.asObservable().bind { [weak self] value in
+        getViewModel().alertValue.asObservable().bind { [weak self] value in
             self?.showAlert(message: value.message, type: value.type)
         }.disposed(by: disposeBag)
     }
@@ -64,11 +65,11 @@ class BaseViewController: UIViewController {
         }.disposed(by: disposeBag)
     }
     
-    private func showLoading() {
+    func showLoading() {
         self.preloader.showLoading()
     }
     
-    private func hideLoading() {
+    func hideLoading() {
         self.preloader.hideLoading()
     }
     

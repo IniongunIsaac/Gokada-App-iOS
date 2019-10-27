@@ -11,10 +11,20 @@ import RxSwift
 import Entities
 
 public protocol IAuthRepo {
+    
     func authenticate(requestBody: [String : String]) -> Observable<ApiResponse<PhoneNumberAuth>>
+    
     func verify(requestBody: [String: String]) -> Observable<ApiResponse<AppUser>>
-    func saveUserInformation(requestBody: [String: String]) -> Observable<ApiResponse<User>>
+    
+    func updateUserProfile(requestBody: [String: String]) -> Observable<ApiResponse<User>>
+    
     func saveUserToken(token: String)
-    func saveUserInformation(user: User)
+    
     func getLoggedInStatus() -> String?
+    
+    func getLoggedInUser() -> Observable<User?>
+    
+    func saveLoggedInUser(user: User)
+    
+    func deleteLoggedInUserDetails()
 }

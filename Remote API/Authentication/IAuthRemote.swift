@@ -11,7 +11,11 @@ import RxSwift
 import Entities
 
 public protocol IAuthRemote {
+    
     func authenticate(requestBody: [String : String]) -> Observable<ApiResponse<PhoneNumberAuth>>
+    
     func verify(requestBody: [String: String]) -> Observable<ApiResponse<AppUser>>
-    func updateProfile(requestBody: [String: String]) -> Observable<ApiResponse<User>>
+    
+    func updateUserProfile(requestBody: [String: String]) -> Observable<ApiResponse<User>>
+    
 }

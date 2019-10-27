@@ -35,19 +35,27 @@ public struct AuthRepoImpl: IAuthRepo {
         Preference.saveAuthorizationHeader(value: token)
     }
     
-    public func saveUserInformation(user: User) {
+    public func updateUserProfile(requestBody: [String : String]) -> Observable<ApiResponse<User>> {
+        return authRemote!.updateUserProfile(requestBody: requestBody)
+    }
+    
+    public func getLoggedInStatus() -> String? {
+        return Preference.getUserLoginStatus()
+    }
+    
+    public func getLoggedInUser() -> Observable<User?> {
+        return authLocal!.getLoggedInUser()
+    }
+    
+    public func saveLoggedInUser(user: User) {
         if user.firstName != nil {
-            Preference.saveAuthorizationHeader(key: "loggedIn", value: "true")
+            Preference.saveUserLoginStatus(value: "true")
             authLocal?.saveLoggedInUser(user: user)
         }
     }
     
-    public func saveUserInformation(requestBody: [String : String]) -> Observable<ApiResponse<User>> {
-        return authRemote!.updateProfile(requestBody: requestBody)
-    }
-    
-    public func getLoggedInStatus() -> String? {
-        return Preference.getAuthorizationHeader(key: "loggedIn")
+    public func deleteLoggedInUserDetails() {
+        authLocal!.deleteLoggedInUserDetails()
     }
     
 }
