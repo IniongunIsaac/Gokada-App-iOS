@@ -67,7 +67,6 @@ class ProfileDetailsViewModel: BaseViewModel, IProfileDetailsViewModel {
         }, onError: {[weak self] error in
             self?.throwableError.onNext(error)
         }).disposed(by: disposeBag)
-        //userDetails.onNext(User(firstName: "Isaac", lastName: "Ngurumun", phoneNumber: "8145421020", profileImage: "https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-circle-512.png", email: "isaac@gokada.ng"))
     }
     
     func logUserOut() {

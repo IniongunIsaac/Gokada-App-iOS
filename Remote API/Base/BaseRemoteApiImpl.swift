@@ -52,9 +52,14 @@ public class BaseRemoteApiImpl: IBaseRemoteApi {
     }
     
     public func makeAPIRequestObservable<T>(responseType: T.Type, url: String, method: HTTPMethod = .get, params: [String : Any]?, encoding: ParameterEncoding = URLEncoding.default) -> Observable<T> where T : Codable {
-        return string(method, url, parameters: params, encoding: encoding, headers: requestHeaders)
+        
+        let manager = SessionManager.default
+        
+        return manager.rx.request(method, url, parameters: params, encoding: encoding, headers: requestHeaders)
+            .validate(statusCode: 200 ..< 499)
             .debug()
-            .flatMap({ responseString -> Observable<T> in
+            .responseString()
+            .flatMap { (_, responseString) -> Observable<T> in
                 do {
                     
                     //check if the `responseString` contains the `errors` key, create a new json string with key `error`
@@ -70,7 +75,27 @@ public class BaseRemoteApiImpl: IBaseRemoteApi {
                 } catch let error {
                     throw error
                 }
-            })
+        }
+        
+//        return string(method, url, parameters: params, encoding: encoding, headers: requestHeaders)
+//            .debug()
+//            .flatMap({ responseString -> Observable<T> in
+//                do {
+//
+//                    //check if the `responseString` contains the `errors` key, create a new json string with key `error`
+//                    //otherwise, create a new json string with key `data`
+//                    let jsonString = responseString.localizedCaseInsensitiveContains("errors") ? try self.getJsonString(withKey: "error", forValue: responseString) : try self.getJsonString(withKey: "data", forValue: responseString)
+//
+//                    //map the result of `jsonString` above to the `responseType`
+//                    let requestResponse = try responseType.mapTo(jsonString: jsonString)!
+//
+//                    //return result in `requestResponse` above in the `successHandler`
+//                    return Observable.just(requestResponse)
+//
+//                } catch let error {
+//                    throw error
+//                }
+//            })
     }
     
     /// Creates a new JSON String
