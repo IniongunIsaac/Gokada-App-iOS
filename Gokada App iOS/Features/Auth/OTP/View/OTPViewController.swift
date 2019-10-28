@@ -46,7 +46,10 @@ class OTPViewController: BaseViewController {
             self?.otpViewModel?.stopCountdown()
             
             if res.user.firstName != nil {
-                self?.performSegue(withIdentifier: "showWelcomeSegue", sender: self)
+                //self?.performSegue(withIdentifier: "showProfile", sender: self)
+                let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "profileDetailsViewController")
+                self?.navigationController?.setViewControllers([vc], animated: false)
             } else {
                 let controller = self?.storyboard?.instantiateViewController(identifier: "registrationVC") as! RegisterViewController
                 controller.currentUser = res.user
@@ -81,9 +84,12 @@ class OTPViewController: BaseViewController {
         otpViewModel?.verifyOTPCode(code: self.otpCodeField.text!, phone: loginDetails.phoneNumber)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
+        if sender.text?.trimmingCharacters(in: .whitespacesAndNewlines).count == 5 {
+            self.view.endEditing(true)
+        }
     }
+    
 }
 
 extension OTPViewController {

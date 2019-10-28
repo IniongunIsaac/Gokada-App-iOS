@@ -22,8 +22,7 @@ class RegisterViewController: BaseViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     var currentUser: User!
-    
-    var keyboardHeight: CGFloat!
+
     var keyboardActive = false
     
     var registerViewModel: IRegisterViewModel?
@@ -37,23 +36,20 @@ class RegisterViewController: BaseViewController {
         super.viewDidLoad()
 
         configureUploadBtn()
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(keyboardWillShow),
-            name: UIResponder.keyboardWillShowNotification,
-            object: nil
-        )
-        let tapScroll = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
-        self.view.addGestureRecognizer(tapScroll)
         
         self.phoneField.text = currentUser.phoneNumber?.replacingOccurrences(of: "+234", with: "+234 - ")
         
         configureBinding()
+        
+        addScrollViewListener(constraint: scrollViewBottomConstraint)
     }
     
     func configureBinding() {
         registerViewModel?.registerResponse.bind { [weak self] res in
-            self?.performSegue(withIdentifier: "showWelcomeSegue", sender: self)
+            //self?.performSegue(withIdentifier: "showProfile", sender: self)
+            let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "profileDetailsViewController")
+            self?.navigationController?.setViewControllers([vc], animated: false)
         }.disposed(by: disposeBag)
     }
     
@@ -63,48 +59,18 @@ class RegisterViewController: BaseViewController {
     
     @IBAction func createAccountBtnClicked(_ sender: UIButton) {
         var profileDetails = [String: String]()
-        profileDetails["firstName"] = firstNameField.text
-        profileDetails["lastName"] = lastNameField.text
-        profileDetails["email"] = emailField.text
-        profileDetails["profileImage"] = profileImage
+        profileDetails[AuthRequestKeyConstants.FIRST_NAME_KEY] = firstNameField.text
+        profileDetails[AuthRequestKeyConstants.LAST_NAME_KEY] = lastNameField.text
+        profileDetails[AuthRequestKeyConstants.EMAIL_ADDRESS_KEY] = emailField.text
+        profileDetails[AuthRequestKeyConstants.PROFILE_IMAGE_KEY] = profileImage
+        profileDetails[AuthRequestKeyConstants.PROFILE_IMAGE_NAME_KEY] = getProfileImageName()
         registerViewModel?.registerUser(profileDetails: profileDetails)
-    }
-    
-    @objc func hideKeyboard() {
-        self.view.endEditing(true)
-        expandScrollView()
-    }
-    
-    @objc func keyboardWillShow(_ notification: Notification) {
-        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
-            let keyboardRectangle = keyboardFrame.cgRectValue
-            self.keyboardHeight = keyboardRectangle.height
-            UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 6, options: [], animations: ({
-                if keyboardRectangle.origin.y >= self.view.frame.height {
-                    self.scrollViewBottomConstraint.constant = 0
-                } else {
-                    self.scrollViewBottomConstraint.constant = self.keyboardHeight
-                }
-                self.view.layoutIfNeeded()
-            }), completion: nil)
-        }
-    }
-    
-    func expandScrollView() {
-        UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 6, options: [], animations: ({
-            self.scrollViewBottomConstraint.constant = 0
-            self.view.layoutIfNeeded()
-        }), completion: nil)
     }
     
     func configureUploadBtn() {
         uploadBtn.titleLabel?.numberOfLines = 0
         uploadBtn.titleLabel?.lineBreakMode = .byWordWrapping
         uploadBtn.titleLabel?.textAlignment = .center
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        hideKeyboard()
     }
 
 }

@@ -14,7 +14,7 @@ enum AlertType {
     case info
 }
 
-public struct AlertValues {
+public struct AlertValue {
     let message: String
     let type: AlertType
 }
@@ -45,7 +45,8 @@ class CustomAlert {
                 self.messageLbl.textAlignment = .center
                 self.messageLbl.numberOfLines = 4
                 self.messageLbl.font = self.messageLbl.font.withSize(13)
-                self.parentView.addSubview(self.messageLbl)
+                let currentWindow: UIWindow? = UIApplication.shared.keyWindow
+                currentWindow?.addSubview(self.messageLbl)
             }
             
             

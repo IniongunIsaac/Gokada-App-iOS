@@ -31,7 +31,7 @@ class OTPViewModel: BaseViewModel, IOTPViewModel {
         reqBody["platform"] = "ios"
         
         guard String(code).count == 5 else {
-            self.showAlert.onNext(AlertValues(message: "Please enter the 5 digit code", type: .error))
+            self.alertValue.onNext(AlertValue(message: "Please enter the 5 digit code", type: .error))
             return
         }
         
@@ -52,7 +52,7 @@ class OTPViewModel: BaseViewModel, IOTPViewModel {
     
     func storeUserDetails(user: AppUser) {
         authRepo.saveUserToken(token: user.token)
-        authRepo.saveUserInformation(user: user.user)
+        authRepo.saveLoggedInUser(user: user.user)
     }
     
     func stopCountdown() {

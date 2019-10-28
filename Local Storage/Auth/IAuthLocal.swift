@@ -16,4 +16,6 @@ public protocol IAuthLocal {
     
     func getLoggedInUser() -> Observable<User?>
     
+    func deleteLoggedInUserDetails()
+    
 }

@@ -28,7 +28,14 @@ public class AuthLocalImpl: IAuthLocal {
     }
     
     public func getLoggedInUser() -> Observable<User?> {
-        return Observable.just(realm.object(ofType: User.self, forPrimaryKey: String.self))
+        return Observable.just(realm.objects(User.self).first)
+        //return Observable.just(realm.object(ofType: User.self, forPrimaryKey: String.self))
+    }
+    
+    public func deleteLoggedInUserDetails() {
+        try! realm.write {
+            realm.delete(realm.objects(User.self))
+        }
     }
     
 }
