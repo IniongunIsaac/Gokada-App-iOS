@@ -54,8 +54,10 @@ class LoginViewController: BaseViewController {
         authViewModel?.sendOTPCode(to: "+234\(phoneNumberField.text!)")
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
+        if sender.text?.trimmingCharacters(in: .whitespacesAndNewlines).count == 10 {
+            self.view.endEditing(true)
+        }
     }
     
     func configurePhoneView() {
@@ -69,6 +71,11 @@ class LoginViewController: BaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
 }
 
 extension LoginViewController: UITextFieldDelegate {

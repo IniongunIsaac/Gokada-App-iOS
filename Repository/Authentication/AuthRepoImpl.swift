@@ -55,6 +55,7 @@ public struct AuthRepoImpl: IAuthRepo {
     }
     
     public func deleteLoggedInUserDetails() {
+        Preference.saveUserLoginStatus(value: "false")
         authLocal!.deleteLoggedInUserDetails()
     }
     

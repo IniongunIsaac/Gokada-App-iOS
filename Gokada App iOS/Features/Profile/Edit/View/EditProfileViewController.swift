@@ -20,6 +20,7 @@ class EditProfileViewController: BaseViewController {
     @IBOutlet weak var profileImageView: ImageViewWithBorderAttributes!
     @IBOutlet weak var changeProfileLabel: UILabel!
     @IBOutlet weak var doneButton: ButtonWithBorderAttributes!
+    @IBOutlet weak var parentScrollViewBottomConstraint: NSLayoutConstraint!
     
     var profileImage = ""
     
@@ -39,6 +40,8 @@ class EditProfileViewController: BaseViewController {
         bindButtonTaps()
         
         addChangeProfileImageLabelTappedGesture()
+        
+        addScrollViewListener(constraint: parentScrollViewBottomConstraint)
     }
     
     fileprivate func bindUserDetails() {
@@ -54,15 +57,11 @@ class EditProfileViewController: BaseViewController {
             }
             
         }
-        
-//        editProfileViewModel?.userDetails.bind(onNext: { user in
-//            print(user)
-//        }).disposed(by: disposeBag)
     }
     
     fileprivate func bindUserProfileUpdateResponse() {
         editProfileViewModel?.profileUpdateResponse.bind { [weak self] _ in
-            self?.dismiss(animated: true, completion: nil)
+            self?.navigationController?.popViewController(animated: true)
         }.disposed(by: disposeBag)
     }
     

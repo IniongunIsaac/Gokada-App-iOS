@@ -81,9 +81,12 @@ class OTPViewController: BaseViewController {
         otpViewModel?.verifyOTPCode(code: self.otpCodeField.text!, phone: loginDetails.phoneNumber)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+    @IBAction func textFieldEditingChanged(_ sender: UITextField) {
+        if sender.text?.trimmingCharacters(in: .whitespacesAndNewlines).count == 5 {
+            self.view.endEditing(true)
+        }
     }
+    
 }
 
 extension OTPViewController {

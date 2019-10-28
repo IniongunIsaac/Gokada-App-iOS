@@ -23,7 +23,7 @@ class RegisterViewController: BaseViewController {
     
     var currentUser: User!
     
-    var keyboardHeight: CGFloat!
+    //var keyboardHeight: CGFloat!
     var keyboardActive = false
     
     var registerViewModel: IRegisterViewModel?
@@ -37,18 +37,12 @@ class RegisterViewController: BaseViewController {
         super.viewDidLoad()
 
         configureUploadBtn()
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(keyboardWillShow),
-            name: UIResponder.keyboardWillShowNotification,
-            object: nil
-        )
-        let tapScroll = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
-        self.view.addGestureRecognizer(tapScroll)
         
         self.phoneField.text = currentUser.phoneNumber?.replacingOccurrences(of: "+234", with: "+234 - ")
         
         configureBinding()
+        
+        addScrollViewListener(constraint: scrollViewBottomConstraint)
     }
     
     func configureBinding() {
@@ -71,41 +65,10 @@ class RegisterViewController: BaseViewController {
         registerViewModel?.registerUser(profileDetails: profileDetails)
     }
     
-    @objc func hideKeyboard() {
-        self.view.endEditing(true)
-        expandScrollView()
-    }
-    
-    @objc func keyboardWillShow(_ notification: Notification) {
-        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
-            let keyboardRectangle = keyboardFrame.cgRectValue
-            self.keyboardHeight = keyboardRectangle.height
-            UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 6, options: [], animations: ({
-                if keyboardRectangle.origin.y >= self.view.frame.height {
-                    self.scrollViewBottomConstraint.constant = 0
-                } else {
-                    self.scrollViewBottomConstraint.constant = self.keyboardHeight
-                }
-                self.view.layoutIfNeeded()
-            }), completion: nil)
-        }
-    }
-    
-    func expandScrollView() {
-        UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 6, options: [], animations: ({
-            self.scrollViewBottomConstraint.constant = 0
-            self.view.layoutIfNeeded()
-        }), completion: nil)
-    }
-    
     func configureUploadBtn() {
         uploadBtn.titleLabel?.numberOfLines = 0
         uploadBtn.titleLabel?.lineBreakMode = .byWordWrapping
         uploadBtn.titleLabel?.textAlignment = .center
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        hideKeyboard()
     }
 
 }

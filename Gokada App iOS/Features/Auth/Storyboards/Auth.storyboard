@@ -77,6 +77,7 @@
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 <connections>
+                                                    <action selector="textFieldEditingChanged:" destination="OV1-di-ygq" eventType="editingChanged" id="I4T-CX-6oX"/>
                                                     <outlet property="delegate" destination="OV1-di-ygq" id="YiJ-Qm-rjQ"/>
                                                 </connections>
                                             </textField>
@@ -254,6 +255,7 @@
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <connections>
+                                                            <action selector="textFieldEditingChanged:" destination="YFq-8E-559" eventType="editingChanged" id="XRa-Ao-0hM"/>
                                                             <outlet property="delegate" destination="YFq-8E-559" id="lWq-jV-dWa"/>
                                                         </connections>
                                                     </textField>
@@ -674,6 +676,7 @@
                         <outlet property="scrollView" destination="mSG-Yi-zFP" id="sKm-gB-1la"/>
                         <outlet property="scrollViewBottomConstraint" destination="Bzr-Gq-g4Y" id="OwV-6z-IrI"/>
                         <outlet property="uploadBtn" destination="hm3-o4-Xp1" id="5HE-1J-P53"/>
+                        <segue destination="Qur-Ks-Aev" kind="show" identifier="showProfile" id="l8l-39-y80"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TW-cV-XMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -700,4 +703,7 @@
         <image name="profileImagePlaceHolder" width="340" height="340"/>
         <image name="telephone" width="9.5" height="9.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KXx-at-pS0"/>
+    </inferredMetricsTieBreakers>
 </document>

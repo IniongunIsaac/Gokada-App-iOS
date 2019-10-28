@@ -96,6 +96,8 @@
 		1438DD72235F602200E51875 /* AuthInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* AuthInjections.swift */; };
 		1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD73235F667E00E51875 /* ILoginViewModel.swift */; };
 		1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD75235F679E00E51875 /* LoginViewController.swift */; };
+		145856E7236703C7008E791F /* ProfileDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */; };
+		145856E9236716B5008E791F /* LogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145856E8236716B5008E791F /* LogoutTableViewCell.swift */; };
 		145930C92365C6A20074E2EF /* Code+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145930C82365C6A20074E2EF /* Code+Extensions.swift */; };
 		145930CB2365C8790074E2EF /* AuthRequestKeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */; };
 		21368E7CE4D339EDA720D642 /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */; };
@@ -383,6 +385,8 @@
 		1438DD71235F602200E51875 /* AuthInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInjections.swift; sourceTree = "<group>"; };
 		1438DD73235F667E00E51875 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
 		1438DD75235F679E00E51875 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		145856E8236716B5008E791F /* LogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutTableViewCell.swift; sourceTree = "<group>"; };
 		145930C82365C6A20074E2EF /* Code+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code+Extensions.swift"; sourceTree = "<group>"; };
 		145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestKeyConstants.swift; sourceTree = "<group>"; };
 		186E3F910A958F53FE229F3D /* Pods-Gokada App iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -696,6 +700,8 @@
 			children = (
 				1420A5672364F6D80084B4BE /* ProfileDetailsViewController.swift */,
 				1420A5682364F6D80084B4BE /* ProfileItemTableViewCell.swift */,
+				145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */,
+				145856E8236716B5008E791F /* LogoutTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1969,6 +1975,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */,
+				145856E9236716B5008E791F /* LogoutTableViewCell.swift in Sources */,
 				1420A5692364F6D80084B4BE /* ProfileDetailsViewController.swift in Sources */,
 				122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */,
 				1438DD67235F2FD800E51875 /* LoginViewModel.swift in Sources */,
@@ -2000,6 +2007,7 @@
 				12C4EF3A23630600002CAB3A /* NotificationType.swift in Sources */,
 				1420A5722364F84B0084B4BE /* View+Extensions.swift in Sources */,
 				1420A56C2364F6F80084B4BE /* EditProfileViewController.swift in Sources */,
+				145856E7236703C7008E791F /* ProfileDetailsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2366,7 +2374,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RT459C64W3;
+				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2387,7 +2395,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RT459C64W3;
+				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (

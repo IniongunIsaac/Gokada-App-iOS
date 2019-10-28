@@ -20,7 +20,7 @@ class RegisterViewModel: BaseViewModel, IRegisterViewModel  {
     }
     
     func registerUser(profileDetails: [String : String]) {
-        if let error = AuthValidation.validProfileRegistration(profileDetails: profileDetails) {
+        if let error = AuthValidation.isValidUserProfileDetails(profileDetails: profileDetails) {
             self.alertValue.onNext(AlertValue(message: error, type: .error))
             return
         }
