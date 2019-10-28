@@ -25,7 +25,6 @@ class WelcomeViewController: BaseViewController {
         super.viewDidLoad()
         
         self.navigationController?.delegate = self
-        
         setupViews()
         startAnimation()
     }
@@ -65,12 +64,6 @@ class WelcomeViewController: BaseViewController {
     }
     
     func showDashboard() {
-//        let storyboard: UIStoryboard = UIStoryboard(name: "Auth", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "homeVC")
-//        self.show(vc, sender: self)
-//        self.navigationItem.setHidesBackButton(true, animated:true)
-//        performSegue(withIdentifier: "showProfile", sender: nil)
-        
         let storyboard = UIStoryboard(name: "Profile", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "profileDetailsViewController")
         self.navigationController?.setViewControllers([vc], animated: true)

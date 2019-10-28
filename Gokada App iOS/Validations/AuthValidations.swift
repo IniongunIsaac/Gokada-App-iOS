@@ -50,13 +50,15 @@ class AuthValidation {
         return nil
     }
     
-    public static func isValidUserProfileDetails(profileDetails: [String: String]) -> String? {
-        if let nameError = validName(name: profileDetails[AuthRequestKeyConstants.FIRST_NAME_KEY], type: "first") {
+    public static func validProfileRegistration(profileDetails: [String: String]) -> String? {
+        if let nameError = validName(name: profileDetails["firstName"], type: "first") {
             return nameError
-        } else if let nameError = validName(name: profileDetails[AuthRequestKeyConstants.LAST_NAME_KEY], type: "last") {
+        } else if let nameError = validName(name: profileDetails["lastName"], type: "last") {
             return nameError
-        } else if let emailError = validEmail(email: profileDetails[AuthRequestKeyConstants.EMAIL_ADDRESS_KEY]) {
+        } else if let emailError = validEmail(email: profileDetails["email"]) {
             return emailError
+        } else if let requiredError = requiredValue(text: profileDetails["profileImage"], type: "Profile image") {
+            return requiredError
         }
         
         return nil

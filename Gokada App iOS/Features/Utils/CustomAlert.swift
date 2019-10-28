@@ -45,7 +45,8 @@ class CustomAlert {
                 self.messageLbl.textAlignment = .center
                 self.messageLbl.numberOfLines = 4
                 self.messageLbl.font = self.messageLbl.font.withSize(13)
-                self.parentView.addSubview(self.messageLbl)
+                let currentWindow: UIWindow? = UIApplication.shared.keyWindow
+                currentWindow?.addSubview(self.messageLbl)
             }
             
             

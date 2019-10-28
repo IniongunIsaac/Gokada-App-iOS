@@ -22,8 +22,7 @@ class RegisterViewController: BaseViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     var currentUser: User!
-    
-    //var keyboardHeight: CGFloat!
+
     var keyboardActive = false
     
     var registerViewModel: IRegisterViewModel?

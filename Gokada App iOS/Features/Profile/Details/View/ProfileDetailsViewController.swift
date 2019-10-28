@@ -42,6 +42,7 @@ class ProfileDetailsViewController: BaseViewController, UITableViewDelegate, UIT
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         profileDetailsViewModel!.getLoggedInUserDetails()
+        profileItemsTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

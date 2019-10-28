@@ -803,6 +803,8 @@
 		1438DC49235DD57100E51875 /* Gokada App iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				1238BA83236601E300EC0492 /* Mocks */,
+				1238BA802365FD9800EC0492 /* Validations */,
 				1438DC4A235DD57100E51875 /* Gokada_App_iOSTests.swift */,
 				1438DC4C235DD57100E51875 /* Info.plist */,
 			);
@@ -2015,6 +2017,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1238BA822365FDAC00EC0492 /* AuthValidations.swift in Sources */,
 				1438DC4B235DD57100E51875 /* Gokada_App_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

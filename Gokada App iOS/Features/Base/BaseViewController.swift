@@ -115,11 +115,11 @@ class BaseViewController: UIViewController {
         }.disposed(by: disposeBag)
     }
     
-    func showLoading() {
+    private func showLoading() {
         self.preloader.showLoading()
     }
     
-    func hideLoading() {
+    private func hideLoading() {
         self.preloader.hideLoading()
     }
     
