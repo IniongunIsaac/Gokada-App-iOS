@@ -7,19 +7,19 @@
 //
 
 import UIKit
+import Repository
+import Remote_API
+import RxSwift
+import RxCocoa
 
 class LoginViewController: BaseViewController {
     
-    var authViewModel: IAuthViewModel?
+    var authViewModel: ILoginViewModel?
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var phoneNumberView: UIView!
     @IBOutlet weak var whiteBackgroundView: UIView!
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
-        get{
-            return .portrait
-        }
-    }
+    @IBOutlet weak var phoneNumberField: UITextField!
+    @IBOutlet weak var nextBtn: UIButton!
     
     override func getViewModel() -> BaseViewModel {
         return self.authViewModel as! BaseViewModel
@@ -32,6 +32,7 @@ class LoginViewController: BaseViewController {
         self.loginView.alpha = 0
         self.whiteBackgroundView.alpha = 0
         animateView()
+        configureBinding()
     }
     
     func animateView() {
@@ -39,6 +40,18 @@ class LoginViewController: BaseViewController {
             self.whiteBackgroundView.alpha = 1
             self.loginView.alpha = 1
         }
+    }
+    
+    func configureBinding() {
+        authViewModel?.loginResponse.bind { [weak self] res in
+            let controller = self?.storyboard?.instantiateViewController(identifier: "otpVC") as! OTPViewController
+            controller.loginDetails = res
+            self?.navigationController?.pushViewController(controller, animated: true)
+        }.disposed(by: disposeBag)
+    }
+    
+    @IBAction func authenticatePhoneNumber(_ sender: UIButton) {
+        authViewModel?.sendOTPCode(to: "+234\(phoneNumberField.text!)")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -49,5 +62,23 @@ class LoginViewController: BaseViewController {
         self.phoneNumberView.layer.borderWidth = 1
         self.phoneNumberView.layer.borderColor = UIColor.lightGray.cgColor
         self.phoneNumberView.layer.cornerRadius = 5
+    }
+    
+    @IBAction func prepareForUnwind(_ segue: UIStoryboardSegue) { }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let textFieldText = textField.text,
+            let rangeOfTextToReplace = Range(range, in: textFieldText) else {
+                return false
+        }
+        let substringToReplace = textFieldText[rangeOfTextToReplace]
+        let count = textFieldText.count - substringToReplace.count + string.count
+        return count <= 10
     }
 }
