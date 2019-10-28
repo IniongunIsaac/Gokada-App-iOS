@@ -317,7 +317,7 @@
 		1420A56D2364F7070084B4BE /* EditProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		1420A56E2364F7070084B4BE /* IEditProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEditProfileViewModel.swift; sourceTree = "<group>"; };
 		1420A5712364F84B0084B4BE /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		1438DC30235DD56C00E51875 /* Gokada App iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada App iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1438DC30235DD56C00E51875 /* Gokada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gokada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438DC33235DD56C00E51875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1438DC35235DD56C00E51875 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1438DC3A235DD56C00E51875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -772,7 +772,7 @@
 		1438DC31235DD56C00E51875 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1438DC30235DD56C00E51875 /* Gokada App iOS.app */,
+				1438DC30235DD56C00E51875 /* Gokada.app */,
 				1438DC46235DD57100E51875 /* Gokada App iOSTests.xctest */,
 				1438DC51235DD57100E51875 /* Gokada App iOSUITests.xctest */,
 				1438DC69235DF5D600E51875 /* Repository.framework */,
@@ -1199,7 +1199,7 @@
 			);
 			name = "Gokada App iOS";
 			productName = "Gokada App iOS";
-			productReference = 1438DC30235DD56C00E51875 /* Gokada App iOS.app */;
+			productReference = 1438DC30235DD56C00E51875 /* Gokada.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1438DC45235DD57100E51875 /* Gokada App iOSTests */ = {
@@ -2382,7 +2382,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.native.Gokada-App-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Gokada;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2403,7 +2403,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.native.Gokada-App-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Gokada;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
