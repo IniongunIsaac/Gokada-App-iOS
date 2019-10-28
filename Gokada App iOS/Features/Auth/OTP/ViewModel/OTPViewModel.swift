@@ -39,8 +39,12 @@ class OTPViewModel: BaseViewModel, IOTPViewModel {
         authRepo.verify(requestBody: reqBody).subscribe(onNext: { [weak self] res in
             self?.isLoading.onNext(false)
             if let otpRes = res.data {
-                self?.otpResponse.onNext(otpRes)
-                self?.storeUserDetails(user: otpRes)
+                if otpRes.user.roles.contains("driver") {
+                    self?.alertValue.onNext(AlertValue(message: "Pilot login is not supported on this device", type: .error))
+                } else {
+                    self?.otpResponse.onNext(otpRes)
+                    self?.storeUserDetails(user: otpRes)
+                }
             } else if let apiErr = res.error {
                 self?.apiError.onNext(apiErr)
             }
