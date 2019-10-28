@@ -47,7 +47,10 @@ class RegisterViewController: BaseViewController {
     
     func configureBinding() {
         registerViewModel?.registerResponse.bind { [weak self] res in
-            self?.performSegue(withIdentifier: "showProfile", sender: self)
+            //self?.performSegue(withIdentifier: "showProfile", sender: self)
+            let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "profileDetailsViewController")
+            self?.navigationController?.setViewControllers([vc], animated: false)
         }.disposed(by: disposeBag)
     }
     
