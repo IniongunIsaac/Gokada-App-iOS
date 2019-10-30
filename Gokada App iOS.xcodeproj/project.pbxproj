@@ -28,6 +28,20 @@
 		12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */; };
 		12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D85FF62360537900C12D79 /* WelcomeViewController.swift */; };
 		12D85FF92360539900C12D79 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12D85FF82360539900C12D79 /* Auth.storyboard */; };
+		12E2B6E623698CC40010F309 /* Rides.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E2B6E523698CC40010F309 /* Rides.storyboard */; };
+		12E2B6EC2369D2430010F309 /* IRidesLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6EB2369D2430010F309 /* IRidesLocal.swift */; };
+		12E2B6EE2369D2530010F309 /* RidesLocalImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6ED2369D2530010F309 /* RidesLocalImpl.swift */; };
+		12E2B6F12369D3700010F309 /* IRidesRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6F02369D3700010F309 /* IRidesRemote.swift */; };
+		12E2B6F32369D3E70010F309 /* RidesRemoteImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6F22369D3E70010F309 /* RidesRemoteImpl.swift */; };
+		12E2B6F62369D4A70010F309 /* RideRepoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6F52369D4A70010F309 /* RideRepoImpl.swift */; };
+		12E2B6F82369D5090010F309 /* IRidesRepo .swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6F72369D5090010F309 /* IRidesRepo .swift */; };
+		12E2B6FC2369D5B00010F309 /* IRidesHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6FB2369D5B00010F309 /* IRidesHomeViewModel.swift */; };
+		12E2B6FE2369D5D90010F309 /* RidesHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6FD2369D5D90010F309 /* RidesHomeViewModel.swift */; };
+		12E2B7002369DC700010F309 /* AuthInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B6FF2369DC700010F309 /* AuthInjections.swift */; };
+		12E2B7022369DD500010F309 /* RidesInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7012369DD500010F309 /* RidesInjections.swift */; };
+		12E2B7042369E5FE0010F309 /* ProfileInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7032369E5FE0010F309 /* ProfileInjections.swift */; };
+		12E2B7062369EC120010F309 /* RidesHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7052369EC120010F309 /* RidesHomeViewController.swift */; };
+		12E2B70A236A2FCE0010F309 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B708236A2FCE0010F309 /* SWRevealViewController.m */; };
 		1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A55E2364F62A0084B4BE /* ProfileItem.swift */; };
 		1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420A5612364F68D0084B4BE /* Profile.storyboard */; };
 		1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */; };
@@ -93,7 +107,7 @@
 		1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD69235F364200E51875 /* BaseViewModel.swift */; };
 		1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6C235F460200E51875 /* BaseViewController.swift */; };
 		1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6F235F4DF900E51875 /* ErrorType.swift */; };
-		1438DD72235F602200E51875 /* AuthInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* AuthInjections.swift */; };
+		1438DD72235F602200E51875 /* DefaultInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* DefaultInjections.swift */; };
 		1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD73235F667E00E51875 /* ILoginViewModel.swift */; };
 		1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD75235F679E00E51875 /* LoginViewController.swift */; };
 		145856E7236703C7008E791F /* ProfileDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */; };
@@ -307,6 +321,22 @@
 		12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRegisterViewModel.swift; sourceTree = "<group>"; };
 		12D85FF62360537900C12D79 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		12D85FF82360539900C12D79 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		12E2B6E523698CC40010F309 /* Rides.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rides.storyboard; sourceTree = "<group>"; };
+		12E2B6EB2369D2430010F309 /* IRidesLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRidesLocal.swift; sourceTree = "<group>"; };
+		12E2B6ED2369D2530010F309 /* RidesLocalImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesLocalImpl.swift; sourceTree = "<group>"; };
+		12E2B6F02369D3700010F309 /* IRidesRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRidesRemote.swift; sourceTree = "<group>"; };
+		12E2B6F22369D3E70010F309 /* RidesRemoteImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesRemoteImpl.swift; sourceTree = "<group>"; };
+		12E2B6F52369D4A70010F309 /* RideRepoImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRepoImpl.swift; sourceTree = "<group>"; };
+		12E2B6F72369D5090010F309 /* IRidesRepo .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IRidesRepo .swift"; sourceTree = "<group>"; };
+		12E2B6FB2369D5B00010F309 /* IRidesHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRidesHomeViewModel.swift; sourceTree = "<group>"; };
+		12E2B6FD2369D5D90010F309 /* RidesHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesHomeViewModel.swift; sourceTree = "<group>"; };
+		12E2B6FF2369DC700010F309 /* AuthInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInjections.swift; sourceTree = "<group>"; };
+		12E2B7012369DD500010F309 /* RidesInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesInjections.swift; sourceTree = "<group>"; };
+		12E2B7032369E5FE0010F309 /* ProfileInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInjections.swift; sourceTree = "<group>"; };
+		12E2B7052369EC120010F309 /* RidesHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesHomeViewController.swift; sourceTree = "<group>"; };
+		12E2B707236A2FCD0010F309 /* Gokada App iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gokada App iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		12E2B708236A2FCE0010F309 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		12E2B709236A2FCE0010F309 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		1420A55E2364F62A0084B4BE /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
 		1420A5612364F68D0084B4BE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProfileDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -382,7 +412,7 @@
 		1438DD69235F364200E51875 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1438DD6C235F460200E51875 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1438DD6F235F4DF900E51875 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
-		1438DD71235F602200E51875 /* AuthInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInjections.swift; sourceTree = "<group>"; };
+		1438DD71235F602200E51875 /* DefaultInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultInjections.swift; sourceTree = "<group>"; };
 		1438DD73235F667E00E51875 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
 		1438DD75235F679E00E51875 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -667,6 +697,83 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		12E2B6E0236989EC0010F309 /* Rides */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B6E123698A110010F309 /* Storyboards */,
+				12E2B6E223698ABB0010F309 /* Home */,
+			);
+			path = Rides;
+			sourceTree = "<group>";
+		};
+		12E2B6E123698A110010F309 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B6E523698CC40010F309 /* Rides.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		12E2B6E223698ABB0010F309 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B6F92369D57F0010F309 /* Views */,
+				12E2B6FA2369D5840010F309 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		12E2B6E92369CFC80010F309 /* Rides */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rides;
+			sourceTree = "<group>";
+		};
+		12E2B6EA2369D2260010F309 /* Rides */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B6EB2369D2430010F309 /* IRidesLocal.swift */,
+				12E2B6ED2369D2530010F309 /* RidesLocalImpl.swift */,
+			);
+			path = Rides;
+			sourceTree = "<group>";
+		};
+		12E2B6EF2369D33D0010F309 /* Rides */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B6F02369D3700010F309 /* IRidesRemote.swift */,
+				12E2B6F22369D3E70010F309 /* RidesRemoteImpl.swift */,
+			);
+			path = Rides;
+			sourceTree = "<group>";
+		};
+		12E2B6F42369D4790010F309 /* Rides */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B6F52369D4A70010F309 /* RideRepoImpl.swift */,
+				12E2B6F72369D5090010F309 /* IRidesRepo .swift */,
+			);
+			path = Rides;
+			sourceTree = "<group>";
+		};
+		12E2B6F92369D57F0010F309 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B7052369EC120010F309 /* RidesHomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12E2B6FA2369D5840010F309 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12E2B6FB2369D5B00010F309 /* IRidesHomeViewModel.swift */,
+				12E2B6FD2369D5D90010F309 /* RidesHomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1420A5562364F5960084B4BE /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -821,6 +928,7 @@
 		1438DC6A235DF5D600E51875 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				12E2B6F42369D4790010F309 /* Rides */,
 				1438DD22235DF8C800E51875 /* Authentication */,
 				1438DC6B235DF5D600E51875 /* Repository.h */,
 				1438DC6C235DF5D600E51875 /* Info.plist */,
@@ -840,6 +948,7 @@
 		1438DCA9235DF67B00E51875 /* Remote API */ = {
 			isa = PBXGroup;
 			children = (
+				12E2B6EF2369D33D0010F309 /* Rides */,
 				1438DD41235E945700E51875 /* Authentication */,
 				1438DD40235E945000E51875 /* Base */,
 				1438DD3F235E944400E51875 /* Utils */,
@@ -861,6 +970,7 @@
 		1438DCCB235DF6C300E51875 /* Local Storage */ = {
 			isa = PBXGroup;
 			children = (
+				12E2B6EA2369D2260010F309 /* Rides */,
 				12A0421823649E2400C4C0EF /* Auth */,
 				1438DCCC235DF6C300E51875 /* Local_Storage.h */,
 				1438DCCD235DF6C300E51875 /* Info.plist */,
@@ -900,6 +1010,7 @@
 		1438DD0F235DF72400E51875 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				12E2B6E92369CFC80010F309 /* Rides */,
 				1420A55D2364F5EA0084B4BE /* Profile */,
 				1438DD36235E428A00E51875 /* Base */,
 				1438DD25235E345F00E51875 /* Authentication */,
@@ -989,6 +1100,7 @@
 		1438DD5E235F2C9C00E51875 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				12E2B6E0236989EC0010F309 /* Rides */,
 				1420A5562364F5960084B4BE /* Profile */,
 				12D85FF2236051C900C12D79 /* Welcome */,
 				1438DD5F235F2CA500E51875 /* Auth */,
@@ -1024,6 +1136,9 @@
 			isa = PBXGroup;
 			children = (
 				1438DC3E235DD57000E51875 /* LaunchScreen.storyboard */,
+				12E2B709236A2FCE0010F309 /* SWRevealViewController.h */,
+				12E2B708236A2FCE0010F309 /* SWRevealViewController.m */,
+				12E2B707236A2FCD0010F309 /* Gokada App iOS-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -1040,7 +1155,10 @@
 		1438DD63235F2D0D00E51875 /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				1438DD71235F602200E51875 /* AuthInjections.swift */,
+				1438DD71235F602200E51875 /* DefaultInjections.swift */,
+				12E2B6FF2369DC700010F309 /* AuthInjections.swift */,
+				12E2B7032369E5FE0010F309 /* ProfileInjections.swift */,
+				12E2B7012369DD500010F309 /* RidesInjections.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -1438,6 +1556,7 @@
 				TargetAttributes = {
 					1438DC2F235DD56C00E51875 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					1438DC45235DD57100E51875 = {
 						CreatedOnToolsVersion = 11.1;
@@ -1523,6 +1642,7 @@
 				122BD9E12361A468009F8AD3 /* montserrat.ttf in Resources */,
 				1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */,
 				1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */,
+				12E2B6E623698CC40010F309 /* Rides.storyboard in Resources */,
 				1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */,
 				1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */,
 				1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */,
@@ -1975,6 +2095,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */,
+				12E2B7042369E5FE0010F309 /* ProfileInjections.swift in Sources */,
+				12E2B70A236A2FCE0010F309 /* SWRevealViewController.m in Sources */,
 				145856E9236716B5008E791F /* LogoutTableViewCell.swift in Sources */,
 				1420A5692364F6D80084B4BE /* ProfileDetailsViewController.swift in Sources */,
 				122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */,
@@ -1988,7 +2110,11 @@
 				1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */,
 				1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */,
 				12C4EF4623635238002CAB3A /* RegisterViewModel.swift in Sources */,
+				12E2B7062369EC120010F309 /* RidesHomeViewController.swift in Sources */,
+				12E2B7002369DC700010F309 /* AuthInjections.swift in Sources */,
 				1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */,
+				12E2B6FC2369D5B00010F309 /* IRidesHomeViewModel.swift in Sources */,
+				12E2B7022369DD500010F309 /* RidesInjections.swift in Sources */,
 				1420A5662364F6BB0084B4BE /* ProfileDetailsViewModel.swift in Sources */,
 				12A04211236487D000C4C0EF /* WelcomeViewModel.swift in Sources */,
 				1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */,
@@ -1996,7 +2122,7 @@
 				1420A56A2364F6D80084B4BE /* ProfileItemTableViewCell.swift in Sources */,
 				12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */,
 				12C4EF332363002F002CAB3A /* OTPViewModel.swift in Sources */,
-				1438DD72235F602200E51875 /* AuthInjections.swift in Sources */,
+				1438DD72235F602200E51875 /* DefaultInjections.swift in Sources */,
 				12C4EF3C23630640002CAB3A /* IOTPViewModel.swift in Sources */,
 				12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */,
 				12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */,
@@ -2007,6 +2133,7 @@
 				12C4EF3A23630600002CAB3A /* NotificationType.swift in Sources */,
 				1420A5722364F84B0084B4BE /* View+Extensions.swift in Sources */,
 				1420A56C2364F6F80084B4BE /* EditProfileViewController.swift in Sources */,
+				12E2B6FE2369D5D90010F309 /* RidesHomeViewModel.swift in Sources */,
 				145856E7236703C7008E791F /* ProfileDetailsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2032,6 +2159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1438DD24235DF90D00E51875 /* AuthRepoImpl.swift in Sources */,
+				12E2B6F62369D4A70010F309 /* RideRepoImpl.swift in Sources */,
+				12E2B6F82369D5090010F309 /* IRidesRepo .swift in Sources */,
 				1438DD5D235F2B6200E51875 /* IAuthRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2053,7 +2182,9 @@
 				1438DD43235E948300E51875 /* RemoteAPI+Extensions.swift in Sources */,
 				1438DD53235EB98400E51875 /* RemoteApiConstants.swift in Sources */,
 				1438DD47235E970700E51875 /* IBaseRemoteApi.swift in Sources */,
+				12E2B6F32369D3E70010F309 /* RidesRemoteImpl.swift in Sources */,
 				1438DD5B235F289000E51875 /* AuthRemoteImpl.swift in Sources */,
+				12E2B6F12369D3700010F309 /* IRidesRemote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2069,6 +2200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E2B6EC2369D2430010F309 /* IRidesLocal.swift in Sources */,
+				12E2B6EE2369D2530010F309 /* RidesLocalImpl.swift in Sources */,
 				12A0421A23649E3600C4C0EF /* AuthLocalImpl.swift in Sources */,
 				12A0421C23649E4F00C4C0EF /* IAuthLocal.swift in Sources */,
 			);
@@ -2373,6 +2506,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RT459C64W3;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
@@ -2383,6 +2517,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.native.Gokada-App-iOS";
 				PRODUCT_NAME = Gokada;
+				SWIFT_OBJC_BRIDGING_HEADER = "Gokada App iOS/Supporting Files/Gokada App iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2394,6 +2530,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RT459C64W3;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
@@ -2404,6 +2541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ng.gokada.native.Gokada-App-iOS";
 				PRODUCT_NAME = Gokada;
+				SWIFT_OBJC_BRIDGING_HEADER = "Gokada App iOS/Supporting Files/Gokada App iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

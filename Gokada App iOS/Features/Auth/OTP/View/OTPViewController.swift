@@ -46,9 +46,8 @@ class OTPViewController: BaseViewController {
             self?.otpViewModel?.stopCountdown()
             
             if res.user.firstName != nil {
-                //self?.performSegue(withIdentifier: "showProfile", sender: self)
-                let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "profileDetailsViewController")
+                let storyboard = UIStoryboard(name: "Rides", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC")
                 self?.navigationController?.setViewControllers([vc], animated: false)
             } else {
                 let controller = self?.storyboard?.instantiateViewController(identifier: "registrationVC") as! RegisterViewController

@@ -15,7 +15,7 @@
         <!--Login View Controller-->
         <scene sceneID="McU-88-Cl8">
             <objects>
-                <viewController storyboardIdentifier="loginViewController" id="OV1-di-ygq" customClass="LoginViewController" customModule="Gokada_App_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="OV1-di-ygq" customClass="LoginViewController" customModule="Gokada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NzT-Pm-xU7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +173,7 @@
         <!--View Controller-->
         <scene sceneID="lJL-fm-z5W">
             <objects>
-                <viewController storyboardIdentifier="otpVC" id="YFq-8E-559" customClass="OTPViewController" customModule="Gokada_App_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="otpVC" id="YFq-8E-559" customClass="OTPViewController" customModule="Gokada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tq1-Z5-7XY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,7 +387,7 @@
         <!--Register View Controller-->
         <scene sceneID="GT2-c1-O2Y">
             <objects>
-                <viewController storyboardIdentifier="registrationVC" id="iQP-Od-zM4" customClass="RegisterViewController" customModule="Gokada_App_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registrationVC" id="iQP-Od-zM4" customClass="RegisterViewController" customModule="Gokada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Cl-X2-hZB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
