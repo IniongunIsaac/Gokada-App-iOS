@@ -104,6 +104,10 @@ class EditProfileViewController: BaseViewController {
             options: [.transition(.fade(0.2)), .processor(processor)]
         )
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
 }
 
 
@@ -114,6 +118,9 @@ extension EditProfileViewController: RSKImageCropViewControllerDelegate, UIImage
     
     func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
         self.profileImageView.image = croppedImage
+        let imageData = croppedImage.jpegData(compressionQuality: 0.7)
+        self.profileImage = imageData!.base64EncodedString()
+        
         _ = self.navigationController?.popViewController(animated: true)
     }
     
@@ -126,9 +133,6 @@ extension EditProfileViewController: RSKImageCropViewControllerDelegate, UIImage
         imageCropVC = RSKImageCropViewController(image: selectedImage, cropMode: RSKImageCropMode.circle)
         imageCropVC.delegate = self
         self.navigationController?.pushViewController(imageCropVC, animated: true)
-        
-        let imageData = selectedImage.jpegData(compressionQuality: 0.7)
-        self.profileImage = imageData!.base64EncodedString()
         
         self.dismiss(animated: true, completion: nil)
     }

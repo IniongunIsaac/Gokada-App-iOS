@@ -64,8 +64,8 @@ class WelcomeViewController: BaseViewController {
     }
     
     func showDashboard() {
-        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "profileDetailsViewController")
+        let storyboard = UIStoryboard(name: "Rides", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC")
         self.navigationController?.setViewControllers([vc], animated: true)
     }
     

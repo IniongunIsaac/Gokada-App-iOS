@@ -39,7 +39,7 @@ class ProfileDetailsViewController: BaseViewController, UITableViewDelegate, UIT
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         profileDetailsViewModel!.getLoggedInUserDetails()
         profileItemsTableView.reloadData()
@@ -57,6 +57,7 @@ class ProfileDetailsViewController: BaseViewController, UITableViewDelegate, UIT
             cell.user = profileDetailsViewModel!.user!
             
             cell.editProfileButton.addTapGesture { [weak self] in
+                self?.revealViewController()?.revealToggle(animated: true)
                 self?.performSegue(withIdentifier: "showEditProfileViewController", sender: nil)
             }
             

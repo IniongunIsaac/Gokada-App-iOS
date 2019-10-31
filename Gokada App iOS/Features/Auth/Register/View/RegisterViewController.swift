@@ -46,9 +46,8 @@ class RegisterViewController: BaseViewController {
     
     func configureBinding() {
         registerViewModel?.registerResponse.bind { [weak self] res in
-            //self?.performSegue(withIdentifier: "showProfile", sender: self)
-            let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "profileDetailsViewController")
+            let storyboard = UIStoryboard(name: "Rides", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC")
             self?.navigationController?.setViewControllers([vc], animated: false)
         }.disposed(by: disposeBag)
     }
@@ -93,6 +92,8 @@ extension RegisterViewController: RSKImageCropViewControllerDelegate, UIImagePic
     
     func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
         self.profileImageView.image = croppedImage
+        let imageData = croppedImage.jpegData(compressionQuality: 0.7)
+        self.profileImage = imageData!.base64EncodedString()
         _ = self.navigationController?.popViewController(animated: true)
     }
     
@@ -105,9 +106,6 @@ extension RegisterViewController: RSKImageCropViewControllerDelegate, UIImagePic
         imageCropVC = RSKImageCropViewController(image: selectedImage, cropMode: RSKImageCropMode.circle)
         imageCropVC.delegate = self
         self.navigationController?.pushViewController(imageCropVC, animated: true)
-        
-        let imageData = selectedImage.jpegData(compressionQuality: 0.7)
-        self.profileImage = imageData!.base64EncodedString()
         
         self.dismiss(animated: true, completion: nil)
     }
