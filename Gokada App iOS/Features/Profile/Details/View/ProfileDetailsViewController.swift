@@ -38,6 +38,10 @@ class ProfileDetailsViewController: BaseViewController, UITableViewDelegate, UIT
         bindUserDetails()
     }
     
+    @IBAction func returnToHome(_ sender: UIButton) {
+        HomeVC.controller?.hideSideNav()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true

@@ -13,7 +13,7 @@ import SwinjectStoryboard
 extension SwinjectStoryboard {
     public static func setup() {
         AuthInjections.setup(container: defaultContainer)
-        ProfileInjections.setup(container: defaultContainer)
         RidesInjections.setup(container: defaultContainer)
+        ProfileInjections.setup(container: defaultContainer)
     }
 }
