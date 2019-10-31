@@ -326,6 +326,7 @@
                         <outlet property="menuBtn" destination="ij4-6H-vPw" id="wmi-5L-Qjf"/>
                         <outlet property="menuBtnView" destination="v7z-Y4-esd" id="lwc-bO-6rJ"/>
                         <outlet property="sideNavLeftConstraint" destination="zq0-aG-0lk" id="sqG-u8-7ES"/>
+                        <outlet property="sideNavView" destination="oem-q3-4fQ" id="MUT-uO-7sj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KL4-Bi-lUi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

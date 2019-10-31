@@ -19,6 +19,7 @@ class RidesHomeViewController: BaseViewController {
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var sideNavLeftConstraint: NSLayoutConstraint!
     static var controller: RidesHomeViewController?
+    @IBOutlet weak var sideNavView: UIView!
     
     override func getViewModel() -> BaseViewModel {
         return ridesHomeViewModel as! BaseViewModel
@@ -34,21 +35,25 @@ class RidesHomeViewController: BaseViewController {
             self?.showSideNav()
         }
         
+        self.sideNavView.alpha = 0
         self.sideNavLeftConstraint.constant = -self.view.frame.width
     }
     
     func hideSideNav() {
-        UIView.animate(withDuration: 0.2) {
+        UIView.animate(withDuration: 0.2, animations: {
             self.sideNavLeftConstraint.constant = -self.view.frame.width
             self.view.layoutIfNeeded()
+        }) { _ in
+            self.sideNavView.alpha = 0
         }
     }
     
     func showSideNav() {
-        UIView.animate(withDuration: 0.3) {
+        self.sideNavView.alpha = 1
+        UIView.animate(withDuration: 0.3, animations: {
             self.sideNavLeftConstraint.constant = 0
             self.view.layoutIfNeeded()
-        }
+        })
     }
     
     @IBAction func prepareForUnwind(_ segue: UIStoryboardSegue) { }
