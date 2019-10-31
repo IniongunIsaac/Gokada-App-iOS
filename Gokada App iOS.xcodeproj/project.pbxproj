@@ -106,7 +106,7 @@
 		1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD69235F364200E51875 /* BaseViewModel.swift */; };
 		1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6C235F460200E51875 /* BaseViewController.swift */; };
 		1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6F235F4DF900E51875 /* ErrorType.swift */; };
-		1438DD72235F602200E51875 /* DefaultInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* DefaultInjections.swift */; };
+		1438DD72235F602200E51875 /* Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* Injections.swift */; };
 		1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD73235F667E00E51875 /* ILoginViewModel.swift */; };
 		1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD75235F679E00E51875 /* LoginViewController.swift */; };
 		145856E7236703C7008E791F /* ProfileDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */; };
@@ -409,7 +409,7 @@
 		1438DD69235F364200E51875 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1438DD6C235F460200E51875 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1438DD6F235F4DF900E51875 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
-		1438DD71235F602200E51875 /* DefaultInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultInjections.swift; sourceTree = "<group>"; };
+		1438DD71235F602200E51875 /* Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injections.swift; sourceTree = "<group>"; };
 		1438DD73235F667E00E51875 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
 		1438DD75235F679E00E51875 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -1150,7 +1150,7 @@
 		1438DD63235F2D0D00E51875 /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				1438DD71235F602200E51875 /* DefaultInjections.swift */,
+				1438DD71235F602200E51875 /* Injections.swift */,
 				12E2B6FF2369DC700010F309 /* AuthInjections.swift */,
 				12E2B7032369E5FE0010F309 /* ProfileInjections.swift */,
 				12E2B7012369DD500010F309 /* RidesInjections.swift */,
@@ -2116,7 +2116,7 @@
 				1420A56A2364F6D80084B4BE /* ProfileItemTableViewCell.swift in Sources */,
 				12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */,
 				12C4EF332363002F002CAB3A /* OTPViewModel.swift in Sources */,
-				1438DD72235F602200E51875 /* DefaultInjections.swift in Sources */,
+				1438DD72235F602200E51875 /* Injections.swift in Sources */,
 				12C4EF3C23630640002CAB3A /* IOTPViewModel.swift in Sources */,
 				12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */,
 				12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */,

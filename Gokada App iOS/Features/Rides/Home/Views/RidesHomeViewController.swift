@@ -8,11 +8,17 @@
 
 import UIKit
 
+struct HomeVC {
+    static var controller: RidesHomeViewController?
+}
+
 class RidesHomeViewController: BaseViewController {
     
     var ridesHomeViewModel: IRidesHomeViewModel?
     @IBOutlet weak var menuBtnView: UIView!
     @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var sideNavLeftConstraint: NSLayoutConstraint!
+    static var controller: RidesHomeViewController?
     
     override func getViewModel() -> BaseViewModel {
         return ridesHomeViewModel as! BaseViewModel
@@ -21,12 +27,27 @@ class RidesHomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        HomeVC.controller = self
         menuBtnView.dropShadow(color: UIColor.black, opacity: 0.3, offSet: CGSize(width: -1, height: 1), radius: 22.0, scale: true)
         
         menuBtn.addTapGesture { [weak self] in
-            let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "profileNavigationVC")
-            self?.navigationController?.pushViewController(vc, animated: true)
+            self?.showSideNav()
+        }
+        
+        self.sideNavLeftConstraint.constant = -self.view.frame.width
+    }
+    
+    func hideSideNav() {
+        UIView.animate(withDuration: 0.2) {
+            self.sideNavLeftConstraint.constant = -self.view.frame.width
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func showSideNav() {
+        UIView.animate(withDuration: 0.3) {
+            self.sideNavLeftConstraint.constant = 0
+            self.view.layoutIfNeeded()
         }
     }
     
