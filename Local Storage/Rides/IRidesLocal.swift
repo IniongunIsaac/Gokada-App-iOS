@@ -11,5 +11,7 @@ import Entities
 import RxSwift
 
 public protocol IRidesLocal {
-    
+    func saveDestinationHistory(queries: [String])
+    func getDestinationHistory() -> Observable<DestinationSearchQueries?>
+    func clearSearchHistory()
 }

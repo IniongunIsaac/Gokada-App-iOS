@@ -17,10 +17,12 @@ public struct AuthRepoImpl: IAuthRepo {
     
     public let authRemote: IAuthRemote?
     public let authLocal: IAuthLocal?
+    public let ridesLocal: IRidesLocal?
     
-    public init(authRemote: IAuthRemote, authLocal: IAuthLocal) {
+    public init(authRemote: IAuthRemote, authLocal: IAuthLocal, ridesLocal: IRidesLocal) {
         self.authRemote = authRemote
         self.authLocal = authLocal
+        self.ridesLocal = ridesLocal
     }
     
     public func authenticate(requestBody: [String : String]) -> Observable<ApiResponse<PhoneNumberAuth>> {
@@ -57,6 +59,7 @@ public struct AuthRepoImpl: IAuthRepo {
     public func deleteLoggedInUserDetails() {
         Preference.saveUserLoginStatus(value: "false")
         authLocal!.deleteLoggedInUserDetails()
+        ridesLocal?.clearSearchHistory()
     }
     
 }

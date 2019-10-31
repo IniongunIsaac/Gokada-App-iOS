@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Entities
 
 class BaseViewController: UIViewController {
     
@@ -36,7 +37,6 @@ class BaseViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
         self.view.addGestureRecognizer(tapGesture)
         
-        //addScrollViewListener()
     }
     
     @objc func hideKeyboard() {

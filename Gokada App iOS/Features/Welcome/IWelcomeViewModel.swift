@@ -13,4 +13,6 @@ import RxCocoa
 
 protocol IWelcomeViewModel {
     func userLoggedIn() -> Bool
+    var userResponse: PublishSubject<User> { get }
+    func getLoggedInUserDetails()
 }

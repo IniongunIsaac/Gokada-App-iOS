@@ -9,6 +9,7 @@
 import UIKit
 import Entities
 import RSKImageCropper
+import Photos
 
 class RegisterViewController: BaseViewController {
 
@@ -37,7 +38,7 @@ class RegisterViewController: BaseViewController {
 
         configureUploadBtn()
         
-        self.phoneField.text = currentUser.phoneNumber?.replacingOccurrences(of: "+234", with: "+234 - ")
+        self.phoneField.text = currentUser?.phoneNumber?.replacingOccurrences(of: "+234", with: "+234 - ")
         
         configureBinding()
         
@@ -47,7 +48,8 @@ class RegisterViewController: BaseViewController {
     func configureBinding() {
         registerViewModel?.registerResponse.bind { [weak self] res in
             let storyboard = UIStoryboard(name: "Rides", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC")
+            let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC") as! RidesHomeViewController
+            HomeVC.currentUser = res
             self?.navigationController?.setViewControllers([vc], animated: false)
         }.disposed(by: disposeBag)
     }
@@ -119,11 +121,26 @@ extension RegisterViewController: RSKImageCropViewControllerDelegate, UIImagePic
     }
     
     func profileImageFromibrary() {
-        let image = UIImagePickerController()
-        image.delegate = self
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        image.allowsEditing = false
-        self.present(image, animated: true, completion: nil)
+        let photos = PHPhotoLibrary.authorizationStatus()
+        if photos == .notDetermined {
+            PHPhotoLibrary.requestAuthorization({status in
+                if status == .authorized{
+                    self.proceedWithPhotoLibrary()
+                } else {}
+            })
+        } else {
+            proceedWithPhotoLibrary()
+        }
+    }
+    
+    func proceedWithPhotoLibrary() {
+        DispatchQueue.main.async {
+            let image = UIImagePickerController()
+            image.delegate = self
+            image.sourceType = UIImagePickerController.SourceType.photoLibrary
+            image.allowsEditing = false
+            self.present(image, animated: true, completion: nil)
+        }
     }
     
     func configureActionSheet() {

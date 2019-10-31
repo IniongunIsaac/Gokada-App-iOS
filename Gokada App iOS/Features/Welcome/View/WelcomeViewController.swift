@@ -27,6 +27,7 @@ class WelcomeViewController: BaseViewController {
         self.navigationController?.delegate = self
         setupViews()
         startAnimation()
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -57,6 +58,7 @@ class WelcomeViewController: BaseViewController {
         animationView.play { [weak self] (_) in
             if (self?.welcomeViewModel?.userLoggedIn())! {
                 self?.showDashboard()
+                self?.welcomeViewModel?.getLoggedInUserDetails()
             } else {
                 self?.showContinueView()
             }
@@ -64,9 +66,12 @@ class WelcomeViewController: BaseViewController {
     }
     
     func showDashboard() {
-        let storyboard = UIStoryboard(name: "Rides", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC")
-        self.navigationController?.setViewControllers([vc], animated: true)
+        welcomeViewModel?.userResponse.bind { [weak self] res in
+            let storyboard = UIStoryboard(name: "Rides", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC") as! RidesHomeViewController
+            HomeVC.currentUser = res
+            self?.navigationController?.setViewControllers([vc], animated: false)
+        }.disposed(by: disposeBag)
     }
     
     func showContinueView() {

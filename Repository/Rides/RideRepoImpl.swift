@@ -21,4 +21,12 @@ public struct RidesRepoImpl: IRidesRepo {
         self.ridesRemote = ridesRemote
         self.ridesLocal = ridesLocal
     }
+    
+    public func getDestinationHistory() -> Observable<DestinationSearchQueries?> {
+        return ridesLocal!.getDestinationHistory()
+    }
+    
+    public func saveDestinationHistory(histories: [String]) {
+        ridesLocal?.saveDestinationHistory(queries: histories)
+    }
 }

@@ -20,7 +20,7 @@ class AuthInjections {
         container.register(IAuthLocal.self) { _ in AuthLocalImpl() }
         
         container.register(IAuthRepo.self) { res in
-            AuthRepoImpl(authRemote: res.resolve(IAuthRemote.self)!, authLocal: res.resolve(IAuthLocal.self)!)
+            AuthRepoImpl(authRemote: res.resolve(IAuthRemote.self)!, authLocal: res.resolve(IAuthLocal.self)!, ridesLocal: res.resolve(IRidesLocal.self)!)
         }
         
         container.register(IWelcomeViewModel.self) { res in

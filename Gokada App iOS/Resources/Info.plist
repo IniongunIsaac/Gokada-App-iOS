@@ -68,6 +68,10 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>This app uses the camera to capture images as your profile image</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>By accessing your location, this app can find Pilots and direct them to you</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>By accessing your location, this app can find Pilots and direct them to you</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app needs access to your Photo Library to be able to select a profile image </string>
 </dict>
