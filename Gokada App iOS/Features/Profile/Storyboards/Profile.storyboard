@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vHC-SW-Wqu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uDp-Da-Olp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -12,16 +12,256 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Profile Details View Controller-->
+        <scene sceneID="atD-Wc-U17">
+            <objects>
+                <viewController storyboardIdentifier="profileNavigationVC" id="uDp-Da-Olp" customClass="ProfileDetailsViewController" customModule="Gokada" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0f-VL-Qyc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJV-Hd-cHt">
+                                <rect key="frame" x="8" y="60" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="qG0-gc-vK6"/>
+                                    <constraint firstAttribute="height" constant="30" id="qTK-sJ-JFZ"/>
+                                </constraints>
+                                <state key="normal" image="backArrow"/>
+                                <connections>
+                                    <segue destination="hjd-LV-wZ8" kind="unwind" unwindAction="prepareForUnwind:" id="1ke-ZD-arA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVw-ow-Jxh">
+                                <rect key="frame" x="175" y="66" width="64" height="18"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byq-Dl-kDL" userLabel="Parent View">
+                                <rect key="frame" x="0.0" y="98" width="414" height="798"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3pa-nR-BdQ" userLabel="Profile Items Table View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="798"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProfileItemTableViewCell" rowHeight="102" id="hva-sP-Om9" userLabel="Profile Item Table View Cell" customClass="ProfileItemTableViewCell" customModule="Gokada" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="102"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hva-sP-Om9" id="RWG-tf-hRj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="102"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qUB-U1-MXv" userLabel="Profile Item Image Icon">
+                                                            <rect key="frame" x="20" y="10" width="70" height="82"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="Pkp-Em-oSB"/>
+                                                                <constraint firstAttribute="width" constant="70" id="yfK-8U-LAh"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfY-TP-IEC" userLabel="Profile Item Label">
+                                                            <rect key="frame" x="108" y="42" width="67" height="18.5"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qUB-U1-MXv" firstAttribute="centerY" secondItem="RWG-tf-hRj" secondAttribute="centerY" id="AI3-Np-dkU"/>
+                                                        <constraint firstItem="zfY-TP-IEC" firstAttribute="centerY" secondItem="RWG-tf-hRj" secondAttribute="centerY" id="DTo-5C-Wqr"/>
+                                                        <constraint firstItem="qUB-U1-MXv" firstAttribute="leading" secondItem="RWG-tf-hRj" secondAttribute="leading" constant="20" id="JYd-1x-3U1"/>
+                                                        <constraint firstItem="qUB-U1-MXv" firstAttribute="top" secondItem="RWG-tf-hRj" secondAttribute="top" constant="10" id="VOI-rb-9Vp"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qUB-U1-MXv" secondAttribute="bottom" constant="10" id="bMA-Hn-ffi"/>
+                                                        <constraint firstItem="zfY-TP-IEC" firstAttribute="leading" secondItem="qUB-U1-MXv" secondAttribute="trailing" constant="18" id="nDT-QF-wc4"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="profileItemImageView" destination="qUB-U1-MXv" id="Hts-eO-seA"/>
+                                                    <outlet property="profileItemLabel" destination="zfY-TP-IEC" id="gMy-O3-eof"/>
+                                                </connections>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogoutTableViewCell" id="rkr-kb-22W" customClass="LogoutTableViewCell" customModule="Gokada" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="130" width="414" height="160.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkr-kb-22W" id="jbO-id-hlY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="160.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8L-F3-NjN" userLabel="Logout View">
+                                                            <rect key="frame" x="0.0" y="100" width="414" height="60.5"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout" translatesAutoresizingMaskIntoConstraints="NO" id="KmH-Gn-KFp">
+                                                                    <rect key="frame" x="40" y="18" width="25" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="25" id="Fc2-Vs-qtn"/>
+                                                                        <constraint firstAttribute="height" constant="25" id="uet-2l-UVJ"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9E-CT-qsi">
+                                                                    <rect key="frame" x="85" y="21" width="52" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" red="0.92941176469999998" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="KmH-Gn-KFp" firstAttribute="leading" secondItem="v8L-F3-NjN" secondAttribute="leading" constant="40" id="8O8-xC-nBq"/>
+                                                                <constraint firstAttribute="height" constant="60" id="gHe-69-hag"/>
+                                                                <constraint firstItem="KmH-Gn-KFp" firstAttribute="centerY" secondItem="v8L-F3-NjN" secondAttribute="centerY" id="lCX-qR-2oX"/>
+                                                                <constraint firstItem="d9E-CT-qsi" firstAttribute="centerY" secondItem="v8L-F3-NjN" secondAttribute="centerY" id="pFy-bo-sAB"/>
+                                                                <constraint firstItem="d9E-CT-qsi" firstAttribute="leading" secondItem="KmH-Gn-KFp" secondAttribute="trailing" constant="20" id="r2o-jf-z3y"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="v8L-F3-NjN" secondAttribute="trailing" id="2ZK-01-sEK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="v8L-F3-NjN" secondAttribute="bottom" id="ZYh-tb-taH"/>
+                                                        <constraint firstItem="v8L-F3-NjN" firstAttribute="leading" secondItem="jbO-id-hlY" secondAttribute="leading" id="aXw-W0-Qdz"/>
+                                                        <constraint firstItem="v8L-F3-NjN" firstAttribute="top" secondItem="jbO-id-hlY" secondAttribute="top" constant="100" id="gBg-xS-hsb"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <outlet property="logoutView" destination="v8L-F3-NjN" id="Mp3-XK-ghX"/>
+                                                </connections>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileDetailsTableViewCell" rowHeight="112" id="qiU-yZ-V0l" userLabel="Profile Item Table View Cell" customClass="ProfileDetailsTableViewCell" customModule="Gokada" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="290.5" width="414" height="112"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qiU-yZ-V0l" id="sZl-iH-EYB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1I-SR-kmw" userLabel="Top View">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-Hu-ika" userLabel="User Profile Image" customClass="ImageViewWithBorderAttributes" customModule="Gokada" customModuleProvider="target">
+                                                                    <rect key="frame" x="12" y="20" width="72" height="72"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="72" id="66t-KP-ubd"/>
+                                                                        <constraint firstAttribute="width" constant="72" id="tW4-Ze-WaL"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="36"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="2"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="0.0" green="0.78039215689999997" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </imageView>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uls-Sk-pQk" userLabel="Edit Button " customClass="ButtonWithBorderAttributes" customModule="Gokada" customModuleProvider="target">
+                                                                    <rect key="frame" x="318" y="41" width="80" height="30"/>
+                                                                    <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="80" id="W6v-bm-p7s"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="oIK-16-Ffq"/>
+                                                                    </constraints>
+                                                                    <state key="normal" title="Edit">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <segue destination="vHC-SW-Wqu" kind="show" identifier="showEditProfileViewController" id="Ryz-Xa-9GJ"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uchena.eze@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4w-Tj-odo" userLabel="Email Label">
+                                                                    <rect key="frame" x="92" y="60" width="218" height="15"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kayode Gbajabiala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI4-Fy-D55" userLabel="User Fullname Label">
+                                                                    <rect key="frame" x="92" y="36" width="218" height="20"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="hI4-Fy-D55" firstAttribute="centerY" secondItem="5dh-Hu-ika" secondAttribute="centerY" constant="-10" id="1br-2J-GRm"/>
+                                                                <constraint firstItem="b4w-Tj-odo" firstAttribute="leading" secondItem="5dh-Hu-ika" secondAttribute="trailing" constant="8" id="8sv-kT-BFh"/>
+                                                                <constraint firstItem="b4w-Tj-odo" firstAttribute="top" secondItem="hI4-Fy-D55" secondAttribute="bottom" constant="4" id="FJb-FP-N4Y"/>
+                                                                <constraint firstAttribute="height" constant="112" id="GZp-a8-tJO"/>
+                                                                <constraint firstItem="Uls-Sk-pQk" firstAttribute="centerY" secondItem="5dh-Hu-ika" secondAttribute="centerY" id="JPH-BF-caK"/>
+                                                                <constraint firstAttribute="bottom" secondItem="5dh-Hu-ika" secondAttribute="bottom" constant="20" id="LOh-BK-hsG"/>
+                                                                <constraint firstItem="hI4-Fy-D55" firstAttribute="leading" secondItem="5dh-Hu-ika" secondAttribute="trailing" constant="8" id="NgU-Ze-0fW"/>
+                                                                <constraint firstItem="5dh-Hu-ika" firstAttribute="top" secondItem="z1I-SR-kmw" secondAttribute="top" constant="20" id="Yzh-Fz-OjN"/>
+                                                                <constraint firstItem="5dh-Hu-ika" firstAttribute="leading" secondItem="z1I-SR-kmw" secondAttribute="leading" constant="12" id="dnr-IM-Zb5"/>
+                                                                <constraint firstItem="Uls-Sk-pQk" firstAttribute="leading" secondItem="hI4-Fy-D55" secondAttribute="trailing" constant="8" id="ieI-SM-xnY"/>
+                                                                <constraint firstItem="Uls-Sk-pQk" firstAttribute="leading" secondItem="b4w-Tj-odo" secondAttribute="trailing" constant="8" id="lBt-l8-CLe"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Uls-Sk-pQk" secondAttribute="trailing" constant="16" id="wxo-Yp-V1O"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="z1I-SR-kmw" secondAttribute="bottom" id="347-HM-zXe"/>
+                                                        <constraint firstAttribute="trailing" secondItem="z1I-SR-kmw" secondAttribute="trailing" id="FxF-Rx-7sb"/>
+                                                        <constraint firstItem="z1I-SR-kmw" firstAttribute="leading" secondItem="sZl-iH-EYB" secondAttribute="leading" id="nju-T2-Fcx"/>
+                                                        <constraint firstItem="z1I-SR-kmw" firstAttribute="top" secondItem="sZl-iH-EYB" secondAttribute="top" id="zic-HQ-wgC"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="editProfileButton" destination="Uls-Sk-pQk" id="ZMV-6h-eA6"/>
+                                                    <outlet property="emailLabel" destination="b4w-Tj-odo" id="ow8-OY-eHa"/>
+                                                    <outlet property="fullNameLabel" destination="hI4-Fy-D55" id="3M7-Lh-rQW"/>
+                                                    <outlet property="profileImageView" destination="5dh-Hu-ika" id="0QA-9X-ctA"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3pa-nR-BdQ" secondAttribute="bottom" id="bWZ-LK-26f"/>
+                                    <constraint firstItem="3pa-nR-BdQ" firstAttribute="top" secondItem="Byq-Dl-kDL" secondAttribute="top" id="bnD-Ne-AdH"/>
+                                    <constraint firstItem="3pa-nR-BdQ" firstAttribute="leading" secondItem="Byq-Dl-kDL" secondAttribute="leading" id="fCM-B0-qNJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="3pa-nR-BdQ" secondAttribute="trailing" id="hdz-p6-SeB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Byq-Dl-kDL" secondAttribute="trailing" id="7wi-OZ-YEI"/>
+                            <constraint firstItem="lVw-ow-Jxh" firstAttribute="centerX" secondItem="edY-iL-pNJ" secondAttribute="centerX" id="iO2-dc-dSY"/>
+                            <constraint firstItem="lVw-ow-Jxh" firstAttribute="centerY" secondItem="fJV-Hd-cHt" secondAttribute="centerY" id="op1-sy-iVe"/>
+                            <constraint firstAttribute="bottom" secondItem="Byq-Dl-kDL" secondAttribute="bottom" id="rqV-ax-w7O"/>
+                            <constraint firstItem="fJV-Hd-cHt" firstAttribute="top" secondItem="edY-iL-pNJ" secondAttribute="top" constant="16" id="sVU-mV-aSc"/>
+                            <constraint firstItem="Byq-Dl-kDL" firstAttribute="leading" secondItem="f0f-VL-Qyc" secondAttribute="leading" id="sei-Te-VMo"/>
+                            <constraint firstItem="fJV-Hd-cHt" firstAttribute="leading" secondItem="edY-iL-pNJ" secondAttribute="leading" constant="8" id="ucW-y9-Frz"/>
+                            <constraint firstItem="Byq-Dl-kDL" firstAttribute="top" secondItem="fJV-Hd-cHt" secondAttribute="bottom" constant="8" id="yEF-6y-y8u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="edY-iL-pNJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="profileItemsTableView" destination="3pa-nR-BdQ" id="5US-WP-V1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hei-Bg-EXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hjd-LV-wZ8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1901" y="194"/>
+        </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="B2l-7N-SMh">
             <objects>
                 <viewController id="vHC-SW-Wqu" customClass="EditProfileViewController" customModule="Gokada" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5JP-8N-vcx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jn2-g6-mnC">
-                                <rect key="frame" x="0.0" y="98" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="788"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LL-xW-fw7" userLabel="Parent View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="650"/>
@@ -45,38 +285,38 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Profile Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywX-NO-PN9">
-                                                <rect key="frame" x="148.5" y="127" width="117.5" height="13.5"/>
+                                                <rect key="frame" x="148.5" y="127" width="117.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                 <color key="textColor" red="0.0" green="0.78039215689999997" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-b1-i51">
-                                                <rect key="frame" x="40" y="175.5" width="334" height="15"/>
+                                                <rect key="frame" x="40" y="175" width="334" height="15"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nigerianFlag" translatesAutoresizingMaskIntoConstraints="NO" id="92W-mp-2c8">
-                                                <rect key="frame" x="49" y="210" width="16" height="9"/>
+                                                <rect key="frame" x="49" y="209.5" width="16" height="9"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="9" id="5fZ-EY-pj0"/>
                                                     <constraint firstAttribute="width" constant="16" id="LMm-G0-riJ"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+234 - 8145421122" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQH-i2-B9P">
-                                                <rect key="frame" x="77" y="205.5" width="118" height="17.5"/>
+                                                <rect key="frame" x="77" y="205" width="118" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qa-tg-s9Y">
-                                                <rect key="frame" x="40" y="259" width="334" height="13.5"/>
+                                                <rect key="frame" x="40" y="258.5" width="334" height="13"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BnI-ox-AUY" customClass="TextFieldWithBorderAttributes" customModule="Gokada" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="280.5" width="334" height="50"/>
+                                                <rect key="frame" x="40" y="279.5" width="334" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="PF8-O7-ncY"/>
                                                 </constraints>
@@ -95,13 +335,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJe-AA-6H7">
-                                                <rect key="frame" x="40" y="348.5" width="334" height="13.5"/>
+                                                <rect key="frame" x="40" y="347.5" width="334" height="13"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Llh-ny-mWx" customClass="TextFieldWithBorderAttributes" customModule="Gokada" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="370" width="334" height="50"/>
+                                                <rect key="frame" x="40" y="368.5" width="334" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="qWK-W3-D2I"/>
                                                 </constraints>
@@ -120,13 +360,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ0-fk-9yB">
-                                                <rect key="frame" x="40" y="438" width="334" height="13.5"/>
+                                                <rect key="frame" x="40" y="436.5" width="334" height="13"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="It7-uT-eAL" customClass="TextFieldWithBorderAttributes" customModule="Gokada" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="459.5" width="334" height="50"/>
+                                                <rect key="frame" x="40" y="457.5" width="334" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="gI2-xK-m1x"/>
                                                 </constraints>
@@ -145,7 +385,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agj-I8-vDK" customClass="ButtonWithBorderAttributes" customModule="Gokada" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="547.5" width="334" height="60"/>
+                                                <rect key="frame" x="40" y="545.5" width="334" height="60"/>
                                                 <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="icj-Su-hPI"/>
@@ -216,7 +456,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="TJO-H9-HFe"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEf-ae-Xdy">
-                                <rect key="frame" x="8" y="60" width="30" height="30"/>
+                                <rect key="frame" x="8" y="16" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2ke-Ih-0EY"/>
                                     <constraint firstAttribute="width" constant="30" id="dzy-Qr-99J"/>
@@ -227,7 +467,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0F-P6-c1Z">
-                                <rect key="frame" x="169" y="66.5" width="76" height="17.5"/>
+                                <rect key="frame" x="169" y="22.5" width="76" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -267,7 +507,9 @@
     </scenes>
     <resources>
         <image name="backArrow" width="25" height="25"/>
+        <image name="logout" width="18.5" height="18"/>
         <image name="nigerianFlag" width="32.5" height="18.5"/>
+        <image name="payment_icon" width="33" height="34.5"/>
         <image name="profile_image_icon" width="168" height="168"/>
     </resources>
 </document>
