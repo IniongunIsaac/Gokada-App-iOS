@@ -23,14 +23,10 @@ class RidesHomeViewController: BaseViewController {
         
         menuBtnView.dropShadow(color: UIColor.black, opacity: 0.3, offSet: CGSize(width: -1, height: 1), radius: 22.0, scale: true)
         
-        sideMenus()
-    }
-    
-    func sideMenus() {
-        if revealViewController() != nil {
-            revealViewController()?.rearViewRevealWidth = 330
-            menuBtn.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
-            view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        menuBtn.addTapGesture { [weak self] in
+            let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "profileNavigationVC")
+            self?.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

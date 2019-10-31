@@ -57,7 +57,6 @@ class ProfileDetailsViewController: BaseViewController, UITableViewDelegate, UIT
             cell.user = profileDetailsViewModel!.user!
             
             cell.editProfileButton.addTapGesture { [weak self] in
-                self?.revealViewController()?.revealToggle(animated: true)
                 self?.performSegue(withIdentifier: "showEditProfileViewController", sender: nil)
             }
             

@@ -41,7 +41,6 @@
 		12E2B7022369DD500010F309 /* RidesInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7012369DD500010F309 /* RidesInjections.swift */; };
 		12E2B7042369E5FE0010F309 /* ProfileInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7032369E5FE0010F309 /* ProfileInjections.swift */; };
 		12E2B7062369EC120010F309 /* RidesHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7052369EC120010F309 /* RidesHomeViewController.swift */; };
-		12E2B70A236A2FCE0010F309 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B708236A2FCE0010F309 /* SWRevealViewController.m */; };
 		1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A55E2364F62A0084B4BE /* ProfileItem.swift */; };
 		1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420A5612364F68D0084B4BE /* Profile.storyboard */; };
 		1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */; };
@@ -319,6 +318,7 @@
 		12C4EF3B23630640002CAB3A /* IOTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTPViewModel.swift; sourceTree = "<group>"; };
 		12C4EF4523635238002CAB3A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRegisterViewModel.swift; sourceTree = "<group>"; };
+		12D84F5B236AF1FC001066A2 /* Gokada App iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gokada App iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		12D85FF62360537900C12D79 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		12D85FF82360539900C12D79 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		12E2B6E523698CC40010F309 /* Rides.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rides.storyboard; sourceTree = "<group>"; };
@@ -334,9 +334,6 @@
 		12E2B7012369DD500010F309 /* RidesInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesInjections.swift; sourceTree = "<group>"; };
 		12E2B7032369E5FE0010F309 /* ProfileInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInjections.swift; sourceTree = "<group>"; };
 		12E2B7052369EC120010F309 /* RidesHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesHomeViewController.swift; sourceTree = "<group>"; };
-		12E2B707236A2FCD0010F309 /* Gokada App iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gokada App iOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		12E2B708236A2FCE0010F309 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		12E2B709236A2FCE0010F309 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		1420A55E2364F62A0084B4BE /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
 		1420A5612364F68D0084B4BE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProfileDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -1136,9 +1133,7 @@
 			isa = PBXGroup;
 			children = (
 				1438DC3E235DD57000E51875 /* LaunchScreen.storyboard */,
-				12E2B709236A2FCE0010F309 /* SWRevealViewController.h */,
-				12E2B708236A2FCE0010F309 /* SWRevealViewController.m */,
-				12E2B707236A2FCD0010F309 /* Gokada App iOS-Bridging-Header.h */,
+				12D84F5B236AF1FC001066A2 /* Gokada App iOS-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -2096,7 +2091,6 @@
 			files = (
 				1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */,
 				12E2B7042369E5FE0010F309 /* ProfileInjections.swift in Sources */,
-				12E2B70A236A2FCE0010F309 /* SWRevealViewController.m in Sources */,
 				145856E9236716B5008E791F /* LogoutTableViewCell.swift in Sources */,
 				1420A5692364F6D80084B4BE /* ProfileDetailsViewController.swift in Sources */,
 				122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */,
