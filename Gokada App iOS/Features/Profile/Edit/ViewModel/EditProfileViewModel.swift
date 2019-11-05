@@ -30,10 +30,8 @@ class EditProfileViewModel: BaseViewModel, IEditProfileViewModel {
     }
     
     func getUserDetails() {
-        //isLoading.onNext(true)
         authRepo.getLoggedInUser()
             .subscribe(onNext: { [weak self] user in
-                //print(user)
                 self?.user = user
                 self?.userDetails.onNext(user!)
         }, onError: {[weak self] error in

@@ -36,27 +36,15 @@ class ProfileDetailsViewModel: BaseViewModel, IProfileDetailsViewModel {
     
     fileprivate func emitProfileItems() {
         
-        print(proItems)
-        
         profileItems.onNext(proItems)
         
         profileItems.on(.next([ProfileItem(itemImageName: "payment_icon", itemName: "Payments")]))
         
         profileItems.subscribe(onNext: { proItems in
-            print(proItems)
             }).disposed(by: disposeBag)
     }
     
     func viewDidLoad1() {
-        
-        //profileItems.onNext(proItems)
-        
-        userDetails.onNext(User(firstName: "Isaac", lastName: "Ngurumun", phoneNumber: "8145421020", profileImage: "https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-circle-512.png", email: "isaac@gokada.ng"))
-        
-        //emitProfileItems()
-        //getLoggedInUserDetails()
-        //isLoading.onNext(true)
-        print("Called viewDidLoad of ProfileDetailsViewModel")
     }
     
     func getLoggedInUserDetails() {

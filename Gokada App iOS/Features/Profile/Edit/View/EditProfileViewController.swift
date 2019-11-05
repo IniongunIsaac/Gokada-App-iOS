@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 import RSKImageCropper
+import Photos
 
 class EditProfileViewController: BaseViewController {
     
@@ -60,7 +61,8 @@ class EditProfileViewController: BaseViewController {
     }
     
     fileprivate func bindUserProfileUpdateResponse() {
-        editProfileViewModel?.profileUpdateResponse.bind { [weak self] _ in
+        editProfileViewModel?.profileUpdateResponse.bind { [weak self] updatedUser in
+            HomeVC.currentUser = updatedUser
             self?.navigationController?.popViewController(animated: true)
         }.disposed(by: disposeBag)
     }
@@ -146,11 +148,26 @@ extension EditProfileViewController: RSKImageCropViewControllerDelegate, UIImage
     }
     
     func profileImageFromibrary() {
-        let image = UIImagePickerController()
-        image.delegate = self
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        image.allowsEditing = false
-        self.present(image, animated: true, completion: nil)
+        let photos = PHPhotoLibrary.authorizationStatus()
+        if photos == .notDetermined {
+            PHPhotoLibrary.requestAuthorization({status in
+                if status == .authorized{
+                    self.proceedWithPhotoLibrary()
+                } else {}
+            })
+        } else {
+            proceedWithPhotoLibrary()
+        }
+    }
+    
+    func proceedWithPhotoLibrary() {
+        DispatchQueue.main.async {
+            let image = UIImagePickerController()
+            image.delegate = self
+            image.sourceType = UIImagePickerController.SourceType.photoLibrary
+            image.allowsEditing = false
+            self.present(image, animated: true, completion: nil)
+        }
     }
     
     func showProfileImageActionSheet() {
