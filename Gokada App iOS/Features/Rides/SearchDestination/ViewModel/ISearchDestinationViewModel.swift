@@ -8,9 +8,11 @@
 
 import Foundation
 import RxSwift
+import Entities
 
 protocol ISearchDestinationViewModel {
-    var placesSuggestion: PublishSubject<[String]> { get }
+    var placesSuggestion: PublishSubject<[DestinationSearchQuery]> { get }
+    var coordinatesDetails: PublishSubject<LocationAddress> { get }
     func fetchPlaceSuggestion(query: String)
     func initializePlaceSuggestion()
 }

@@ -9,6 +9,8 @@
 import UIKit
 import Entities
 import GoogleMaps
+import Realm
+import RealmSwift
 
 struct HomeVC {
     static var controller: RidesHomeViewController?
@@ -28,7 +30,7 @@ class RidesHomeViewController: BaseViewController {
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var mapView: GMSMapView!
     private let locationManager = CLLocationManager()
-    var currentLocation: String?
+    var currentLocation: DestinationSearchQuery?
     
     override func getViewModel() -> BaseViewModel {
         return ridesHomeViewModel as! BaseViewModel
@@ -66,7 +68,7 @@ class RidesHomeViewController: BaseViewController {
     func bindViews() {
         ridesHomeViewModel?.searchHistory.bind(to: self.searchHistoryTableView.rx.items) { (tableView, index, element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: "SearchHistoryTableViewCell") as! SearchHistoryTableViewCell
-            cell.updateView(query: element)
+            cell.updateView(query: element.address)
             
             cell.addTapGesture { [weak self] in
                 if let sourceAddress = self?.currentLocation {
@@ -127,6 +129,7 @@ extension RidesHomeViewController: CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
+        mapView.padding = UIEdgeInsets(top: 0, left: 0, bottom: 25, right: 10)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -134,7 +137,7 @@ extension RidesHomeViewController: CLLocationManagerDelegate {
             return
         }
         
-        mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+        mapView.animate(to: GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0))
         reverseGeocodeCoordinate(CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
         locationManager.stopUpdatingLocation()
     }
@@ -145,7 +148,7 @@ extension RidesHomeViewController: CLLocationManagerDelegate {
             guard let address = response?.firstResult(), let lines = address.lines else {
                 return
             }
-            self.currentLocation = lines.joined(separator: "\n")
+            self.currentLocation = DestinationSearchQuery(id: nil, address: lines.joined(separator: "\n"), latitude: coordinate.latitude, longitude: coordinate.longitude)
         }
     }
 }

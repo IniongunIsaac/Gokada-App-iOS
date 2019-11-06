@@ -104,6 +104,7 @@
                                                         <connections>
                                                             <action selector="searchDidBeginEditing:" destination="A7y-4K-fg0" eventType="editingDidBegin" id="Udv-mt-2Z3"/>
                                                             <action selector="searchDidEndEditing:" destination="A7y-4K-fg0" eventType="editingDidEnd" id="Bzw-yj-Lu6"/>
+                                                            <outlet property="delegate" destination="A7y-4K-fg0" id="prL-Mj-7lO"/>
                                                         </connections>
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dottedLine" translatesAutoresizingMaskIntoConstraints="NO" id="jZJ-18-q5c">
@@ -143,6 +144,7 @@
                                                         <connections>
                                                             <action selector="searchDidBeginEditing:" destination="A7y-4K-fg0" eventType="editingDidBegin" id="Sz7-f7-6un"/>
                                                             <action selector="searchDidEndEditing:" destination="A7y-4K-fg0" eventType="editingDidEnd" id="9Da-OR-0MV"/>
+                                                            <outlet property="delegate" destination="A7y-4K-fg0" id="CdM-Lf-f7W"/>
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpu-Vg-FG4">

@@ -10,10 +10,14 @@ import Foundation
 
 struct RemoteApiConstants {
     fileprivate static let BASE_URL = "https://09yv3jwnq5.execute-api.eu-west-1.amazonaws.com/staging/"
+    
+    // MARK:- AUTHENTICATION APIs
     static let LOGIN_URL = "\(BASE_URL)authenticate"
     static let OTP_VERIFICATION_URL = "\(BASE_URL)authenticate/verify"
     static let UPDATE_USER_PROFILE_URL = "\(BASE_URL)user"
     
-    // MARK: - GOOGLE APIs
-    static let FIND_PLACES_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=festac&key=AIzaSyBIcWSKcmJr0mbl4FZcGHjdcTvRSHk7QVQ"
+    
+    // MARK:- RIDES APIs
+    static let RIDE_ESTIMATES_URL = "\(BASE_URL)user/rides/fare"
+    static let REQUEST_RIDE_URL = "\(BASE_URL)user/rides"
 }

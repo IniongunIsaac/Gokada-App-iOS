@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		050CDEE23F7B960A8D12E3F9 /* Pods_Local_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */; };
 		12142303236B22C40031E5DA /* SearchHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12142302236B22C40031E5DA /* SearchHistoryTableViewCell.swift */; };
+		12241F4C2375AE16009585CB /* PickupInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F4B2375AE15009585CB /* PickupInfo.swift */; };
+		12241F4E2375AEA1009585CB /* TotalsEstimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F4D2375AEA1009585CB /* TotalsEstimated.swift */; };
+		12241F502375B30A009585CB /* EstimatedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F4F2375B30A009585CB /* EstimatedLocation.swift */; };
+		12241F542375B4F6009585CB /* LocationAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F532375B4F6009585CB /* LocationAddress.swift */; };
+		12241F56237604E7009585CB /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F55237604E7009585CB /* DateFormatter+Extensions.swift */; };
+		12241F582376BE94009585CB /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F572376BE94009585CB /* Double+Extensions.swift */; };
+		12241F5A2376C119009585CB /* RequestRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F592376C119009585CB /* RequestRide.swift */; };
+		12241F64237894E4009585CB /* RideUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F63237894E4009585CB /* RideUser.swift */; };
+		12241F66237896B6009585CB /* RidePilot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F65237896B6009585CB /* RidePilot.swift */; };
+		12241F6823789E40009585CB /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F6723789E40009585CB /* Driver.swift */; };
+		12241F6A23789ECB009585CB /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F6923789ECB009585CB /* Vehicle.swift */; };
+		12241F6C2378A6AA009585CB /* AddNewCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12241F6B2378A6AA009585CB /* AddNewCardTableViewCell.swift */; };
 		12292E45236CD49300BD0FEC /* PlacesSuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12292E44236CD49300BD0FEC /* PlacesSuggestionTableViewCell.swift */; };
 		12292E49236E19C200BD0FEC /* TripConfirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12292E48236E19C200BD0FEC /* TripConfirmation.storyboard */; };
 		12292E4B236E19D800BD0FEC /* DestinationFromMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12292E4A236E19D800BD0FEC /* DestinationFromMap.storyboard */; };
@@ -19,6 +31,9 @@
 		126B8780236F5518005E6270 /* TripInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B877F236F5518005E6270 /* TripInformation.swift */; };
 		126B8782236F57A1005E6270 /* ITripConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B8781236F57A1005E6270 /* ITripConfirmationViewModel.swift */; };
 		126B8784236F57B0005E6270 /* TripConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B8783236F57B0005E6270 /* TripConfirmationViewModel.swift */; };
+		127F480C2372E03C006B3209 /* PaymentMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F480B2372E03B006B3209 /* PaymentMethodTableViewCell.swift */; };
+		127F480E23730D56006B3209 /* UserPaymentOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F480D23730D56006B3209 /* UserPaymentOptions.swift */; };
+		127F481023734BC2006B3209 /* RideEstimates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F480F23734BC2006B3209 /* RideEstimates.swift */; };
 		1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */; };
 		1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */; };
 		12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12959FE6235FB6E700DC7856 /* PreLoader.swift */; };
@@ -28,7 +43,7 @@
 		12A0421A23649E3600C4C0EF /* AuthLocalImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A0421923649E3600C4C0EF /* AuthLocalImpl.swift */; };
 		12A0421C23649E4F00C4C0EF /* IAuthLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A0421B23649E4F00C4C0EF /* IAuthLocal.swift */; };
 		12A7B9222361C4D400861E3D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7B9212361C4D400861E3D /* RegisterViewController.swift */; };
-		12BB151E236B701A00F69BC7 /* DestinationSearchQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BB151D236B701A00F69BC7 /* DestinationSearchQueries.swift */; };
+		12BB151E236B701A00F69BC7 /* DestinationSearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BB151D236B701A00F69BC7 /* DestinationSearchQuery.swift */; };
 		12C4EF2B2362E6FB002CAB3A /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF2A2362E6FB002CAB3A /* CustomAlert.swift */; };
 		12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF302362F538002CAB3A /* AuthValidations.swift */; };
 		12C4EF332363002F002CAB3A /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF322363002F002CAB3A /* OTPViewModel.swift */; };
@@ -55,6 +70,8 @@
 		12E8A5B1236C3CE10070BE9E /* SearchDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8A5B0236C3CE10070BE9E /* SearchDestinationViewController.swift */; };
 		12E8A5B3236C3F6A0070BE9E /* ISearchDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8A5B2236C3F6A0070BE9E /* ISearchDestinationViewModel.swift */; };
 		12E8A5B5236C3F7B0070BE9E /* SearchDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8A5B4236C3F7B0070BE9E /* SearchDestinationViewModel.swift */; };
+		12F018602375673600F4330D /* GMSMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0185F2375673600F4330D /* GMSMapView+Extensions.swift */; };
+		12F018622375849700F4330D /* CustomMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F018612375849600F4330D /* CustomMarker.swift */; };
 		1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A55E2364F62A0084B4BE /* ProfileItem.swift */; };
 		1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420A5612364F68D0084B4BE /* Profile.storyboard */; };
 		1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */; };
@@ -315,6 +332,18 @@
 
 /* Begin PBXFileReference section */
 		12142302236B22C40031E5DA /* SearchHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		12241F4B2375AE15009585CB /* PickupInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupInfo.swift; sourceTree = "<group>"; };
+		12241F4D2375AEA1009585CB /* TotalsEstimated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalsEstimated.swift; sourceTree = "<group>"; };
+		12241F4F2375B30A009585CB /* EstimatedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatedLocation.swift; sourceTree = "<group>"; };
+		12241F532375B4F6009585CB /* LocationAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAddress.swift; sourceTree = "<group>"; };
+		12241F55237604E7009585CB /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		12241F572376BE94009585CB /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		12241F592376C119009585CB /* RequestRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRide.swift; sourceTree = "<group>"; };
+		12241F63237894E4009585CB /* RideUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideUser.swift; sourceTree = "<group>"; };
+		12241F65237896B6009585CB /* RidePilot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidePilot.swift; sourceTree = "<group>"; };
+		12241F6723789E40009585CB /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		12241F6923789ECB009585CB /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		12241F6B2378A6AA009585CB /* AddNewCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardTableViewCell.swift; sourceTree = "<group>"; };
 		12292E44236CD49300BD0FEC /* PlacesSuggestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesSuggestionTableViewCell.swift; sourceTree = "<group>"; };
 		12292E48236E19C200BD0FEC /* TripConfirmation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripConfirmation.storyboard; sourceTree = "<group>"; };
 		12292E4A236E19D800BD0FEC /* DestinationFromMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DestinationFromMap.storyboard; sourceTree = "<group>"; };
@@ -324,6 +353,9 @@
 		126B877F236F5518005E6270 /* TripInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInformation.swift; sourceTree = "<group>"; };
 		126B8781236F57A1005E6270 /* ITripConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITripConfirmationViewModel.swift; sourceTree = "<group>"; };
 		126B8783236F57B0005E6270 /* TripConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripConfirmationViewModel.swift; sourceTree = "<group>"; };
+		127F480B2372E03B006B3209 /* PaymentMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodTableViewCell.swift; sourceTree = "<group>"; };
+		127F480D23730D56006B3209 /* UserPaymentOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPaymentOptions.swift; sourceTree = "<group>"; };
+		127F480F23734BC2006B3209 /* RideEstimates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimates.swift; sourceTree = "<group>"; };
 		1283C6E6235FAA7B00414C46 /* montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat.ttf; sourceTree = "<group>"; };
 		1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_welcome_anim.json; sourceTree = "<group>"; };
 		1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_splash_amin.json; sourceTree = "<group>"; };
@@ -334,7 +366,7 @@
 		12A0421923649E3600C4C0EF /* AuthLocalImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalImpl.swift; sourceTree = "<group>"; };
 		12A0421B23649E4F00C4C0EF /* IAuthLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthLocal.swift; sourceTree = "<group>"; };
 		12A7B9212361C4D400861E3D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		12BB151D236B701A00F69BC7 /* DestinationSearchQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchQueries.swift; sourceTree = "<group>"; };
+		12BB151D236B701A00F69BC7 /* DestinationSearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchQuery.swift; sourceTree = "<group>"; };
 		12C4EF2A2362E6FB002CAB3A /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		12C4EF302362F538002CAB3A /* AuthValidations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidations.swift; sourceTree = "<group>"; };
 		12C4EF322363002F002CAB3A /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
@@ -362,6 +394,8 @@
 		12E8A5B0236C3CE10070BE9E /* SearchDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationViewController.swift; sourceTree = "<group>"; };
 		12E8A5B2236C3F6A0070BE9E /* ISearchDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISearchDestinationViewModel.swift; sourceTree = "<group>"; };
 		12E8A5B4236C3F7B0070BE9E /* SearchDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationViewModel.swift; sourceTree = "<group>"; };
+		12F0185F2375673600F4330D /* GMSMapView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GMSMapView+Extensions.swift"; sourceTree = "<group>"; };
+		12F018612375849600F4330D /* CustomMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarker.swift; sourceTree = "<group>"; };
 		1420A55E2364F62A0084B4BE /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
 		1420A5612364F68D0084B4BE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProfileDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -629,6 +663,8 @@
 			isa = PBXGroup;
 			children = (
 				12292E54236E1C3200BD0FEC /* TripConfirmationViewController.swift */,
+				127F480B2372E03B006B3209 /* PaymentMethodTableViewCell.swift */,
+				12241F6B2378A6AA009585CB /* AddNewCardTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -807,8 +843,19 @@
 		12E2B6E92369CFC80010F309 /* Rides */ = {
 			isa = PBXGroup;
 			children = (
-				12BB151D236B701A00F69BC7 /* DestinationSearchQueries.swift */,
+				12BB151D236B701A00F69BC7 /* DestinationSearchQuery.swift */,
 				126B877F236F5518005E6270 /* TripInformation.swift */,
+				127F480D23730D56006B3209 /* UserPaymentOptions.swift */,
+				12241F532375B4F6009585CB /* LocationAddress.swift */,
+				127F480F23734BC2006B3209 /* RideEstimates.swift */,
+				12241F4B2375AE15009585CB /* PickupInfo.swift */,
+				12241F4D2375AEA1009585CB /* TotalsEstimated.swift */,
+				12241F4F2375B30A009585CB /* EstimatedLocation.swift */,
+				12241F592376C119009585CB /* RequestRide.swift */,
+				12241F63237894E4009585CB /* RideUser.swift */,
+				12241F65237896B6009585CB /* RidePilot.swift */,
+				12241F6723789E40009585CB /* Driver.swift */,
+				12241F6923789ECB009585CB /* Vehicle.swift */,
 			);
 			path = Rides;
 			sourceTree = "<group>";
@@ -1309,6 +1356,10 @@
 				12C4EF3923630600002CAB3A /* NotificationType.swift */,
 				145930C82365C6A20074E2EF /* Code+Extensions.swift */,
 				145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */,
+				12F0185F2375673600F4330D /* GMSMapView+Extensions.swift */,
+				12F018612375849600F4330D /* CustomMarker.swift */,
+				12241F55237604E7009585CB /* DateFormatter+Extensions.swift */,
+				12241F572376BE94009585CB /* Double+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -2209,6 +2260,7 @@
 				1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */,
 				12E2B7042369E5FE0010F309 /* ProfileInjections.swift in Sources */,
 				12E8A5B5236C3F7B0070BE9E /* SearchDestinationViewModel.swift in Sources */,
+				12F018622375849700F4330D /* CustomMarker.swift in Sources */,
 				145856E9236716B5008E791F /* LogoutTableViewCell.swift in Sources */,
 				12E8A5B3236C3F6A0070BE9E /* ISearchDestinationViewModel.swift in Sources */,
 				1420A5692364F6D80084B4BE /* ProfileDetailsViewController.swift in Sources */,
@@ -2226,6 +2278,7 @@
 				1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */,
 				12C4EF4623635238002CAB3A /* RegisterViewModel.swift in Sources */,
 				12E2B7062369EC120010F309 /* RidesHomeViewController.swift in Sources */,
+				12241F6C2378A6AA009585CB /* AddNewCardTableViewCell.swift in Sources */,
 				12E2B7002369DC700010F309 /* AuthInjections.swift in Sources */,
 				12292E50236E1B8800BD0FEC /* DestinationFromMapViewController.swift in Sources */,
 				1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */,
@@ -2235,6 +2288,9 @@
 				12A04211236487D000C4C0EF /* WelcomeViewModel.swift in Sources */,
 				1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */,
 				12A7B9222361C4D400861E3D /* RegisterViewController.swift in Sources */,
+				12241F582376BE94009585CB /* Double+Extensions.swift in Sources */,
+				12241F56237604E7009585CB /* DateFormatter+Extensions.swift in Sources */,
+				12F018602375673600F4330D /* GMSMapView+Extensions.swift in Sources */,
 				12E8A5B1236C3CE10070BE9E /* SearchDestinationViewController.swift in Sources */,
 				1420A56A2364F6D80084B4BE /* ProfileItemTableViewCell.swift in Sources */,
 				12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */,
@@ -2248,6 +2304,7 @@
 				1420A5702364F7070084B4BE /* IEditProfileViewModel.swift in Sources */,
 				12A04213236487E700C4C0EF /* IWelcomeViewModel.swift in Sources */,
 				12C4EF2B2362E6FB002CAB3A /* CustomAlert.swift in Sources */,
+				127F480C2372E03C006B3209 /* PaymentMethodTableViewCell.swift in Sources */,
 				12C4EF3A23630600002CAB3A /* NotificationType.swift in Sources */,
 				12292E55236E1C3200BD0FEC /* TripConfirmationViewController.swift in Sources */,
 				1420A5722364F84B0084B4BE /* View+Extensions.swift in Sources */,
@@ -2357,19 +2414,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */,
-				12BB151E236B701A00F69BC7 /* DestinationSearchQueries.swift in Sources */,
+				12BB151E236B701A00F69BC7 /* DestinationSearchQuery.swift in Sources */,
 				1438DD3C235E43E000E51875 /* ApiResponse.swift in Sources */,
+				12241F6A23789ECB009585CB /* Vehicle.swift in Sources */,
+				12241F6823789E40009585CB /* Driver.swift in Sources */,
 				1438DD57235EBCCE00E51875 /* PhoneNumberAuth.swift in Sources */,
+				12241F5A2376C119009585CB /* RequestRide.swift in Sources */,
+				127F480E23730D56006B3209 /* UserPaymentOptions.swift in Sources */,
 				1438DD33235E3AF600E51875 /* Pilot.swift in Sources */,
 				1438DD3E235E8D2500E51875 /* AppUser.swift in Sources */,
+				12241F4E2375AEA1009585CB /* TotalsEstimated.swift in Sources */,
+				12241F4C2375AE16009585CB /* PickupInfo.swift in Sources */,
 				1438DD3A235E436600E51875 /* ApiError.swift in Sources */,
 				126B8780236F5518005E6270 /* TripInformation.swift in Sources */,
+				12241F542375B4F6009585CB /* LocationAddress.swift in Sources */,
 				1438DD2B235E38CA00E51875 /* Earning.swift in Sources */,
 				1438DD38235E431300E51875 /* ErrorMessage.swift in Sources */,
 				1438DD35235E3B6300E51875 /* Rating.swift in Sources */,
+				12241F64237894E4009585CB /* RideUser.swift in Sources */,
+				12241F66237896B6009585CB /* RidePilot.swift in Sources */,
 				1438DD2F235E3A6000E51875 /* Location.swift in Sources */,
 				1438DD27235E367400E51875 /* User.swift in Sources */,
 				1438DD29235E386E00E51875 /* Daily.swift in Sources */,
+				127F481023734BC2006B3209 /* RideEstimates.swift in Sources */,
+				12241F502375B30A009585CB /* EstimatedLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2632,7 +2700,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RT459C64W3;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2656,7 +2724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RT459C64W3;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2766,6 +2834,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Repository/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2795,6 +2864,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Repository/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2863,6 +2933,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Remote API/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2892,6 +2963,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Remote API/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2960,6 +3032,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Local Storage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2989,6 +3062,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Local Storage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3056,6 +3130,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "App Preferences/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3084,6 +3159,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "App Preferences/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3150,6 +3226,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Entities/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3179,6 +3256,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Entities/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

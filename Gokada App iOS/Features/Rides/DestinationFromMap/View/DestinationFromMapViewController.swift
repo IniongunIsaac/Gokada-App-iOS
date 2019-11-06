@@ -17,7 +17,8 @@ class DestinationFromMapViewController: UIViewController {
     private let locationManager = CLLocationManager()
     @IBOutlet weak var destinationNameLbl: UILabel!
     let geocoder = GMSGeocoder()
-    var currentLocation: String!
+    var currentLocation: DestinationSearchQuery!
+    var destinationLocation: DestinationSearchQuery!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,7 @@ class DestinationFromMapViewController: UIViewController {
     @IBAction func goToConfirmTripPage(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "TripConfirmation", bundle: nil)
         let controller = storyboard.instantiateViewController(identifier: "tripConfirmationVC") as! TripConfirmationViewController
-        controller.tripInformation = TripInformation(from: currentLocation, to: destinationNameLbl.text!.trimmingCharacters(in: .whitespacesAndNewlines))
+        controller.tripInformation = TripInformation(from: currentLocation, to: destinationLocation)
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -54,6 +55,7 @@ extension DestinationFromMapViewController: CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
+        mapView.padding = UIEdgeInsets(top: 0, left: 0, bottom: 25, right: 10)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -78,6 +80,7 @@ extension DestinationFromMapViewController: GMSMapViewDelegate {
                 return
             }
             self.destinationNameLbl.text = lines.joined(separator: "\n")
+            self.destinationLocation = DestinationSearchQuery(id: nil, address: lines.joined(separator: "\n"), latitude: coordinate.latitude, longitude: coordinate.longitude)
             UIView.animate(withDuration: 0.25) {
                 self.view.layoutIfNeeded()
             }

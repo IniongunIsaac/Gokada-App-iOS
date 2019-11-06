@@ -9,8 +9,8 @@
 import Foundation
 
 public struct Pilot: Codable {
-    let earnings: Earning? = nil
-    let rating: Rating? = nil
-    let location: Location? = nil
-    let status: String? = nil
+    public let earnings: Earning? = nil
+    public let rating: Rating? = nil
+    public let location: Location? = nil
+    public let status: String? = nil
 }
