@@ -13,9 +13,20 @@ import RxSwift
 import RxCocoa
 
 class RidesHomeViewModel: BaseViewModel, IRidesHomeViewModel {
+    var searchHistory: PublishSubject<[String]> = PublishSubject()
     let ridesRepo: IRidesRepo
     
     init(ridesRepo: IRidesRepo) {
         self.ridesRepo = ridesRepo
+    }
+    
+    func getDestinationSearchHistory() {
+        ridesRepo.getDestinationHistory().subscribe(onNext: { [weak self] history in
+            if let queries = history?.queries {
+                self?.searchHistory.onNext(Array(queries))
+            }
+        }, onError: {[weak self] error in
+            self?.throwableError.onNext(error)
+        }).disposed(by: disposeBag)
     }
 }

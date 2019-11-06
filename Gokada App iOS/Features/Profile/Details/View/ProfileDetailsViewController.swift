@@ -38,6 +38,10 @@ class ProfileDetailsViewController: BaseViewController, UITableViewDelegate, UIT
         bindUserDetails()
     }
     
+    @IBAction func returnToHome(_ sender: UIButton) {
+        HomeVC.controller?.hideSideNav()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
@@ -57,7 +61,6 @@ class ProfileDetailsViewController: BaseViewController, UITableViewDelegate, UIT
             cell.user = profileDetailsViewModel!.user!
             
             cell.editProfileButton.addTapGesture { [weak self] in
-                self?.revealViewController()?.revealToggle(animated: true)
                 self?.performSegue(withIdentifier: "showEditProfileViewController", sender: nil)
             }
             

@@ -23,12 +23,25 @@ class RidesInjections {
         container.register(IRidesHomeViewModel.self) { res in
             RidesHomeViewModel(ridesRepo: res.resolve(IRidesRepo.self)!)
         }
+        container.register(ISearchDestinationViewModel.self) { res in
+            SearchDestinationViewModel(ridesRepo: res.resolve(IRidesRepo.self)!)
+        }
+        container.register(ITripConfirmationViewModel.self) { res in
+            TripConfirmationViewModel(ridesRepo: res.resolve(IRidesRepo.self)!)
+        }
         
+        // MARK: - Storyboard
         container.register(IRidesRateViewModel.self) { res in
             RidesRateViewModel(ridesRepo: res.resolve(IRidesRepo.self)!)
         }
         container.storyboardInitCompleted(RidesHomeViewController.self) { (res, cntrl) in
             cntrl.ridesHomeViewModel = res.resolve(IRidesHomeViewModel.self)
+        }
+        container.storyboardInitCompleted(SearchDestinationViewController.self) { (res, cntrl) in
+            cntrl.searchDestinationViewModel = res.resolve(ISearchDestinationViewModel.self)
+        }
+        container.storyboardInitCompleted(TripConfirmationViewController.self) { (res, cntrl) in
+            cntrl.tripConfirmationViewModel = res.resolve(ITripConfirmationViewModel.self)
         }
         
         container.storyboardInitCompleted(RidesRateViewController.self) { (res, cntrl) in

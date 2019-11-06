@@ -8,8 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		050CDEE23F7B960A8D12E3F9 /* Pods_Local_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF1009B08BB6007B8F9797 /* Pods_Local_StorageTests.framework */; };
+		12142303236B22C40031E5DA /* SearchHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12142302236B22C40031E5DA /* SearchHistoryTableViewCell.swift */; };
+		12292E45236CD49300BD0FEC /* PlacesSuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12292E44236CD49300BD0FEC /* PlacesSuggestionTableViewCell.swift */; };
+		12292E49236E19C200BD0FEC /* TripConfirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12292E48236E19C200BD0FEC /* TripConfirmation.storyboard */; };
+		12292E4B236E19D800BD0FEC /* DestinationFromMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12292E4A236E19D800BD0FEC /* DestinationFromMap.storyboard */; };
+		12292E50236E1B8800BD0FEC /* DestinationFromMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12292E4F236E1B8800BD0FEC /* DestinationFromMapViewController.swift */; };
+		12292E55236E1C3200BD0FEC /* TripConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12292E54236E1C3200BD0FEC /* TripConfirmationViewController.swift */; };
 		122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122BD9DF236195AA009F8AD3 /* OTPViewController.swift */; };
 		122BD9E12361A468009F8AD3 /* montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E6235FAA7B00414C46 /* montserrat.ttf */; };
+		126B8780236F5518005E6270 /* TripInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B877F236F5518005E6270 /* TripInformation.swift */; };
+		126B8782236F57A1005E6270 /* ITripConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B8781236F57A1005E6270 /* ITripConfirmationViewModel.swift */; };
+		126B8784236F57B0005E6270 /* TripConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126B8783236F57B0005E6270 /* TripConfirmationViewModel.swift */; };
 		1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */; };
 		1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */ = {isa = PBXBuildFile; fileRef = 1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */; };
 		12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12959FE6235FB6E700DC7856 /* PreLoader.swift */; };
@@ -19,6 +28,7 @@
 		12A0421A23649E3600C4C0EF /* AuthLocalImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A0421923649E3600C4C0EF /* AuthLocalImpl.swift */; };
 		12A0421C23649E4F00C4C0EF /* IAuthLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A0421B23649E4F00C4C0EF /* IAuthLocal.swift */; };
 		12A7B9222361C4D400861E3D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7B9212361C4D400861E3D /* RegisterViewController.swift */; };
+		12BB151E236B701A00F69BC7 /* DestinationSearchQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BB151D236B701A00F69BC7 /* DestinationSearchQueries.swift */; };
 		12C4EF2B2362E6FB002CAB3A /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF2A2362E6FB002CAB3A /* CustomAlert.swift */; };
 		12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF302362F538002CAB3A /* AuthValidations.swift */; };
 		12C4EF332363002F002CAB3A /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4EF322363002F002CAB3A /* OTPViewModel.swift */; };
@@ -41,7 +51,10 @@
 		12E2B7022369DD500010F309 /* RidesInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7012369DD500010F309 /* RidesInjections.swift */; };
 		12E2B7042369E5FE0010F309 /* ProfileInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7032369E5FE0010F309 /* ProfileInjections.swift */; };
 		12E2B7062369EC120010F309 /* RidesHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B7052369EC120010F309 /* RidesHomeViewController.swift */; };
-		12E2B70A236A2FCE0010F309 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E2B708236A2FCE0010F309 /* SWRevealViewController.m */; };
+		12E8A5AC236C3BA30070BE9E /* RidesSelectDestination.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E8A5AB236C3BA30070BE9E /* RidesSelectDestination.storyboard */; };
+		12E8A5B1236C3CE10070BE9E /* SearchDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8A5B0236C3CE10070BE9E /* SearchDestinationViewController.swift */; };
+		12E8A5B3236C3F6A0070BE9E /* ISearchDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8A5B2236C3F6A0070BE9E /* ISearchDestinationViewModel.swift */; };
+		12E8A5B5236C3F7B0070BE9E /* SearchDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8A5B4236C3F7B0070BE9E /* SearchDestinationViewModel.swift */; };
 		1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A55E2364F62A0084B4BE /* ProfileItem.swift */; };
 		1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420A5612364F68D0084B4BE /* Profile.storyboard */; };
 		1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */; };
@@ -107,7 +120,7 @@
 		1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD69235F364200E51875 /* BaseViewModel.swift */; };
 		1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6C235F460200E51875 /* BaseViewController.swift */; };
 		1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD6F235F4DF900E51875 /* ErrorType.swift */; };
-		1438DD72235F602200E51875 /* DefaultInjections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* DefaultInjections.swift */; };
+		1438DD72235F602200E51875 /* Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD71235F602200E51875 /* Injections.swift */; };
 		1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD73235F667E00E51875 /* ILoginViewModel.swift */; };
 		1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438DD75235F679E00E51875 /* LoginViewController.swift */; };
 		145856E7236703C7008E791F /* ProfileDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */; };
@@ -308,7 +321,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		12142302236B22C40031E5DA /* SearchHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		12292E44236CD49300BD0FEC /* PlacesSuggestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesSuggestionTableViewCell.swift; sourceTree = "<group>"; };
+		12292E48236E19C200BD0FEC /* TripConfirmation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripConfirmation.storyboard; sourceTree = "<group>"; };
+		12292E4A236E19D800BD0FEC /* DestinationFromMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DestinationFromMap.storyboard; sourceTree = "<group>"; };
+		12292E4F236E1B8800BD0FEC /* DestinationFromMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationFromMapViewController.swift; sourceTree = "<group>"; };
+		12292E54236E1C3200BD0FEC /* TripConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripConfirmationViewController.swift; sourceTree = "<group>"; };
 		122BD9DF236195AA009F8AD3 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		126B877F236F5518005E6270 /* TripInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInformation.swift; sourceTree = "<group>"; };
+		126B8781236F57A1005E6270 /* ITripConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITripConfirmationViewModel.swift; sourceTree = "<group>"; };
+		126B8783236F57B0005E6270 /* TripConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripConfirmationViewModel.swift; sourceTree = "<group>"; };
 		1283C6E6235FAA7B00414C46 /* montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat.ttf; sourceTree = "<group>"; };
 		1283C6E8235FAAA300414C46 /* gokada_welcome_anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_welcome_anim.json; sourceTree = "<group>"; };
 		1283C6E9235FAAA400414C46 /* gokada_splash_amin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gokada_splash_amin.json; sourceTree = "<group>"; };
@@ -319,6 +341,7 @@
 		12A0421923649E3600C4C0EF /* AuthLocalImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalImpl.swift; sourceTree = "<group>"; };
 		12A0421B23649E4F00C4C0EF /* IAuthLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthLocal.swift; sourceTree = "<group>"; };
 		12A7B9212361C4D400861E3D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		12BB151D236B701A00F69BC7 /* DestinationSearchQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchQueries.swift; sourceTree = "<group>"; };
 		12C4EF2A2362E6FB002CAB3A /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		12C4EF302362F538002CAB3A /* AuthValidations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidations.swift; sourceTree = "<group>"; };
 		12C4EF322363002F002CAB3A /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
@@ -326,6 +349,7 @@
 		12C4EF3B23630640002CAB3A /* IOTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTPViewModel.swift; sourceTree = "<group>"; };
 		12C4EF4523635238002CAB3A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		12C4EF4723635266002CAB3A /* IRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRegisterViewModel.swift; sourceTree = "<group>"; };
+		12D84F5B236AF1FC001066A2 /* Gokada App iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gokada App iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		12D85FF62360537900C12D79 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		12D85FF82360539900C12D79 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		12E2B6E523698CC40010F309 /* Rides.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rides.storyboard; sourceTree = "<group>"; };
@@ -341,9 +365,10 @@
 		12E2B7012369DD500010F309 /* RidesInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesInjections.swift; sourceTree = "<group>"; };
 		12E2B7032369E5FE0010F309 /* ProfileInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInjections.swift; sourceTree = "<group>"; };
 		12E2B7052369EC120010F309 /* RidesHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesHomeViewController.swift; sourceTree = "<group>"; };
-		12E2B707236A2FCD0010F309 /* Gokada App iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gokada App iOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		12E2B708236A2FCE0010F309 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		12E2B709236A2FCE0010F309 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		12E8A5AB236C3BA30070BE9E /* RidesSelectDestination.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RidesSelectDestination.storyboard; sourceTree = "<group>"; };
+		12E8A5B0236C3CE10070BE9E /* SearchDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationViewController.swift; sourceTree = "<group>"; };
+		12E8A5B2236C3F6A0070BE9E /* ISearchDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISearchDestinationViewModel.swift; sourceTree = "<group>"; };
+		12E8A5B4236C3F7B0070BE9E /* SearchDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationViewModel.swift; sourceTree = "<group>"; };
 		1420A55E2364F62A0084B4BE /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
 		1420A5612364F68D0084B4BE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProfileDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -419,7 +444,7 @@
 		1438DD69235F364200E51875 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1438DD6C235F460200E51875 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1438DD6F235F4DF900E51875 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
-		1438DD71235F602200E51875 /* DefaultInjections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultInjections.swift; sourceTree = "<group>"; };
+		1438DD71235F602200E51875 /* Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injections.swift; sourceTree = "<group>"; };
 		1438DD73235F667E00E51875 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
 		1438DD75235F679E00E51875 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		145856E6236703C7008E791F /* ProfileDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -572,6 +597,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12292E4C236E1B1800BD0FEC /* DestinationFromMap */ = {
+			isa = PBXGroup;
+			children = (
+				12292E4E236E1B3400BD0FEC /* View */,
+				12292E4D236E1B2D00BD0FEC /* ViewModel */,
+			);
+			path = DestinationFromMap;
+			sourceTree = "<group>";
+		};
+		12292E4D236E1B2D00BD0FEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12292E4E236E1B3400BD0FEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12292E4F236E1B8800BD0FEC /* DestinationFromMapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12292E51236E1C1000BD0FEC /* TripConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				12292E53236E1C2600BD0FEC /* View */,
+				12292E52236E1C2000BD0FEC /* ViewModel */,
+			);
+			path = TripConfirmation;
+			sourceTree = "<group>";
+		};
+		12292E52236E1C2000BD0FEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				126B8781236F57A1005E6270 /* ITripConfirmationViewModel.swift */,
+				126B8783236F57B0005E6270 /* TripConfirmationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12292E53236E1C2600BD0FEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12292E54236E1C3200BD0FEC /* TripConfirmationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		122BD9DD2361958B009F8AD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +792,9 @@
 				12E2B6E123698A110010F309 /* Storyboards */,
 				EC1DA596236AF08B00A78F96 /* Rate */,
 				12E2B6E223698ABB0010F309 /* Home */,
+				12E8A5AD236C3C9B0070BE9E /* SearchDestination */,
+				12292E4C236E1B1800BD0FEC /* DestinationFromMap */,
+				12292E51236E1C1000BD0FEC /* TripConfirmation */,
 			);
 			path = Rides;
 			sourceTree = "<group>";
@@ -725,6 +803,9 @@
 			isa = PBXGroup;
 			children = (
 				12E2B6E523698CC40010F309 /* Rides.storyboard */,
+				12E8A5AB236C3BA30070BE9E /* RidesSelectDestination.storyboard */,
+				12292E4A236E19D800BD0FEC /* DestinationFromMap.storyboard */,
+				12292E48236E19C200BD0FEC /* TripConfirmation.storyboard */,
 				EC1DA59F236AF43F00A78F96 /* RidesRate.storyboard */,
 			);
 			path = Storyboards;
@@ -742,6 +823,8 @@
 		12E2B6E92369CFC80010F309 /* Rides */ = {
 			isa = PBXGroup;
 			children = (
+				12BB151D236B701A00F69BC7 /* DestinationSearchQueries.swift */,
+				126B877F236F5518005E6270 /* TripInformation.swift */,
 				EC1DA5A3236F2DF200A78F96 /* RatingItem.swift */,
 			);
 			path = Rides;
@@ -778,6 +861,7 @@
 			isa = PBXGroup;
 			children = (
 				12E2B7052369EC120010F309 /* RidesHomeViewController.swift */,
+				12142302236B22C40031E5DA /* SearchHistoryTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -789,6 +873,33 @@
 				12E2B6FD2369D5D90010F309 /* RidesHomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12E8A5AD236C3C9B0070BE9E /* SearchDestination */ = {
+			isa = PBXGroup;
+			children = (
+				12E8A5AF236C3CB80070BE9E /* View */,
+				12E8A5AE236C3CB10070BE9E /* ViewModel */,
+			);
+			path = SearchDestination;
+			sourceTree = "<group>";
+		};
+		12E8A5AE236C3CB10070BE9E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12E8A5B2236C3F6A0070BE9E /* ISearchDestinationViewModel.swift */,
+				12E8A5B4236C3F7B0070BE9E /* SearchDestinationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		12E8A5AF236C3CB80070BE9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12E8A5B0236C3CE10070BE9E /* SearchDestinationViewController.swift */,
+				12292E44236CD49300BD0FEC /* PlacesSuggestionTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1420A5562364F5960084B4BE /* Profile */ = {
@@ -1153,9 +1264,7 @@
 			isa = PBXGroup;
 			children = (
 				1438DC3E235DD57000E51875 /* LaunchScreen.storyboard */,
-				12E2B709236A2FCE0010F309 /* SWRevealViewController.h */,
-				12E2B708236A2FCE0010F309 /* SWRevealViewController.m */,
-				12E2B707236A2FCD0010F309 /* Gokada App iOS-Bridging-Header.h */,
+				12D84F5B236AF1FC001066A2 /* Gokada App iOS-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -1172,10 +1281,10 @@
 		1438DD63235F2D0D00E51875 /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				1438DD71235F602200E51875 /* DefaultInjections.swift */,
+				1438DD71235F602200E51875 /* Injections.swift */,
+				12E2B7012369DD500010F309 /* RidesInjections.swift */,
 				12E2B6FF2369DC700010F309 /* AuthInjections.swift */,
 				12E2B7032369E5FE0010F309 /* ProfileInjections.swift */,
-				12E2B7012369DD500010F309 /* RidesInjections.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -1685,13 +1794,16 @@
 			files = (
 				12959FE9235FBB7B00DC7856 /* gokada_custom_loader.json in Resources */,
 				122BD9E12361A468009F8AD3 /* montserrat.ttf in Resources */,
+				12292E49236E19C200BD0FEC /* TripConfirmation.storyboard in Resources */,
 				1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */,
 				1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */,
+				12E8A5AC236C3BA30070BE9E /* RidesSelectDestination.storyboard in Resources */,
 				12E2B6E623698CC40010F309 /* Rides.storyboard in Resources */,
 				1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */,
 				1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */,
 				1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */,
 				1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */,
+				12292E4B236E19D800BD0FEC /* DestinationFromMap.storyboard in Resources */,
 				12D85FF92360539900C12D79 /* Auth.storyboard in Resources */,
 				EC1DA5A0236AF43F00A78F96 /* RidesRate.storyboard in Resources */,
 			);
@@ -2143,26 +2255,32 @@
 				1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */,
 				ECBED2A32371BF7100DCF905 /* RateKeys.swift in Sources */,
 				12E2B7042369E5FE0010F309 /* ProfileInjections.swift in Sources */,
+               12E8A5B5236C3F7B0070BE9E /* SearchDestinationViewModel.swift in Sources */,
 				12E2B70A236A2FCE0010F309 /* SWRevealViewController.m in Sources */,
 				EC1DA5A2236C36CD00A78F96 /* RatingView.swift in Sources */,
+                
 				145856E9236716B5008E791F /* LogoutTableViewCell.swift in Sources */,
+				12E8A5B3236C3F6A0070BE9E /* ISearchDestinationViewModel.swift in Sources */,
 				1420A5692364F6D80084B4BE /* ProfileDetailsViewController.swift in Sources */,
 				122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */,
 				EC1DA59E236AF1EC00A78F96 /* RidesRateViewModel.swift in Sources */,
 				1438DD67235F2FD800E51875 /* LoginViewModel.swift in Sources */,
 				1420A56F2364F7070084B4BE /* EditProfileViewModel.swift in Sources */,
 				1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */,
+				126B8784236F57B0005E6270 /* TripConfirmationViewModel.swift in Sources */,
 				12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */,
 				1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */,
 				EC1DA59C236AF18000A78F96 /* IRidesRateViewModel.swift in Sources */,
 				145930C92365C6A20074E2EF /* Code+Extensions.swift in Sources */,
 				1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */,
 				1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */,
+				12142303236B22C40031E5DA /* SearchHistoryTableViewCell.swift in Sources */,
 				1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */,
 				12C4EF4623635238002CAB3A /* RegisterViewModel.swift in Sources */,
 				EC1DA59A236AF0FE00A78F96 /* RidesRateViewController.swift in Sources */,
 				12E2B7062369EC120010F309 /* RidesHomeViewController.swift in Sources */,
 				12E2B7002369DC700010F309 /* AuthInjections.swift in Sources */,
+				12292E50236E1B8800BD0FEC /* DestinationFromMapViewController.swift in Sources */,
 				1438DD74235F667E00E51875 /* ILoginViewModel.swift in Sources */,
 				12E2B6FC2369D5B00010F309 /* IRidesHomeViewModel.swift in Sources */,
 				12E2B7022369DD500010F309 /* RidesInjections.swift in Sources */,
@@ -2170,10 +2288,12 @@
 				12A04211236487D000C4C0EF /* WelcomeViewModel.swift in Sources */,
 				1438DD6D235F460200E51875 /* BaseViewController.swift in Sources */,
 				12A7B9222361C4D400861E3D /* RegisterViewController.swift in Sources */,
+				12E8A5B1236C3CE10070BE9E /* SearchDestinationViewController.swift in Sources */,
 				1420A56A2364F6D80084B4BE /* ProfileItemTableViewCell.swift in Sources */,
 				12959FE7235FB6E700DC7856 /* PreLoader.swift in Sources */,
 				12C4EF332363002F002CAB3A /* OTPViewModel.swift in Sources */,
-				1438DD72235F602200E51875 /* DefaultInjections.swift in Sources */,
+				126B8782236F57A1005E6270 /* ITripConfirmationViewModel.swift in Sources */,
+				1438DD72235F602200E51875 /* Injections.swift in Sources */,
 				12C4EF3C23630640002CAB3A /* IOTPViewModel.swift in Sources */,
 				12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */,
 				12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */,
@@ -2182,10 +2302,12 @@
 				12A04213236487E700C4C0EF /* IWelcomeViewModel.swift in Sources */,
 				12C4EF2B2362E6FB002CAB3A /* CustomAlert.swift in Sources */,
 				12C4EF3A23630600002CAB3A /* NotificationType.swift in Sources */,
+				12292E55236E1C3200BD0FEC /* TripConfirmationViewController.swift in Sources */,
 				1420A5722364F84B0084B4BE /* View+Extensions.swift in Sources */,
 				1420A56C2364F6F80084B4BE /* EditProfileViewController.swift in Sources */,
 				12E2B6FE2369D5D90010F309 /* RidesHomeViewModel.swift in Sources */,
 				145856E7236703C7008E791F /* ProfileDetailsTableViewCell.swift in Sources */,
+				12292E45236CD49300BD0FEC /* PlacesSuggestionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2288,11 +2410,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */,
+				12BB151E236B701A00F69BC7 /* DestinationSearchQueries.swift in Sources */,
 				1438DD3C235E43E000E51875 /* ApiResponse.swift in Sources */,
 				1438DD57235EBCCE00E51875 /* PhoneNumberAuth.swift in Sources */,
 				1438DD33235E3AF600E51875 /* Pilot.swift in Sources */,
 				1438DD3E235E8D2500E51875 /* AppUser.swift in Sources */,
 				1438DD3A235E436600E51875 /* ApiError.swift in Sources */,
+				126B8780236F5518005E6270 /* TripInformation.swift in Sources */,
 				1438DD2B235E38CA00E51875 /* Earning.swift in Sources */,
 				1438DD38235E431300E51875 /* ErrorMessage.swift in Sources */,
 				1438DD35235E3B6300E51875 /* Rating.swift in Sources */,

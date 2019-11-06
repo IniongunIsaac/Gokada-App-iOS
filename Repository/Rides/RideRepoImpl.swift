@@ -27,6 +27,12 @@ public struct RidesRepoImpl: IRidesRepo {
         self.ridesLocal = ridesLocal
     }
     
+    public func getDestinationHistory() -> Observable<DestinationSearchQueries?> {
+        return ridesLocal!.getDestinationHistory()
+    }
+    
+    public func saveDestinationHistory(histories: [String]) {
+        ridesLocal?.saveDestinationHistory(queries: histories)
     public func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>> {
         return ridesRemote!.rating(requestBody: requestBody)
     }

@@ -47,7 +47,8 @@ class OTPViewController: BaseViewController {
             
             if res.user.firstName != nil {
                 let storyboard = UIStoryboard(name: "Rides", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC")
+                let vc = storyboard.instantiateViewController(withIdentifier: "ridesHomeVC") as! RidesHomeViewController
+                HomeVC.currentUser = res.user
                 self?.navigationController?.setViewControllers([vc], animated: false)
             } else {
                 let controller = self?.storyboard?.instantiateViewController(identifier: "registrationVC") as! RegisterViewController

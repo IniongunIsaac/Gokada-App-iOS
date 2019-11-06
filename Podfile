@@ -30,6 +30,7 @@ target 'Gokada App iOS' do
   
   #Rx Google Maps SDK
   pod 'RxGoogleMaps'
+  pod 'GooglePlaces'
   
   pod 'ProgressHUD'
   pod 'Toast', '~> 4.0.0'
