@@ -13,4 +13,5 @@ struct RemoteApiConstants {
     static let LOGIN_URL = "\(BASE_URL)authenticate"
     static let OTP_VERIFICATION_URL = "\(BASE_URL)authenticate/verify"
     static let UPDATE_USER_PROFILE_URL = "\(BASE_URL)user"
+    static let RATE_USER_RIDE_URL =  "\(BASE_URL)user/rides/5dc2980d3b2a840008365d4b/rate"
 }

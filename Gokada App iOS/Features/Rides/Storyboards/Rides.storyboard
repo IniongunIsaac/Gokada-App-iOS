@@ -302,11 +302,24 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOB-1T-8VI">
+                                <rect key="frame" x="265" y="765" width="104" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="DS6-Av-I3g"/>
+                                    <constraint firstAttribute="height" constant="30" id="QiR-30-hQO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="kmY-8C-gm8" kind="show" id="5AA-44-Sds"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="v7z-Y4-esd" firstAttribute="top" secondItem="iEV-Dz-yag" secondAttribute="top" constant="16" id="2wC-P7-I4m"/>
+                            <constraint firstItem="iEV-Dz-yag" firstAttribute="bottom" secondItem="nOB-1T-8VI" secondAttribute="bottom" constant="67" id="4z2-hk-hIK"/>
                             <constraint firstItem="v7z-Y4-esd" firstAttribute="leading" secondItem="iEV-Dz-yag" secondAttribute="leading" constant="16" id="Uh5-u7-tOe"/>
+                            <constraint firstItem="iEV-Dz-yag" firstAttribute="trailing" secondItem="nOB-1T-8VI" secondAttribute="trailing" constant="45" id="py9-9o-Mx4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iEV-Dz-yag"/>
                     </view>
@@ -317,7 +330,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KL4-Bi-lUi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="163"/>
+            <point key="canvasLocation" x="101.25" y="162.67605633802816"/>
+        </scene>
+        <!--RidesRate-->
+        <scene sceneID="Rw6-Zt-EI1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RidesRate" id="kmY-8C-gm8" userLabel="RidesRate" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XmU-r8-6qg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ath-VK-PGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="396"/>
         </scene>
     </scenes>
     <resources>

@@ -11,5 +11,5 @@ import RxSwift
 import Entities
 
 public protocol IRidesRemote {
-    
+    func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>>
 }

@@ -14,11 +14,20 @@ import App_Preferences
 import Local_Storage
 
 public struct RidesRepoImpl: IRidesRepo {
+
+    
+    
+
+    
     public let ridesRemote: IRidesRemote?
     public let ridesLocal: IRidesLocal?
     
     public init(ridesRemote: IRidesRemote, ridesLocal: IRidesLocal) {
         self.ridesRemote = ridesRemote
         self.ridesLocal = ridesLocal
+    }
+    
+    public func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>> {
+        return ridesRemote!.rating(requestBody: requestBody)
     }
 }

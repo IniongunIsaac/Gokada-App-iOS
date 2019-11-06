@@ -24,8 +24,15 @@ class RidesInjections {
             RidesHomeViewModel(ridesRepo: res.resolve(IRidesRepo.self)!)
         }
         
+        container.register(IRidesRateViewModel.self) { res in
+            RidesRateViewModel(ridesRepo: res.resolve(IRidesRepo.self)!)
+        }
         container.storyboardInitCompleted(RidesHomeViewController.self) { (res, cntrl) in
             cntrl.ridesHomeViewModel = res.resolve(IRidesHomeViewModel.self)
         }
+        
+        container.storyboardInitCompleted(RidesRateViewController.self) { (res, cntrl) in
+            cntrl.ridesRateViewModel = res.resolve(IRidesRateViewModel.self)
+            }
     }
 }
