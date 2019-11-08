@@ -11,13 +11,6 @@ import UIKit
 import Kingfisher
 import Entities
 
-struct RateVC {
-    static var controller: RidesHomeViewController?
-    static var currentUser: User? = User(firstName: "Isaac", lastName: "Ngurumun", phoneNumber: "8145421020", profileImage: "https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-circle-512.png", email: "isaac@gokada.ng")
-}
-
-
-
 class RidesRateViewController: BaseViewController {
     
     var ridesRateViewModel: IRidesRateViewModel?
@@ -42,12 +35,12 @@ class RidesRateViewController: BaseViewController {
         riderProfileImageView.layer.cornerRadius = riderProfileImageView.frame.size.width  /  2
         riderProfileImageView.clipsToBounds = true
         
-        if let userImage = RateVC.currentUser?.profileImage {
+        if let userImage = HomeVC.currentUser?.profileImage {
                 
             setImage(imageUrl: userImage)
                   }
 
-        if let name = RateVC.currentUser?.firstName{
+        if let name = HomeVC.currentUser?.firstName{
             userNameLabel.text = "\(name),"
         } else {
             userNameLabel.text = "Nil Nil"

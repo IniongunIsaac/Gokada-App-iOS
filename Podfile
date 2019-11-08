@@ -15,6 +15,7 @@ target 'Gokada App iOS' do
   pod 'RxAlamofire', '~> 5'
   pod 'RealmSwift'
   pod "RxRealm"
+  pod 'PullUpController'
   #pod 'RxCoreLocation', '~> 1.4'
   #pod "RxSegue", :git => "https://github.com/RxSwiftCommunity/RxSegue.git"
   #pod 'RxTapAction', :git => 'https://github.com/RxSwiftCommunity/RxTapAction.git'
