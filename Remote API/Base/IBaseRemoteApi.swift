@@ -11,7 +11,9 @@ import Alamofire
 import RxSwift
 
 protocol IBaseRemoteApi {
-    func makeAPIRequest<T: Codable>(responseType: T.Type, url: String, method: HTTPMethod, params: [String : Any]?, encoding: ParameterEncoding, successHandler: @escaping (T) -> Void, errorHandler: @escaping (Error) -> Void)
+    func makeAPIRequest<T: Codable>(responseType: T.Type, url: String, method: HTTPMethod, params: [String : Any]?, encoding: ParameterEncoding,
+                                    successHandler: @escaping (T) -> Void, errorHandler: @escaping (Error) -> Void)
     
-    func makeAPIRequestObservable<T: Codable>(responseType: T.Type, url: String, method: HTTPMethod, params: [String : Any]?, encoding: ParameterEncoding) -> Observable<T>
+    func makeAPIRequestObservable<T: Codable>(responseType: T.Type, url: String, method: HTTPMethod, params: [String : Any]?,
+                                              encoding: ParameterEncoding) -> Observable<T>
 }

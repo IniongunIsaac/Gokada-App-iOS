@@ -12,6 +12,7 @@ PODS:
   - Kingfisher (4.10.1)
   - lottie-ios (3.1.3)
   - ProgressHUD (2.51)
+  - PullUpController (0.7.0)
   - Realm (3.20.0):
     - Realm/Headers (= 3.20.0)
   - Realm/Headers (3.20.0)
@@ -63,6 +64,7 @@ DEPENDENCIES:
   - Kingfisher
   - lottie-ios
   - ProgressHUD
+  - PullUpController
   - RealmSwift
   - RSKImageCropper
   - RxAlamofire (~> 5)
@@ -88,6 +90,7 @@ SPEC REPOS:
     - Kingfisher
     - lottie-ios
     - ProgressHUD
+    - PullUpController
     - Realm
     - RealmSwift
     - RSKImageCropper
@@ -114,6 +117,7 @@ SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   lottie-ios: 496ac5cea1bbf1a7bd1f1f472f3232eb1b8d744b
   ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
+  PullUpController: 5c8710cb686dca43d5850ae994debb7fdb824b75
   Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
   RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
   RSKImageCropper: a446db0e8444a036b34f3c43db01b2373baa4b2a
@@ -131,6 +135,6 @@ SPEC CHECKSUMS:
   SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 54601c9232751bbe8d97cfaf142590148cbf4783
+PODFILE CHECKSUM: f29b1e9f7f2041d01f8acca1a12ae0817940b965
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

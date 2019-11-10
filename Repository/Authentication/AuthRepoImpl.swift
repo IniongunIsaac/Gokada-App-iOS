@@ -14,6 +14,8 @@ import App_Preferences
 import Local_Storage
 
 public struct AuthRepoImpl: IAuthRepo {
+ 
+    
     
     public let authRemote: IAuthRemote?
     public let authLocal: IAuthLocal?
@@ -61,5 +63,6 @@ public struct AuthRepoImpl: IAuthRepo {
         authLocal!.deleteLoggedInUserDetails()
         ridesLocal?.clearSearchHistory()
     }
+    
     
 }

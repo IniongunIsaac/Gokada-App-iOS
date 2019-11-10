@@ -15,4 +15,6 @@ import Entities
 public protocol IRidesRepo {
     func getDestinationHistory() -> Observable<DestinationSearchQueries?>
     func saveDestinationHistory(histories: [String])
+    func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>>
+    
 }

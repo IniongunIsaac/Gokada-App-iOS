@@ -135,6 +135,18 @@
 		C1E4292101E708249E4BDBAF /* Pods_Remote_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CC7820B6EF6A314767FE4B /* Pods_Remote_API.framework */; };
 		D258757A4B13DA48EBA9CEC5 /* Pods_Local_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3538DE3DD6C8B121CA0C4677 /* Pods_Local_Storage.framework */; };
 		E08DD234C6E4DECD1152579A /* Pods_Remote_APITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C82131DF1A92AD73F41CFCB /* Pods_Remote_APITests.framework */; };
+		EC1DA59A236AF0FE00A78F96 /* RidesRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DA599236AF0FE00A78F96 /* RidesRateViewController.swift */; };
+		EC1DA59C236AF18000A78F96 /* IRidesRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DA59B236AF18000A78F96 /* IRidesRateViewModel.swift */; };
+		EC1DA59E236AF1EC00A78F96 /* RidesRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DA59D236AF1EC00A78F96 /* RidesRateViewModel.swift */; };
+		EC1DA5A0236AF43F00A78F96 /* RidesRate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1DA59F236AF43F00A78F96 /* RidesRate.storyboard */; };
+		EC1DA5A2236C36CD00A78F96 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DA5A1236C36CD00A78F96 /* RatingView.swift */; };
+		EC1DA5A4236F2DF300A78F96 /* RatingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DA5A3236F2DF200A78F96 /* RatingItem.swift */; };
+		ECBED2A32371BF7100DCF905 /* RateKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBED2A22371BF7100DCF905 /* RateKeys.swift */; };
+		ECDE1A552374101C0043BF55 /* RideDuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDE1A542374101C0043BF55 /* RideDuration.storyboard */; };
+		ECDE1A5A23756B090043BF55 /* RideDurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE1A5923756B090043BF55 /* RideDurationViewController.swift */; };
+		ECDE1A5C23756B4D0043BF55 /* RideDurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE1A5B23756B4D0043BF55 /* RideDurationViewModel.swift */; };
+		ECDE1A5E23756B690043BF55 /* IRideDurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE1A5D23756B690043BF55 /* IRideDurationViewModel.swift */; };
+		ECDE1A60237584CE0043BF55 /* EstimatedFare.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE1A5F237584CE0043BF55 /* EstimatedFare.swift */; };
 		F0D59D5F441CE2F5ADCD336D /* Pods_Gokada_App_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03169CF9B0EA0A1EC6340E5 /* Pods_Gokada_App_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -470,6 +482,18 @@
 		D97CAD2D78704A14831BBD3C /* Pods-Gokada App iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E074583ACD4AF2F18B08DAD3 /* Pods-Entities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entities.release.xcconfig"; path = "Target Support Files/Pods-Entities/Pods-Entities.release.xcconfig"; sourceTree = "<group>"; };
 		E960928A282C0129B7556D69 /* Pods-Entities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entities.debug.xcconfig"; path = "Target Support Files/Pods-Entities/Pods-Entities.debug.xcconfig"; sourceTree = "<group>"; };
+		EC1DA599236AF0FE00A78F96 /* RidesRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesRateViewController.swift; sourceTree = "<group>"; };
+		EC1DA59B236AF18000A78F96 /* IRidesRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRidesRateViewModel.swift; sourceTree = "<group>"; };
+		EC1DA59D236AF1EC00A78F96 /* RidesRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesRateViewModel.swift; sourceTree = "<group>"; };
+		EC1DA59F236AF43F00A78F96 /* RidesRate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RidesRate.storyboard; sourceTree = "<group>"; };
+		EC1DA5A1236C36CD00A78F96 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		EC1DA5A3236F2DF200A78F96 /* RatingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RatingItem.swift; path = "Gokada App iOS/Features/Rides/Rate/Views/RatingItem.swift"; sourceTree = SOURCE_ROOT; };
+		ECBED2A22371BF7100DCF905 /* RateKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateKeys.swift; sourceTree = "<group>"; };
+		ECDE1A542374101C0043BF55 /* RideDuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RideDuration.storyboard; sourceTree = "<group>"; };
+		ECDE1A5923756B090043BF55 /* RideDurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDurationViewController.swift; sourceTree = "<group>"; };
+		ECDE1A5B23756B4D0043BF55 /* RideDurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDurationViewModel.swift; sourceTree = "<group>"; };
+		ECDE1A5D23756B690043BF55 /* IRideDurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRideDurationViewModel.swift; sourceTree = "<group>"; };
+		ECDE1A5F237584CE0043BF55 /* EstimatedFare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatedFare.swift; sourceTree = "<group>"; };
 		ECECC4D8B70F14400A182FB6 /* Pods-Local StorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Local StorageTests.release.xcconfig"; path = "Target Support Files/Pods-Local StorageTests/Pods-Local StorageTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F204A53EE2C1C47E5F1638CF /* Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gokada App iOS-Gokada App iOSUITests/Pods-Gokada App iOS-Gokada App iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -776,6 +800,8 @@
 			isa = PBXGroup;
 			children = (
 				12E2B6E123698A110010F309 /* Storyboards */,
+				ECDE1A5623756A3F0043BF55 /* RideDuration */,
+				EC1DA596236AF08B00A78F96 /* Rate */,
 				12E2B6E223698ABB0010F309 /* Home */,
 				12E8A5AD236C3C9B0070BE9E /* SearchDestination */,
 				12292E4C236E1B1800BD0FEC /* DestinationFromMap */,
@@ -791,6 +817,8 @@
 				12E8A5AB236C3BA30070BE9E /* RidesSelectDestination.storyboard */,
 				12292E4A236E19D800BD0FEC /* DestinationFromMap.storyboard */,
 				12292E48236E19C200BD0FEC /* TripConfirmation.storyboard */,
+				EC1DA59F236AF43F00A78F96 /* RidesRate.storyboard */,
+				ECDE1A542374101C0043BF55 /* RideDuration.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -809,6 +837,7 @@
 			children = (
 				12BB151D236B701A00F69BC7 /* DestinationSearchQueries.swift */,
 				126B877F236F5518005E6270 /* TripInformation.swift */,
+				EC1DA5A3236F2DF200A78F96 /* RatingItem.swift */,
 			);
 			path = Rides;
 			sourceTree = "<group>";
@@ -1309,6 +1338,7 @@
 				12C4EF3923630600002CAB3A /* NotificationType.swift */,
 				145930C82365C6A20074E2EF /* Code+Extensions.swift */,
 				145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */,
+				ECBED2A22371BF7100DCF905 /* RateKeys.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1355,6 +1385,60 @@
 				E074583ACD4AF2F18B08DAD3 /* Pods-Entities.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC1DA596236AF08B00A78F96 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				EC1DA597236AF0B400A78F96 /* Views */,
+				EC1DA598236AF0C000A78F96 /* ViewModel */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
+		EC1DA597236AF0B400A78F96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC1DA599236AF0FE00A78F96 /* RidesRateViewController.swift */,
+				EC1DA5A1236C36CD00A78F96 /* RatingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC1DA598236AF0C000A78F96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC1DA59D236AF1EC00A78F96 /* RidesRateViewModel.swift */,
+				EC1DA59B236AF18000A78F96 /* IRidesRateViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ECDE1A5623756A3F0043BF55 /* RideDuration */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE1A5823756A9F0043BF55 /* Views */,
+				ECDE1A5723756A9B0043BF55 /* ViewModel */,
+			);
+			path = RideDuration;
+			sourceTree = "<group>";
+		};
+		ECDE1A5723756A9B0043BF55 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE1A5B23756B4D0043BF55 /* RideDurationViewModel.swift */,
+				ECDE1A5D23756B690043BF55 /* IRideDurationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ECDE1A5823756A9F0043BF55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECDE1A5923756B090043BF55 /* RideDurationViewController.swift */,
+				ECDE1A5F237584CE0043BF55 /* EstimatedFare.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1753,6 +1837,7 @@
 				1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */,
 				1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */,
 				12E8A5AC236C3BA30070BE9E /* RidesSelectDestination.storyboard in Resources */,
+				ECDE1A552374101C0043BF55 /* RideDuration.storyboard in Resources */,
 				12E2B6E623698CC40010F309 /* Rides.storyboard in Resources */,
 				1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */,
 				1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */,
@@ -1760,6 +1845,7 @@
 				1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */,
 				12292E4B236E19D800BD0FEC /* DestinationFromMap.storyboard in Resources */,
 				12D85FF92360539900C12D79 /* Auth.storyboard in Resources */,
+				EC1DA5A0236AF43F00A78F96 /* RidesRate.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2207,24 +2293,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */,
+				ECBED2A32371BF7100DCF905 /* RateKeys.swift in Sources */,
 				12E2B7042369E5FE0010F309 /* ProfileInjections.swift in Sources */,
 				12E8A5B5236C3F7B0070BE9E /* SearchDestinationViewModel.swift in Sources */,
+				EC1DA5A2236C36CD00A78F96 /* RatingView.swift in Sources */,
 				145856E9236716B5008E791F /* LogoutTableViewCell.swift in Sources */,
 				12E8A5B3236C3F6A0070BE9E /* ISearchDestinationViewModel.swift in Sources */,
 				1420A5692364F6D80084B4BE /* ProfileDetailsViewController.swift in Sources */,
 				122BD9E0236195AA009F8AD3 /* OTPViewController.swift in Sources */,
+				EC1DA59E236AF1EC00A78F96 /* RidesRateViewModel.swift in Sources */,
 				1438DD67235F2FD800E51875 /* LoginViewModel.swift in Sources */,
 				1420A56F2364F7070084B4BE /* EditProfileViewModel.swift in Sources */,
+				ECDE1A60237584CE0043BF55 /* EstimatedFare.swift in Sources */,
 				1438DD70235F4DF900E51875 /* ErrorType.swift in Sources */,
 				126B8784236F57B0005E6270 /* TripConfirmationViewModel.swift in Sources */,
 				12D85FF72360537900C12D79 /* WelcomeViewController.swift in Sources */,
 				1438DD76235F679E00E51875 /* LoginViewController.swift in Sources */,
+				EC1DA59C236AF18000A78F96 /* IRidesRateViewModel.swift in Sources */,
 				145930C92365C6A20074E2EF /* Code+Extensions.swift in Sources */,
 				1438DD6A235F364200E51875 /* BaseViewModel.swift in Sources */,
 				1438DC34235DD56C00E51875 /* AppDelegate.swift in Sources */,
 				12142303236B22C40031E5DA /* SearchHistoryTableViewCell.swift in Sources */,
 				1438DC36235DD56C00E51875 /* SceneDelegate.swift in Sources */,
 				12C4EF4623635238002CAB3A /* RegisterViewModel.swift in Sources */,
+				EC1DA59A236AF0FE00A78F96 /* RidesRateViewController.swift in Sources */,
 				12E2B7062369EC120010F309 /* RidesHomeViewController.swift in Sources */,
 				12E2B7002369DC700010F309 /* AuthInjections.swift in Sources */,
 				12292E50236E1B8800BD0FEC /* DestinationFromMapViewController.swift in Sources */,
@@ -2242,14 +2334,17 @@
 				126B8782236F57A1005E6270 /* ITripConfirmationViewModel.swift in Sources */,
 				1438DD72235F602200E51875 /* Injections.swift in Sources */,
 				12C4EF3C23630640002CAB3A /* IOTPViewModel.swift in Sources */,
+				ECDE1A5A23756B090043BF55 /* RideDurationViewController.swift in Sources */,
 				12C4EF312362F538002CAB3A /* AuthValidations.swift in Sources */,
 				12C4EF4823635266002CAB3A /* IRegisterViewModel.swift in Sources */,
+				ECDE1A5C23756B4D0043BF55 /* RideDurationViewModel.swift in Sources */,
 				145930CB2365C8790074E2EF /* AuthRequestKeyConstants.swift in Sources */,
 				1420A5702364F7070084B4BE /* IEditProfileViewModel.swift in Sources */,
 				12A04213236487E700C4C0EF /* IWelcomeViewModel.swift in Sources */,
 				12C4EF2B2362E6FB002CAB3A /* CustomAlert.swift in Sources */,
 				12C4EF3A23630600002CAB3A /* NotificationType.swift in Sources */,
 				12292E55236E1C3200BD0FEC /* TripConfirmationViewController.swift in Sources */,
+				ECDE1A5E23756B690043BF55 /* IRideDurationViewModel.swift in Sources */,
 				1420A5722364F84B0084B4BE /* View+Extensions.swift in Sources */,
 				1420A56C2364F6F80084B4BE /* EditProfileViewController.swift in Sources */,
 				12E2B6FE2369D5D90010F309 /* RidesHomeViewModel.swift in Sources */,
@@ -2369,6 +2464,7 @@
 				1438DD35235E3B6300E51875 /* Rating.swift in Sources */,
 				1438DD2F235E3A6000E51875 /* Location.swift in Sources */,
 				1438DD27235E367400E51875 /* User.swift in Sources */,
+				EC1DA5A4236F2DF300A78F96 /* RatingItem.swift in Sources */,
 				1438DD29235E386E00E51875 /* Daily.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

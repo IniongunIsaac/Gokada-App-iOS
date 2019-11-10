@@ -14,6 +14,8 @@ import App_Preferences
 import Local_Storage
 
 public struct RidesRepoImpl: IRidesRepo {
+
+    
     public let ridesRemote: IRidesRemote?
     public let ridesLocal: IRidesLocal?
     
@@ -28,5 +30,8 @@ public struct RidesRepoImpl: IRidesRepo {
     
     public func saveDestinationHistory(histories: [String]) {
         ridesLocal?.saveDestinationHistory(queries: histories)
-    }
+}
+public func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>> {
+       return ridesRemote!.rating(requestBody: requestBody)
+   }
 }
