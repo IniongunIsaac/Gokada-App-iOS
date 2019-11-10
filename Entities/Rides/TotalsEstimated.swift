@@ -9,10 +9,10 @@
 import Foundation
 
 public struct TotalsEstimated: Codable {
-    public var tollFees: [Double]? = []
-    public var distance: Double? = 0.0
-    public var duration: Double? = 0.0
-    public var totalFrom: Double? = 0.0
-    public var total: Double? = 0.0
-    public var totalTo: Double? = 0.0
+    public var tollFees: [Double]
+    public var distance: Double
+    public var duration: Double
+    public var totalFrom: Double
+    public var total: Double
+    public var totalTo: Double
 }

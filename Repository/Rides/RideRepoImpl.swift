@@ -14,6 +14,8 @@ import App_Preferences
 import Local_Storage
 
 public struct RidesRepoImpl: IRidesRepo {
+
+    
     public let ridesRemote: IRidesRemote?
     public let ridesLocal: IRidesLocal?
     
@@ -36,5 +38,9 @@ public struct RidesRepoImpl: IRidesRepo {
     
     public func requestRide(requestBody: [String : Any]) -> Observable<ApiResponse<RequestRide>> {
         return ridesRemote!.requestRide(requestBody: requestBody)
+    }
+
+    public func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>> {
+        return ridesRemote!.rating(requestBody: requestBody)
     }
 }

@@ -20,4 +20,5 @@ struct RemoteApiConstants {
     // MARK:- RIDES APIs
     static let RIDE_ESTIMATES_URL = "\(BASE_URL)user/rides/fare"
     static let REQUEST_RIDE_URL = "\(BASE_URL)user/rides"
+    static let RATE_USER_RIDE_URL =  "\(BASE_URL)user/rides/5dc2980d3b2a840008365d4b/rate"
 }

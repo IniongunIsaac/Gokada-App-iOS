@@ -17,5 +17,5 @@ public struct RequestRide: Codable {
     public let status: String
     public let requestedPickup: PickupInfo?
     public let requestedDropOff: PickupInfo?
-    public let totalsEstimated: TotalsEstimated?
+    public let totalsEstimated: TotalsEstimated
 }

@@ -31,6 +31,9 @@ class RidesInjections {
         }
         
         // MARK: - Storyboard
+        container.register(IRidesRateViewModel.self) { res in
+            RidesRateViewModel(ridesRepo: res.resolve(IRidesRepo.self)!)
+        }
         container.storyboardInitCompleted(RidesHomeViewController.self) { (res, cntrl) in
             cntrl.ridesHomeViewModel = res.resolve(IRidesHomeViewModel.self)
         }
@@ -40,5 +43,9 @@ class RidesInjections {
         container.storyboardInitCompleted(TripConfirmationViewController.self) { (res, cntrl) in
             cntrl.tripConfirmationViewModel = res.resolve(ITripConfirmationViewModel.self)
         }
+        
+        container.storyboardInitCompleted(RidesRateViewController.self) { (res, cntrl) in
+            cntrl.ridesRateViewModel = res.resolve(IRidesRateViewModel.self)
+            }
     }
 }

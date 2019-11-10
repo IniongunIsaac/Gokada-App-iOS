@@ -13,4 +13,5 @@ import Entities
 public protocol IRidesRemote {
     func getRideEstimates(requestBody: [String : Any]) -> Observable<ApiResponse<RideEstimates>>
     func requestRide(requestBody: [String: Any]) -> Observable<ApiResponse<RequestRide>>
+    func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>>
 }

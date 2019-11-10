@@ -149,8 +149,8 @@ class TripConfirmationViewController: BaseViewController {
         
         tripConfirmationViewModel?.rideEstimationResponse.bind { [weak self] estimations in
             self?.ridesEstimations = estimations
-            self?.newAmountLbl.text = "\(estimations.totalsEstimated.totalFrom!) - \(estimations.totalsEstimated.totalTo!)"
-            self?.distanceLbl.text = "\(Double(estimations.totalsEstimated.distance! / 1000).rounded(toPlaces: 1)) km / \(Int(ceil(estimations.totalsEstimated.duration! / 60))) min"
+            self?.newAmountLbl.text = "\(estimations.totalsEstimated.totalFrom) - \(estimations.totalsEstimated.totalTo)"
+            self?.distanceLbl.text = "\(Double(estimations.totalsEstimated.distance / 1000).rounded(toPlaces: 1)) km / \(Int(ceil(estimations.totalsEstimated.duration / 60))) min"
         }.disposed(by: disposeBag)
         
         tripConfirmationViewModel?.newRideResponse.bind { [weak self] newRide in

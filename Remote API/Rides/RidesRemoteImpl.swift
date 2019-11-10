@@ -20,6 +20,10 @@ public class RidesRemoteImpl: BaseRemoteApiImpl, IRidesRemote {
     }
     
     public func requestRide(requestBody: [String : Any]) -> Observable<ApiResponse<RequestRide>> {
-        return makeAPIRequestObservable(responseType: ApiResponse<RequestRide>.self, url: RemoteApiConstants.REQUEST_RIDE_URL, method: .post, params: requestBody, encoding: JSONEncoding.default)
+        return makeAPIRequestObservable(responseType: ApiResponse<RequestRide>.self, url: RemoteApiConstants.REQUEST_RIDE_URL, method: .post, params: requestBody, encoding: JSONEncoding.default)   
+    }
+    
+    public func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>> {
+        return makeAPIRequestObservable(responseType: ApiResponse<RatingItem>.self, url: RemoteApiConstants.RATE_USER_RIDE_URL, method: .post, params: requestBody, encoding: JSONEncoding.default)
     }
 }
