@@ -24,14 +24,23 @@ public struct RidesRepoImpl: IRidesRepo {
         self.ridesLocal = ridesLocal
     }
     
-    public func getDestinationHistory() -> Observable<DestinationSearchQueries?> {
+    public func getDestinationHistory() -> Observable<[DestinationSearchQuery]?> {
         return ridesLocal!.getDestinationHistory()
     }
     
-    public func saveDestinationHistory(histories: [String]) {
-        ridesLocal?.saveDestinationHistory(queries: histories)
-}
-public func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>> {
-       return ridesRemote!.rating(requestBody: requestBody)
-   }
+    public func saveDestinationHistory(history: DestinationSearchQuery) {
+        ridesLocal?.saveDestinationHistory(history: history)
+    }
+    
+    public func getRideEstimates(requestBody: [String : Any]) -> Observable<ApiResponse<RideEstimates>> {
+        return ridesRemote!.getRideEstimates(requestBody: requestBody)
+    }
+    
+    public func requestRide(requestBody: [String : Any]) -> Observable<ApiResponse<RequestRide>> {
+        return ridesRemote!.requestRide(requestBody: requestBody)
+    }
+
+    public func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>> {
+        return ridesRemote!.rating(requestBody: requestBody)
+    }
 }

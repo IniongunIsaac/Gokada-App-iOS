@@ -226,12 +226,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQJ-Ld-S6X">
-                                <rect key="frame" x="-30" y="60" width="30" height="30"/>
+                                <rect key="frame" x="8" y="60" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="VXG-xo-qDZ"/>
                                     <constraint firstAttribute="height" constant="30" id="aPa-ZZ-WK6"/>
                                 </constraints>
-                                <state key="normal" image="frontArrow"/>
+                                <state key="normal" image="backArrow"/>
                                 <connections>
                                     <action selector="returnToHome:" destination="uxh-cM-k1y" eventType="touchUpInside" id="hbV-Zk-1WX"/>
                                 </connections>
@@ -241,7 +241,7 @@
                         <constraints>
                             <constraint firstItem="GQJ-Ld-S6X" firstAttribute="top" secondItem="W4m-jD-vzW" secondAttribute="top" constant="16" id="2h8-ZE-3n5"/>
                             <constraint firstItem="2SP-ED-nYB" firstAttribute="top" secondItem="GQJ-Ld-S6X" secondAttribute="bottom" constant="8" id="GGK-qr-dle"/>
-                            <constraint firstItem="W4m-jD-vzW" firstAttribute="trailing" secondItem="GQJ-Ld-S6X" secondAttribute="trailing" constant="8" id="GK5-JS-Ata"/>
+                            <constraint firstItem="GQJ-Ld-S6X" firstAttribute="leading" secondItem="W4m-jD-vzW" secondAttribute="leading" constant="8" id="VN6-J1-Lex"/>
                             <constraint firstItem="W4m-jD-vzW" firstAttribute="trailing" secondItem="2SP-ED-nYB" secondAttribute="trailing" id="d92-an-a1W"/>
                             <constraint firstItem="2SP-ED-nYB" firstAttribute="leading" secondItem="W4m-jD-vzW" secondAttribute="leading" id="g2B-M4-4Y0"/>
                             <constraint firstAttribute="bottom" secondItem="2SP-ED-nYB" secondAttribute="bottom" id="gr2-aO-0gY"/>
@@ -271,7 +271,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZZ-Yu-FL5" customClass="GMSMapView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="596"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="611"/>
                                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5v-sj-iUo">
@@ -368,7 +368,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="gmW-9a-ia9" firstAttribute="leading" secondItem="p5v-sj-iUo" secondAttribute="leading" constant="36" id="4u7-eV-RWp"/>
                                             <constraint firstItem="Lho-QL-19Q" firstAttribute="leading" secondItem="p5v-sj-iUo" secondAttribute="leading" constant="36" id="BZv-ep-1Je"/>
@@ -385,6 +385,11 @@
                                             <constraint firstItem="HKH-eb-WSj" firstAttribute="leading" secondItem="XW7-g5-QG7" secondAttribute="trailing" constant="4" id="yHb-gG-xVf"/>
                                             <constraint firstItem="XW7-g5-QG7" firstAttribute="leading" secondItem="p5v-sj-iUo" secondAttribute="leading" constant="36" id="zMc-CX-Y1W"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -393,8 +398,8 @@
                                     <constraint firstItem="gZZ-Yu-FL5" firstAttribute="leading" secondItem="6qC-ea-S3P" secondAttribute="leading" id="Yec-t7-bWq"/>
                                     <constraint firstAttribute="trailing" secondItem="p5v-sj-iUo" secondAttribute="trailing" id="YpF-po-Hqc"/>
                                     <constraint firstItem="p5v-sj-iUo" firstAttribute="leading" secondItem="6qC-ea-S3P" secondAttribute="leading" id="b3g-XE-jRw"/>
-                                    <constraint firstItem="p5v-sj-iUo" firstAttribute="top" secondItem="gZZ-Yu-FL5" secondAttribute="bottom" id="bMJ-98-WwD"/>
                                     <constraint firstAttribute="trailing" secondItem="gZZ-Yu-FL5" secondAttribute="trailing" id="gf7-YH-WZn"/>
+                                    <constraint firstItem="p5v-sj-iUo" firstAttribute="top" secondItem="gZZ-Yu-FL5" secondAttribute="bottom" constant="-15" id="sIf-PC-zec"/>
                                     <constraint firstItem="gZZ-Yu-FL5" firstAttribute="top" secondItem="6qC-ea-S3P" secondAttribute="top" id="yKz-9C-w1i"/>
                                 </constraints>
                             </view>
@@ -474,8 +479,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backArrow" width="25" height="25"/>
         <image name="clock-circular-outline" width="24" height="24"/>
-        <image name="frontArrow" width="25" height="25"/>
         <image name="logout" width="18.5" height="18"/>
         <image name="menuIcon" width="25" height="25"/>
         <image name="payment_icon" width="33" height="34.5"/>

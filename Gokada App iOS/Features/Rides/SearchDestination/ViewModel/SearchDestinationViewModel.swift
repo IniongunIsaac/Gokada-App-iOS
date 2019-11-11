@@ -14,9 +14,10 @@ import RxCocoa
 import GooglePlaces
 
 class SearchDestinationViewModel: BaseViewModel, ISearchDestinationViewModel {
-    var placesSuggestion: PublishSubject<[String]> = PublishSubject()
+    var placesSuggestion: PublishSubject<[DestinationSearchQuery]> = PublishSubject()
     let token = GMSAutocompleteSessionToken.init()
     let filter = GMSAutocompleteFilter()
+    var coordinatesDetails: PublishSubject<LocationAddress> = PublishSubject()
     
     let ridesRepo: IRidesRepo
     
@@ -25,7 +26,26 @@ class SearchDestinationViewModel: BaseViewModel, ISearchDestinationViewModel {
     }
     
     func initializePlaceSuggestion() {
-        placesSuggestion.onNext(["Choose Location on Map"])
+        placesSuggestion.onNext([DestinationSearchQuery(id: "1", address: "Choose Location on Map", latitude: nil, longitude: nil)])
+    }
+    
+    func getCoordinatedBy(id placeID: String) {
+        isLoading.onNext(true)
+        let placesClient = GMSPlacesClient.shared()
+        placesClient.lookUpPlaceID(placeID) { [weak self] (place, error) in
+            self?.isLoading.onNext(false)
+            if let error = error {
+                self?.alertValue.onNext(AlertValue(message: "Could not retrieve location \(error.localizedDescription)", type: .error))
+                return
+            }
+
+            guard let place = place else {
+                self?.alertValue.onNext(AlertValue(message: "No place details for \(placeID)", type: .error))
+                return
+            }
+            
+            self?.coordinatesDetails.onNext(LocationAddress(id: nil, latitude: place.coordinate.latitude, longitude: place.coordinate.longitude, description: place.formattedAddress ?? ""))
+        }
     }
     
     func fetchPlaceSuggestion(query: String) {
@@ -38,9 +58,9 @@ class SearchDestinationViewModel: BaseViewModel, ISearchDestinationViewModel {
             if let _ = error { return }
                                                     
             if let results = results {
-                var suggestions = ["Choose Location on Map"]
+                var suggestions = [DestinationSearchQuery(id: "1", address: "Choose Location on Map", latitude: nil, longitude: nil)]
                 for result in results {
-                    suggestions.append(result.attributedFullText.string)
+                    suggestions.append(DestinationSearchQuery(id: result.placeID, address: result.attributedFullText.string, latitude: nil, longitude: nil))
                 }
                 self?.placesSuggestion.onNext(suggestions)
             }

@@ -12,6 +12,6 @@ import Entities
 import RxSwift
 
 protocol IRidesHomeViewModel {
-    var searchHistory: PublishSubject<[String]> { get }
+    var searchHistory: PublishSubject<[DestinationSearchQuery]> { get }
     func getDestinationSearchHistory()
 }

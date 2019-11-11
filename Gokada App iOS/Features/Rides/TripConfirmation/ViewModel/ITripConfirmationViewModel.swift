@@ -7,7 +7,19 @@
 //
 
 import Foundation
+import RxSwift
+import Entities
 
 protocol ITripConfirmationViewModel {
-    func saveSearchHistory(query: String)
+    var userPaymentOptions: PublishSubject<[UserPaymentOptions]> { get }
+    var rideEstimationResponse: PublishSubject<RideEstimates> { get }
+    var newRideResponse: PublishSubject<RequestRide> { get }
+    func saveSearchHistory(query: DestinationSearchQuery)
+    func fetchPaymentOptions()
+    func updateDefaultPayment(accountNumber: String)
+    var sourceCoordinatesResponse: PublishSubject<DestinationSearchQuery> { get }
+    var destinationCoordinatesResponse: PublishSubject<DestinationSearchQuery> { get }
+    func getLocationsCoordinates(tripInformation: TripInformation)
+    func getRideEstimates(source: DestinationSearchQuery, destination: DestinationSearchQuery)
+    func requestRide(source: DestinationSearchQuery, destination: DestinationSearchQuery, estimates: RideEstimates)
 }

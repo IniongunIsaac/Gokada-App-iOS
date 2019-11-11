@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Rating: Codable {
-    let total: Int? = nil
-    let count: Int? = nil
-    let value: Double? = nil
+    public let total: Int? = nil
+    public let count: Int? = nil
+    public let value: Double? = nil
 }

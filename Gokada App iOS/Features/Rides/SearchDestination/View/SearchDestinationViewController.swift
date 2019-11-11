@@ -21,6 +21,8 @@ class SearchDestinationViewController: BaseViewController {
     @IBOutlet weak var addressView: UIView!
     private let locationManager = CLLocationManager()
     var currentSearchField: UITextField?
+    var currentLocation: DestinationSearchQuery!
+    var destinationLocation: DestinationSearchQuery!
     
     override func getViewModel() -> BaseViewModel {
         return searchDestinationViewModel as! BaseViewModel
@@ -71,19 +73,25 @@ class SearchDestinationViewController: BaseViewController {
     }
     
     func bindViews() {
-        searchDestinationViewModel?.placesSuggestion.bind(to: self.suggestionTableView.rx.items) { (tableView, index, element) in
+        searchDestinationViewModel?.placesSuggestion.bind(to: self.suggestionTableView.rx.items) { [weak self] (tableView, index, element) in
             let cell = tableView.dequeueReusableCell(withIdentifier: "PlacesSuggestionTableViewCell") as! PlacesSuggestionTableViewCell
             
             if index == 0 {
-                cell.updateView(address: element, icon: #imageLiteral(resourceName: "onlineIcon"))
+                cell.updateView(address: element.address, icon: #imageLiteral(resourceName: "onlineIcon"))
                 cell.addTapGesture { [weak self] in
                     self?.selectDestinationFromMap()
                 }
             } else {
-                cell.updateView(address: element, icon: #imageLiteral(resourceName: "maps-and-flags"))
+                cell.updateView(address: element.address, icon: #imageLiteral(resourceName: "maps-and-flags"))
                 cell.addTapGesture { [weak self] in
-                    self?.populateSuggestedPlace(element)
-                    if self?.sourceLocationField.text?.trimmingCharacters(in: .whitespacesAndNewlines) != "" && self?.destinationLocationField.text?.trimmingCharacters(in: .whitespacesAndNewlines) != "" {
+                    self?.currentSearchField?.text = element.address
+                    if self?.currentSearchField?.tag == 0 {
+                        self?.currentLocation = DestinationSearchQuery(id: element.id, address: element.address, latitude: element.latitude, longitude: element.longitude)
+                    } else {
+                        self?.destinationLocation = DestinationSearchQuery(id: element.id, address: element.address, latitude: element.latitude, longitude: element.longitude)
+                    }
+                    
+                    if (self?.currentLocation != nil && self?.destinationLocation != nil) {
                         self?.goToConfirmTripPage()
                     }
                 }
@@ -96,30 +104,28 @@ class SearchDestinationViewController: BaseViewController {
     func selectDestinationFromMap() {
         let storyboard = UIStoryboard(name: "DestinationFromMap", bundle: nil)
         let controller = storyboard.instantiateViewController(identifier: "destinationFromMapVC") as! DestinationFromMapViewController
-        controller.currentLocation = sourceLocationField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        controller.currentLocation = currentLocation
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func goToConfirmTripPage() {
         let storyboard = UIStoryboard(name: "TripConfirmation", bundle: nil)
         let controller = storyboard.instantiateViewController(identifier: "tripConfirmationVC") as! TripConfirmationViewController
-        controller.tripInformation = TripInformation(from: sourceLocationField.text!.trimmingCharacters(in: .whitespacesAndNewlines), to: destinationLocationField.text!.trimmingCharacters(in: .whitespacesAndNewlines))
+        controller.tripInformation = TripInformation(from: currentLocation, to: destinationLocation)
         self.navigationController?.pushViewController(controller, animated: true)
-    }
-    
-    func populateSuggestedPlace(_ suggestion: String) {
-        self.currentSearchField?.text = suggestion
     }
     
     private func reverseGeocodeCoordinate(_ coordinate: CLLocationCoordinate2D) {
         let geocoder = GMSGeocoder()
-        geocoder.reverseGeocodeCoordinate(coordinate) { response, error in
+        geocoder.reverseGeocodeCoordinate(coordinate) { [weak self] response, error in
             guard let address = response?.firstResult(), let lines = address.lines else {
                 return
             }
-            self.sourceLocationField.text = lines.joined(separator: "\n")
+            self?.currentLocation = DestinationSearchQuery(id: nil, address: lines.joined(separator: "\n"), latitude: coordinate.latitude, longitude: coordinate.longitude)
+            self?.sourceLocationField.text = self?.currentLocation.address
+            
             UIView.animate(withDuration: 0.25) {
-                self.view.layoutIfNeeded()
+                self?.view.layoutIfNeeded()
             }
         }
     }
@@ -143,5 +149,18 @@ extension SearchDestinationViewController: CLLocationManagerDelegate {
         
         reverseGeocodeCoordinate(CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude))
         locationManager.stopUpdatingLocation()
+    }
+}
+
+extension SearchDestinationViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if textField.tag == 0 {
+            self.currentLocation = nil
+        } else {
+            self.destinationLocation = nil
+        }
+        
+        return true
     }
 }

@@ -13,8 +13,9 @@ import RxSwift
 import Entities
 
 public protocol IRidesRepo {
-    func getDestinationHistory() -> Observable<DestinationSearchQueries?>
-    func saveDestinationHistory(histories: [String])
+    func getDestinationHistory() -> Observable<[DestinationSearchQuery]?>
+    func saveDestinationHistory(history: DestinationSearchQuery)
+    func getRideEstimates(requestBody: [String: Any]) -> Observable<ApiResponse<RideEstimates>>
+    func requestRide(requestBody: [String: Any]) -> Observable<ApiResponse<RequestRide>>
     func rating(requestBody: [String : String]) -> Observable<ApiResponse<RatingItem>>
-    
 }

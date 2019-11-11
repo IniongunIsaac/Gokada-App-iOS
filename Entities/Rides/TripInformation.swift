@@ -9,10 +9,10 @@
 import Foundation
 
 public struct TripInformation {
-    public let source: String
-    public let destination: String
+    public var source: DestinationSearchQuery
+    public var destination: DestinationSearchQuery
     
-    public init(from source: String, to destination: String) {
+    public init(from source: DestinationSearchQuery, to destination: DestinationSearchQuery) {
         self.source = source
         self.destination = destination
     }
