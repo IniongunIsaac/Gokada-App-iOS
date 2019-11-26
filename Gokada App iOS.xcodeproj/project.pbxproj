@@ -72,6 +72,24 @@
 		12E8A5B5236C3F7B0070BE9E /* SearchDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8A5B4236C3F7B0070BE9E /* SearchDestinationViewModel.swift */; };
 		12F018602375673600F4330D /* GMSMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0185F2375673600F4330D /* GMSMapView+Extensions.swift */; };
 		12F018622375849700F4330D /* CustomMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F018612375849600F4330D /* CustomMarker.swift */; };
+		1416BC1E238D15BB001BB02E /* Payments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC1D238D15BB001BB02E /* Payments.storyboard */; };
+		1416BC20238D40A0001BB02E /* Montserrat_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC1F238D409F001BB02E /* Montserrat_Bold.ttf */; };
+		1416BC31238D4193001BB02E /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC21238D4191001BB02E /* Montserrat-ExtraBoldItalic.ttf */; };
+		1416BC32238D4193001BB02E /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC22238D4191001BB02E /* Montserrat-LightItalic.ttf */; };
+		1416BC33238D4193001BB02E /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC23238D4191001BB02E /* Montserrat-SemiBoldItalic.ttf */; };
+		1416BC34238D4193001BB02E /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC24238D4191001BB02E /* Montserrat-ExtraLight.ttf */; };
+		1416BC35238D4193001BB02E /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC25238D4192001BB02E /* Montserrat-BlackItalic.ttf */; };
+		1416BC36238D4193001BB02E /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC26238D4192001BB02E /* Montserrat-BoldItalic.ttf */; };
+		1416BC37238D4193001BB02E /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC27238D4192001BB02E /* Montserrat-Thin.ttf */; };
+		1416BC38238D4193001BB02E /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC28238D4192001BB02E /* Montserrat-Black.ttf */; };
+		1416BC39238D4193001BB02E /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC29238D4192001BB02E /* Montserrat-ThinItalic.ttf */; };
+		1416BC3A238D4193001BB02E /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC2A238D4192001BB02E /* Montserrat-Italic.ttf */; };
+		1416BC3B238D4193001BB02E /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC2B238D4192001BB02E /* Montserrat-MediumItalic.ttf */; };
+		1416BC3C238D4193001BB02E /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC2C238D4192001BB02E /* Montserrat-ExtraBold.ttf */; };
+		1416BC3D238D4193001BB02E /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC2D238D4192001BB02E /* Montserrat-Light.ttf */; };
+		1416BC3E238D4193001BB02E /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC2E238D4193001BB02E /* Montserrat-SemiBold.ttf */; };
+		1416BC3F238D4193001BB02E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC2F238D4193001BB02E /* Montserrat-Medium.ttf */; };
+		1416BC40238D4193001BB02E /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1416BC30238D4193001BB02E /* Montserrat-ExtraLightItalic.ttf */; };
 		1420A55F2364F62A0084B4BE /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A55E2364F62A0084B4BE /* ProfileItem.swift */; };
 		1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420A5612364F68D0084B4BE /* Profile.storyboard */; };
 		1420A5652364F6BB0084B4BE /* IProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */; };
@@ -144,6 +162,12 @@
 		145856E9236716B5008E791F /* LogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145856E8236716B5008E791F /* LogoutTableViewCell.swift */; };
 		145930C92365C6A20074E2EF /* Code+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145930C82365C6A20074E2EF /* Code+Extensions.swift */; };
 		145930CB2365C8790074E2EF /* AuthRequestKeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */; };
+		14CAD8D32382D0F2004BDCE4 /* AddCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CAD8D22382D0F1004BDCE4 /* AddCardResponse.swift */; };
+		14CAD8D52382D142004BDCE4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CAD8D42382D142004BDCE4 /* Card.swift */; };
+		14CAD8D72382D17E004BDCE4 /* ChargeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CAD8D62382D17E004BDCE4 /* ChargeData.swift */; };
+		14CAD8D92382D2E8004BDCE4 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CAD8D82382D2E8004BDCE4 /* Cards.swift */; };
+		14CAD8DC2382D3D2004BDCE4 /* IPaymentRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CAD8DB2382D3D2004BDCE4 /* IPaymentRemote.swift */; };
+		14CAD8DE2382D3E6004BDCE4 /* PaymentRemoteImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CAD8DD2382D3E6004BDCE4 /* PaymentRemoteImpl.swift */; };
 		21368E7CE4D339EDA720D642 /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E9BD2DD78F9E7B3E48ADEF /* Pods_Gokada_App_iOS_Gokada_App_iOSUITests.framework */; };
 		6A98988D5A8290F170391B36 /* Pods_RepositoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647530F024AE0DCDEC06811A /* Pods_RepositoryTests.framework */; };
 		6E584A78FA773E9C6EDE0A27 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE44B767004B6A4112DCDE02 /* Pods_Repository.framework */; };
@@ -408,6 +432,24 @@
 		12E8A5B4236C3F7B0070BE9E /* SearchDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationViewModel.swift; sourceTree = "<group>"; };
 		12F0185F2375673600F4330D /* GMSMapView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GMSMapView+Extensions.swift"; sourceTree = "<group>"; };
 		12F018612375849600F4330D /* CustomMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarker.swift; sourceTree = "<group>"; };
+		1416BC1D238D15BB001BB02E /* Payments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payments.storyboard; sourceTree = "<group>"; };
+		1416BC1F238D409F001BB02E /* Montserrat_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat_Bold.ttf; sourceTree = "<group>"; };
+		1416BC21238D4191001BB02E /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		1416BC22238D4191001BB02E /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		1416BC23238D4191001BB02E /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		1416BC24238D4191001BB02E /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1416BC25238D4192001BB02E /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		1416BC26238D4192001BB02E /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1416BC27238D4192001BB02E /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		1416BC28238D4192001BB02E /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		1416BC29238D4192001BB02E /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		1416BC2A238D4192001BB02E /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		1416BC2B238D4192001BB02E /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1416BC2C238D4192001BB02E /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1416BC2D238D4192001BB02E /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		1416BC2E238D4193001BB02E /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		1416BC2F238D4193001BB02E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		1416BC30238D4193001BB02E /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		1420A55E2364F62A0084B4BE /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
 		1420A5612364F68D0084B4BE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		1420A5632364F6BB0084B4BE /* IProfileDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProfileDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -490,6 +532,12 @@
 		145856E8236716B5008E791F /* LogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutTableViewCell.swift; sourceTree = "<group>"; };
 		145930C82365C6A20074E2EF /* Code+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Code+Extensions.swift"; sourceTree = "<group>"; };
 		145930CA2365C8790074E2EF /* AuthRequestKeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestKeyConstants.swift; sourceTree = "<group>"; };
+		14CAD8D22382D0F1004BDCE4 /* AddCardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardResponse.swift; sourceTree = "<group>"; };
+		14CAD8D42382D142004BDCE4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		14CAD8D62382D17E004BDCE4 /* ChargeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeData.swift; sourceTree = "<group>"; };
+		14CAD8D82382D2E8004BDCE4 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		14CAD8DB2382D3D2004BDCE4 /* IPaymentRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPaymentRemote.swift; sourceTree = "<group>"; };
+		14CAD8DD2382D3E6004BDCE4 /* PaymentRemoteImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRemoteImpl.swift; sourceTree = "<group>"; };
 		186E3F910A958F53FE229F3D /* Pods-Gokada App iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada App iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Gokada App iOSTests/Pods-Gokada App iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B20F9A3373A28D9D1FFC57C /* Pods-Repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.release.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.release.xcconfig"; sourceTree = "<group>"; };
 		1E53639A3269A89B1106E590 /* Pods-Repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.debug.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.debug.xcconfig"; sourceTree = "<group>"; };
@@ -713,6 +761,23 @@
 		1283C6E5235FAA6900414C46 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1416BC28238D4192001BB02E /* Montserrat-Black.ttf */,
+				1416BC25238D4192001BB02E /* Montserrat-BlackItalic.ttf */,
+				1416BC26238D4192001BB02E /* Montserrat-BoldItalic.ttf */,
+				1416BC2C238D4192001BB02E /* Montserrat-ExtraBold.ttf */,
+				1416BC21238D4191001BB02E /* Montserrat-ExtraBoldItalic.ttf */,
+				1416BC24238D4191001BB02E /* Montserrat-ExtraLight.ttf */,
+				1416BC30238D4193001BB02E /* Montserrat-ExtraLightItalic.ttf */,
+				1416BC2A238D4192001BB02E /* Montserrat-Italic.ttf */,
+				1416BC2D238D4192001BB02E /* Montserrat-Light.ttf */,
+				1416BC22238D4191001BB02E /* Montserrat-LightItalic.ttf */,
+				1416BC2F238D4193001BB02E /* Montserrat-Medium.ttf */,
+				1416BC2B238D4192001BB02E /* Montserrat-MediumItalic.ttf */,
+				1416BC2E238D4193001BB02E /* Montserrat-SemiBold.ttf */,
+				1416BC23238D4191001BB02E /* Montserrat-SemiBoldItalic.ttf */,
+				1416BC27238D4192001BB02E /* Montserrat-Thin.ttf */,
+				1416BC29238D4192001BB02E /* Montserrat-ThinItalic.ttf */,
+				1416BC1F238D409F001BB02E /* Montserrat_Bold.ttf */,
 				1283C6E6235FAA7B00414C46 /* montserrat.ttf */,
 			);
 			path = Fonts;
@@ -961,6 +1026,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1416BC1B238D14E7001BB02E /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				1416BC1C238D1502001BB02E /* Storyboards */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		1416BC1C238D1502001BB02E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1416BC1D238D15BB001BB02E /* Payments.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		1420A5562364F5960084B4BE /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -1135,6 +1216,7 @@
 		1438DCA9235DF67B00E51875 /* Remote API */ = {
 			isa = PBXGroup;
 			children = (
+				14CAD8DA2382D3B7004BDCE4 /* Payment */,
 				12E2B6EF2369D33D0010F309 /* Rides */,
 				1438DD41235E945700E51875 /* Authentication */,
 				1438DD40235E945000E51875 /* Base */,
@@ -1197,6 +1279,7 @@
 		1438DD0F235DF72400E51875 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				14CAD8D12382D0D4004BDCE4 /* Payment */,
 				12E2B6E92369CFC80010F309 /* Rides */,
 				1420A55D2364F5EA0084B4BE /* Profile */,
 				1438DD36235E428A00E51875 /* Base */,
@@ -1287,6 +1370,7 @@
 		1438DD5E235F2C9C00E51875 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				1416BC1B238D14E7001BB02E /* Payment */,
 				12E2B6E0236989EC0010F309 /* Rides */,
 				1420A5562364F5960084B4BE /* Profile */,
 				12D85FF2236051C900C12D79 /* Welcome */,
@@ -1392,6 +1476,26 @@
 				ECBED2A22371BF7100DCF905 /* RateKeys.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		14CAD8D12382D0D4004BDCE4 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				14CAD8D22382D0F1004BDCE4 /* AddCardResponse.swift */,
+				14CAD8D42382D142004BDCE4 /* Card.swift */,
+				14CAD8D62382D17E004BDCE4 /* ChargeData.swift */,
+				14CAD8D82382D2E8004BDCE4 /* Cards.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		14CAD8DA2382D3B7004BDCE4 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				14CAD8DB2382D3D2004BDCE4 /* IPaymentRemote.swift */,
+				14CAD8DD2382D3E6004BDCE4 /* PaymentRemoteImpl.swift */,
+			);
+			path = Payment;
 			sourceTree = "<group>";
 		};
 		7DA2971EDEA381CD23C8169F /* Frameworks */ = {
@@ -1882,20 +1986,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1416BC3D238D4193001BB02E /* Montserrat-Light.ttf in Resources */,
 				12959FE9235FBB7B00DC7856 /* gokada_custom_loader.json in Resources */,
+				1416BC40238D4193001BB02E /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				122BD9E12361A468009F8AD3 /* montserrat.ttf in Resources */,
+				1416BC3B238D4193001BB02E /* Montserrat-MediumItalic.ttf in Resources */,
 				12292E49236E19C200BD0FEC /* TripConfirmation.storyboard in Resources */,
+				1416BC36238D4193001BB02E /* Montserrat-BoldItalic.ttf in Resources */,
+				1416BC35238D4193001BB02E /* Montserrat-BlackItalic.ttf in Resources */,
 				1283C6EB235FAAA400414C46 /* gokada_splash_amin.json in Resources */,
+				1416BC3E238D4193001BB02E /* Montserrat-SemiBold.ttf in Resources */,
+				1416BC3A238D4193001BB02E /* Montserrat-Italic.ttf in Resources */,
 				1438DC40235DD57000E51875 /* LaunchScreen.storyboard in Resources */,
 				12E8A5AC236C3BA30070BE9E /* RidesSelectDestination.storyboard in Resources */,
 				ECDE1A552374101C0043BF55 /* RideDuration.storyboard in Resources */,
 				12E2B6E623698CC40010F309 /* Rides.storyboard in Resources */,
+				1416BC3F238D4193001BB02E /* Montserrat-Medium.ttf in Resources */,
+				1416BC39238D4193001BB02E /* Montserrat-ThinItalic.ttf in Resources */,
 				1438DC3D235DD57000E51875 /* Assets.xcassets in Resources */,
+				1416BC38238D4193001BB02E /* Montserrat-Black.ttf in Resources */,
+				1416BC31238D4193001BB02E /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				1416BC34238D4193001BB02E /* Montserrat-ExtraLight.ttf in Resources */,
 				1283C6EA235FAAA400414C46 /* gokada_welcome_anim.json in Resources */,
+				1416BC20238D40A0001BB02E /* Montserrat_Bold.ttf in Resources */,
 				1420A5622364F68D0084B4BE /* Profile.storyboard in Resources */,
+				1416BC1E238D15BB001BB02E /* Payments.storyboard in Resources */,
+				1416BC32238D4193001BB02E /* Montserrat-LightItalic.ttf in Resources */,
+				1416BC3C238D4193001BB02E /* Montserrat-ExtraBold.ttf in Resources */,
 				1438DC3B235DD56C00E51875 /* Main.storyboard in Resources */,
 				12292E4B236E19D800BD0FEC /* DestinationFromMap.storyboard in Resources */,
 				12D85FF92360539900C12D79 /* Auth.storyboard in Resources */,
+				1416BC33238D4193001BB02E /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				1416BC37238D4193001BB02E /* Montserrat-Thin.ttf in Resources */,
 				EC1DA5A0236AF43F00A78F96 /* RidesRate.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2453,9 +2575,11 @@
 				1438DD49235E97D900E51875 /* BaseRemoteApiImpl.swift in Sources */,
 				1438DD43235E948300E51875 /* RemoteAPI+Extensions.swift in Sources */,
 				1438DD53235EB98400E51875 /* RemoteApiConstants.swift in Sources */,
+				14CAD8DC2382D3D2004BDCE4 /* IPaymentRemote.swift in Sources */,
 				1438DD47235E970700E51875 /* IBaseRemoteApi.swift in Sources */,
 				12E2B6F32369D3E70010F309 /* RidesRemoteImpl.swift in Sources */,
 				1438DD5B235F289000E51875 /* AuthRemoteImpl.swift in Sources */,
+				14CAD8DE2382D3E6004BDCE4 /* PaymentRemoteImpl.swift in Sources */,
 				12E2B6F12369D3700010F309 /* IRidesRemote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2523,13 +2647,17 @@
 				1438DD3A235E436600E51875 /* ApiError.swift in Sources */,
 				126B8780236F5518005E6270 /* TripInformation.swift in Sources */,
 				12241F542375B4F6009585CB /* LocationAddress.swift in Sources */,
+				14CAD8D92382D2E8004BDCE4 /* Cards.swift in Sources */,
 				1438DD2B235E38CA00E51875 /* Earning.swift in Sources */,
 				1438DD38235E431300E51875 /* ErrorMessage.swift in Sources */,
+				14CAD8D32382D0F2004BDCE4 /* AddCardResponse.swift in Sources */,
 				1438DD35235E3B6300E51875 /* Rating.swift in Sources */,
 				12241F64237894E4009585CB /* RideUser.swift in Sources */,
 				12241F66237896B6009585CB /* RidePilot.swift in Sources */,
 				1438DD2F235E3A6000E51875 /* Location.swift in Sources */,
 				1438DD27235E367400E51875 /* User.swift in Sources */,
+				14CAD8D72382D17E004BDCE4 /* ChargeData.swift in Sources */,
+				14CAD8D52382D142004BDCE4 /* Card.swift in Sources */,
 				EC1DA5A4236F2DF300A78F96 /* RatingItem.swift in Sources */,
 				1438DD29235E386E00E51875 /* Daily.swift in Sources */,
 				127F481023734BC2006B3209 /* RideEstimates.swift in Sources */,
@@ -2794,7 +2922,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RT459C64W3;
+				DEVELOPMENT_TEAM = H4J3Q4SCD8;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2818,7 +2946,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RT459C64W3;
+				DEVELOPMENT_TEAM = H4J3Q4SCD8;
 				INFOPLIST_FILE = "Gokada App iOS/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
